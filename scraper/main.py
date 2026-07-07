@@ -44,6 +44,29 @@ def load_cinemas() -> list[dict]:
         return json.load(f)["cinemas"]
 
 
+def fix_metropolis_ov(showtimes: list[dict], original_language: str | None) -> None:
+    """Correct the one place our source data reliably lies about language.
+
+    Metropolis is an original-version arthouse that tags its explicit OV
+    screenings (combinedAttributes 'OV') but leaves foreign-language films
+    shown with subtitles unmarked — so they fall through to 'DE'. We relabel
+    such a Metropolis screening as OmU only when we're confident:
+      - the film's original language is not German, and
+      - the film has NO OV/OmU screening at Metropolis at all
+        (if it does, the unmarked ones are the German-dubbed counterpart,
+         e.g. Minions runs both OV and dubbed — leave those as DE).
+    German-language films (Conni etc.) are never touched. Mutates in place.
+    """
+    if not original_language or original_language == "de":
+        return
+    metro = [s for s in showtimes if s["cinema"] == "Metropolis"]
+    if any(s["language"] in ("OV", "OmU") for s in metro):
+        return
+    for s in metro:
+        if s["language"] == "DE":
+            s["language"] = "OmU"
+
+
 def main() -> None:
     movies: dict[str, dict] = {}  # keyed by cleaned title
 
@@ -94,6 +117,10 @@ def main() -> None:
                 print(f"  [warn] OMDb failed for {imdb_id}: {e}")
             scores["letterboxd"] = letterboxd.rating(imdb_id)
 
+        orig_lang = (meta or {}).get("original_language")
+        showtimes = sorted(entry["showtimes"], key=lambda s: s["datetime"])
+        fix_metropolis_ov(showtimes, orig_lang)
+
         result.append({
             "id": imdb_id or key,
             "title_de": (meta or {}).get("title_de", entry["title_raw"]),
@@ -105,12 +132,13 @@ def main() -> None:
             "age_rating": (meta or {}).get("age_rating"),
             "overview_de": (meta or {}).get("overview_de"),
             "overview_en": (meta or {}).get("overview_en"),
+            "original_language": orig_lang,
             "directors": (meta or {}).get("directors", []),
             "tags": (meta or {}).get("tags", []),
             "trailer_de": (meta or {}).get("trailer_de"),
             "trailer_en": (meta or {}).get("trailer_en"),
             "ratings": scores,
-            "showtimes": sorted(entry["showtimes"], key=lambda s: s["datetime"]),
+            "showtimes": showtimes,
         })
 
     # Two title variants (e.g. kinoheld vs. Metropolis punctuation) can resolve
@@ -126,10 +154,8 @@ def main() -> None:
     result = list(merged.values())
 
     result.sort(key=lambda m: m["ratings"]["imdb"] or 0, reverse=True)
-    # static per-cinema facts (website, wheelchair access) for the frontend
-    cinema_info = {c["name"]: {"city": c["city"],
-                               "website": c.get("website"),
-                               "wheelchair": c.get("wheelchair")}
+    # static per-cinema facts for the frontend
+    cinema_info = {c["name"]: {"city": c["city"], "website": c.get("website")}
                    for c in load_cinemas()}
     payload = {"generated_at": datetime.now(timezone.utc).isoformat(),
                "cinemas": cinema_info,

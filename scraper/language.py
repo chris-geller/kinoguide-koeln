@@ -12,8 +12,11 @@ import re
 OV_PATTERNS = [
     r"\bOV\b", r"\bOF\b", r"engl\.?\s*OF", r"original\s*(version|fassung)",
 ]
+# "subtitled OV" is kinoheld's own flag for an original version *with* subtitles,
+# i.e. OmU — so subtitle markers must be checked before the plain OV patterns.
 OMU_PATTERNS = [
     r"\bOmU\b", r"\bOmdU\b", r"\bOmeU\b", r"\bOmengU\b",
+    r"subtitled", r"mit\s+untertitel", r"with\s+subtitles",
 ]
 
 

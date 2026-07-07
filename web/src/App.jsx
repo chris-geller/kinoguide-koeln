@@ -26,7 +26,6 @@ const T = {
     anyRating: 'egal',
     timeLabel: 'Uhrzeit:',
     reset: 'Filter zurücksetzen',
-    wheelchairOnly: '♿ Nur rollstuhlgerechte Kinos (auch teilweise)',
     today: 'Heute',
     tomorrow: 'Morgen',
     loading: 'Lade Programm…',
@@ -41,16 +40,16 @@ const T = {
     favOn: 'Aus Favoriten entfernen',
     favOff: 'Als Favorit merken',
     langBadgeDe: 'Deutsch',
-    wheel: { yes: '♿ rollstuhlgerecht', partial: '♿ teilweise rollstuhlgerecht', no: 'nicht rollstuhlgerecht' },
     topicsLabel: 'Themen',
     topics: {
       women_directed: '♀ Regie: Frauen',
       queer: '🏳️‍🌈 Queer',
-      black_stories: '✊🏿 Schwarze Perspektiven',
-      feminism: '♀ Feminismus',
+      international: '🌍 International',
     },
+    origLangLabel: 'Originalsprache',
+    origLabel: 'Original',
     director: 'Regie',
-    footer: 'Bewertungen: IMDb & Metascore via OMDb, Metadaten & FSK via TMDB. Themen-Filter basieren auf TMDB-Verschlagwortung und Regie-Daten — sie zeigen Filme auf, sind aber nicht vollständig. Barrierefreiheits-Angaben ohne Gewähr — im Zweifel beim Kino anrufen.',
+    footer: 'Bewertungen: IMDb & Metascore via OMDb, Metadaten & FSK via TMDB. Themen- und Sprachfilter basieren auf TMDB-Daten (Originalsprache, Regie, Verschlagwortung) — sie zeigen Filme auf, sind aber nicht vollständig. OV/OmU wird aus den Kino-Angaben erkannt; einige Programmkinos kennzeichnen Originalfassungen nicht immer.',
   },
   en: {
     locale: 'en-GB',
@@ -76,7 +75,6 @@ const T = {
     anyRating: 'any',
     timeLabel: 'Time:',
     reset: 'Reset filters',
-    wheelchairOnly: '♿ Wheelchair-accessible cinemas only (incl. partial)',
     today: 'Today',
     tomorrow: 'Tomorrow',
     loading: 'Loading program…',
@@ -91,20 +89,48 @@ const T = {
     favOn: 'Remove from favorites',
     favOff: 'Mark as favorite',
     langBadgeDe: 'German',
-    wheel: { yes: '♿ wheelchair accessible', partial: '♿ partially wheelchair accessible', no: 'not wheelchair accessible' },
     topicsLabel: 'Topics',
     topics: {
       women_directed: '♀ Directed by women',
       queer: '🏳️‍🌈 Queer',
-      black_stories: '✊🏿 Black stories',
-      feminism: '♀ Feminism',
+      international: '🌍 International',
     },
+    origLangLabel: 'Original language',
+    origLabel: 'Original',
     director: 'Director',
-    footer: 'Ratings: IMDb & Metascore via OMDb, metadata & FSK via TMDB. Topic filters are based on TMDB keywords and director data — they surface films but aren\'t exhaustive. Accessibility info without guarantee — when in doubt, call the cinema.',
+    footer: 'Ratings: IMDb & Metascore via OMDb, metadata & FSK via TMDB. Topic and language filters are based on TMDB data (original language, director, keywords) — they surface films but aren\'t exhaustive. OV/OmU is read from the cinemas\' listings; some arthouse cinemas don\'t always tag original-version screenings.',
   },
 }
 
-const TOPIC_IDS = ['women_directed', 'queer', 'black_stories', 'feminism']
+const TOPIC_IDS = ['women_directed', 'queer', 'international']
+
+// Original-language ISO 639-1 → display names + flag, for the language filter
+// and the "Original: …" line in the popup. Only codes that appear in the data
+// get a button; anything unmapped falls back to the raw code.
+const LANGUAGES = {
+  en: { flag: '🇬🇧', de: 'Englisch', en: 'English' },
+  de: { flag: '🇩🇪', de: 'Deutsch', en: 'German' },
+  fr: { flag: '🇫🇷', de: 'Französisch', en: 'French' },
+  es: { flag: '🇪🇸', de: 'Spanisch', en: 'Spanish' },
+  it: { flag: '🇮🇹', de: 'Italienisch', en: 'Italian' },
+  ja: { flag: '🇯🇵', de: 'Japanisch', en: 'Japanese' },
+  ko: { flag: '🇰🇷', de: 'Koreanisch', en: 'Korean' },
+  zh: { flag: '🇨🇳', de: 'Chinesisch', en: 'Chinese' },
+  hi: { flag: '🇮🇳', de: 'Hindi', en: 'Hindi' },
+  sv: { flag: '🇸🇪', de: 'Schwedisch', en: 'Swedish' },
+  no: { flag: '🇳🇴', de: 'Norwegisch', en: 'Norwegian' },
+  nl: { flag: '🇳🇱', de: 'Niederländisch', en: 'Dutch' },
+  pt: { flag: '🇵🇹', de: 'Portugiesisch', en: 'Portuguese' },
+  el: { flag: '🇬🇷', de: 'Griechisch', en: 'Greek' },
+  uk: { flag: '🇺🇦', de: 'Ukrainisch', en: 'Ukrainian' },
+  ar: { flag: '🇸🇦', de: 'Arabisch', en: 'Arabic' },
+  tr: { flag: '🇹🇷', de: 'Türkisch', en: 'Turkish' },
+  is: { flag: '🇮🇸', de: 'Isländisch', en: 'Icelandic' },
+  ka: { flag: '🇬🇪', de: 'Georgisch', en: 'Georgian' },
+  tl: { flag: '🇵🇭', de: 'Philippinisch', en: 'Filipino' },
+}
+const langName = (code, ui) => (LANGUAGES[code] ? LANGUAGES[code][ui] : (code || '').toUpperCase())
+const langFlag = (code) => (LANGUAGES[code] ? LANGUAGES[code].flag + ' ' : '')
 
 // TMDB delivers genre names in German; translate for the English UI.
 const GENRES_EN = {
@@ -147,6 +173,16 @@ function matchesLang(show, lang) {
   return show.language === 'OV' || show.language === 'OmU'
 }
 
+// Topic pills: women_directed/queer come from TMDB tags; "international" is
+// derived from the film's original language (anything but German or English).
+function matchTopic(m, tag) {
+  if (tag === 'international') {
+    const l = m.original_language
+    return !!l && l !== 'de' && l !== 'en'
+  }
+  return (m.tags || []).includes(tag)
+}
+
 function dayKey(iso) {
   return iso.slice(0, 10)
 }
@@ -186,11 +222,6 @@ const displayOverview = (m, ui) =>
 function LangBadge({ lang, t }) {
   const label = lang === 'DE' ? t.langBadgeDe : lang
   return <span className={`badge-lang lang-${lang.toLowerCase()}`}>{label}</span>
-}
-
-function WheelBadge({ level, t }) {
-  if (!level) return null
-  return <span className={`wheel-badge wheel-${level}`}>{t.wheel[level]}</span>
 }
 
 function Card({ movie, onOpen, isFav, onToggleFav, t, ui }) {
@@ -246,7 +277,7 @@ function Rating({ value, label, href, title }) {
   )
 }
 
-function Modal({ movie, shows, cinemaInfo, onClose, t, ui }) {
+function Modal({ movie, shows, onClose, t, ui }) {
   useEffect(() => {
     const onKey = (e) => e.key === 'Escape' && onClose()
     window.addEventListener('keydown', onKey)
@@ -279,6 +310,9 @@ function Modal({ movie, shows, cinemaInfo, onClose, t, ui }) {
             </p>
             {(movie.directors || []).length > 0 && (
               <p className="modal-sub">{t.director}: {movie.directors.join(', ')}</p>
+            )}
+            {movie.original_language && movie.original_language !== 'de' && (
+              <p className="modal-sub">{t.origLabel}: {langFlag(movie.original_language)}{langName(movie.original_language, ui)}</p>
             )}
             <p className="modal-genres">
               {(movie.genres || []).map((g) => <span className="genre-pill" key={g}>{genreName(g, ui)}</span>)}
@@ -314,13 +348,9 @@ function Modal({ movie, shows, cinemaInfo, onClose, t, ui }) {
         {overview && <p className="modal-desc">{overview}</p>}
         <div className="modal-shows">
           {Object.entries(byCinema).map(([cinema, times]) => {
-            const info = cinemaInfo?.[times[0].cinema]
             return (
               <div className="cinema-row" key={cinema}>
-                <span className="cinema-name">
-                  {cinema}
-                  <WheelBadge level={info?.wheelchair} t={t} />
-                </span>
+                <span className="cinema-name">{cinema}</span>
                 <span className="times">
                   {times.map((tm, i) => {
                     const chip = (
@@ -365,8 +395,8 @@ export default function App() {
   const [date, setDate] = useState('Alle')
   const [timeFrom, setTimeFrom] = useState(0)
   const [timeTo, setTimeTo] = useState(24)
-  const [wheelchairOnly, setWheelchairOnly] = useState(false)
-  const [topics, setTopics] = useState([])       // selected topic tag ids
+  const [topics, setTopics] = useState([])       // women_directed / queer / international
+  const [origLangs, setOrigLangs] = useState([]) // selected original-language ISO codes
 
   // favorites survive reloads via localStorage
   const [favs, setFavs] = useState(() => {
@@ -386,7 +416,20 @@ export default function App() {
       .catch((e) => setError(String(e)))
   }, [])
 
-  const cinemaInfo = data?.cinemas || {}
+  // original languages present in the data, most common first, for the
+  // language filter buttons (German excluded — it's the home language)
+  const allLangs = useMemo(() => {
+    if (!data) return []
+    const count = {}
+    for (const m of data.movies) {
+      const l = m.original_language
+      if (l && l !== 'de') count[l] = (count[l] || 0) + 1
+    }
+    return Object.entries(count)
+      .filter(([, n]) => n >= 2)
+      .sort((a, b) => b[1] - a[1])
+      .map(([code]) => code)
+  }, [data])
 
   // option lists derived from the data
   const allGenres = useMemo(() => {
@@ -416,10 +459,6 @@ export default function App() {
     if (city !== 'Alle' && s.city !== city) return false
     if (cinema !== 'Alle' && s.cinema !== cinema) return false
     if (date !== 'Alle' && dayKey(s.datetime) !== date) return false
-    if (wheelchairOnly) {
-      const w = cinemaInfo[s.cinema]?.wheelchair
-      if (w !== 'yes' && w !== 'partial') return false
-    }
     const d = new Date(s.datetime)
     const hour = d.getHours() + d.getMinutes() / 60
     if (hour < timeFrom || hour > timeTo) return false
@@ -434,7 +473,8 @@ export default function App() {
       .filter((m) => (m.ratings.imdb ?? 0) >= minImdb)
       .filter((m) => !kidsOnly || isKidsFilm(m))
       .filter((m) => genres.length === 0 || (m.genres || []).some((g) => genres.includes(g)))
-      .filter((m) => topics.length === 0 || topics.some((tg) => (m.tags || []).includes(tg)))
+      .filter((m) => topics.length === 0 || topics.some((tg) => matchTopic(m, tg)))
+      .filter((m) => origLangs.length === 0 || origLangs.includes(m.original_language))
       .filter((m) => !needle
         || m.title_de.toLowerCase().includes(needle)
         || (m.title_original || '').toLowerCase().includes(needle))
@@ -444,7 +484,7 @@ export default function App() {
         if (sort === 'recent') return (b.m.year ?? 0) - (a.m.year ?? 0)
         return (b.m.ratings[sort] ?? -1) - (a.m.ratings[sort] ?? -1)
       })
-  }, [data, q, city, lang, sort, minImdb, genres, kidsOnly, cinema, date, timeFrom, timeTo, favsOnly, favs, wheelchairOnly, topics])
+  }, [data, q, city, lang, sort, minImdb, genres, kidsOnly, cinema, date, timeFrom, timeTo, favsOnly, favs, topics, origLangs])
 
   const toggleGenre = (g) =>
     setGenres((prev) => prev.includes(g) ? prev.filter((x) => x !== g) : [...prev, g])
@@ -452,10 +492,13 @@ export default function App() {
   const toggleTopic = (tg) =>
     setTopics((prev) => prev.includes(tg) ? prev.filter((x) => x !== tg) : [...prev, tg])
 
+  const toggleLang = (code) =>
+    setOrigLangs((prev) => prev.includes(code) ? prev.filter((x) => x !== code) : [...prev, code])
+
   const resetFilters = () => {
     setQ(''); setCity('Alle'); setLang('alle'); setMinImdb(0); setGenres([])
     setKidsOnly(false); setCinema('Alle'); setDate('Alle'); setTimeFrom(0); setTimeTo(24)
-    setWheelchairOnly(false); setTopics([])
+    setTopics([]); setOrigLangs([])
   }
 
   return (
@@ -523,6 +566,19 @@ export default function App() {
             </div>
           </div>
 
+          {allLangs.length > 0 && (
+            <div className="field">
+              <label>{t.origLangLabel}</label>
+              <div className="pills">
+                {allLangs.map((code) => (
+                  <button key={code} className={`pill ${origLangs.includes(code) ? 'on' : ''}`} onClick={() => toggleLang(code)}>
+                    {langFlag(code)}{langName(code, ui)}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+
           <div className="field">
             <label>{t.genres}</label>
             <div className="pills">
@@ -561,13 +617,6 @@ export default function App() {
           </div>
 
           <div className="field">
-            <label className="check-label">
-              <input type="checkbox" checked={wheelchairOnly} onChange={(e) => setWheelchairOnly(e.target.checked)} />
-              {t.wheelchairOnly}
-            </label>
-          </div>
-
-          <div className="field">
             <label>{t.imdbMin} <b>{minImdb === 0 ? t.anyRating : minImdb.toFixed(1)}</b></label>
             <input type="range" min="0" max="9" step="0.5" value={minImdb} onChange={(e) => setMinImdb(+e.target.value)} />
           </div>
@@ -597,7 +646,7 @@ export default function App() {
       </main>
 
       {selected && (
-        <Modal movie={selected} shows={showsFor(selected)} cinemaInfo={cinemaInfo}
+        <Modal movie={selected} shows={showsFor(selected)}
           onClose={() => setSelected(null)} t={t} ui={ui} />
       )}
 

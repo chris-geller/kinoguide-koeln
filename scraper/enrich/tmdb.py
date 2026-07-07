@@ -60,6 +60,7 @@ def lookup(title: str, year: int | None = None) -> dict | None:
         "age_rating": _fsk(detail),
         "overview_de": overview_de or None,
         "overview_en": overview_en or None,
+        "original_language": detail.get("original_language") or None,
         "directors": _directors(detail),
         "tags": _tags(detail),
         **dict(zip(("trailer_de", "trailer_en"), _trailers(detail))),
@@ -73,27 +74,19 @@ def _directors(detail: dict) -> list[str]:
 
 # Topic tags, derived from data TMDB actually has — no guessing about people:
 #  - women_directed: TMDB stores a gender field per crew member (1 = female);
-#    tagged when at least one credited director is a woman. Unknown genders
-#    (0) simply don't count either way, so absence of the tag is not a claim.
-#  - queer / feminism / black_stories: matched against TMDB's community-
-#    maintained keywords. Keyword coverage is imperfect (smaller films are
-#    under-tagged), so these filters surface films rather than define them —
-#    the frontend footer says so. Patterns use word boundaries to avoid
-#    false hits (e.g. 'gay' must be a whole word).
+#    tagged when at least one credited director is a woman, or the community
+#    'woman director' keyword is present. Unknown genders (0) don't count
+#    either way, so absence of the tag is not a claim.
+#  - queer: matched against TMDB's community-maintained keywords. Keyword
+#    coverage is imperfect (smaller films are under-tagged), so this filter
+#    surfaces films rather than defines them — the frontend footer says so.
+#    Patterns use word boundaries (e.g. 'gay' must be a whole word).
+# ("International" and per-language filters are derived in the frontend from
+#  original_language, not from keywords.)
 TAG_PATTERNS = {
     "queer": re.compile(
         r"lgbt|queer|\bgay\b|lesbian|bisexual|transgender|trans woman|trans man"
         r"|non-binary|genderqueer|drag queen|coming out|same-sex|homosexual",
-        re.IGNORECASE),
-    "feminism": re.compile(
-        r"feminis|women's rights|suffrag|patriarch|women's movement"
-        r"|women's liberation|female empowerment|sexism|misogyn"
-        r"|gender discrimination|gender equality|me too",
-        re.IGNORECASE),
-    "black_stories": re.compile(
-        r"african[- ]american|black lives matter|blaxploitation|black culture"
-        r"|black communit|black histor|afrofuturis|black cinema|black experience"
-        r"|afro[- ]descend|black lgbt|civil rights movement|racial segregation",
         re.IGNORECASE),
 }
 
