@@ -102,6 +102,14 @@ body {
 .chip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
 .count { margin-left: auto; color: var(--muted); font-size: 15px; }
 
+/* --- day quick-filter row --- */
+.dayrow {
+  display: flex; gap: 8px; margin-bottom: 20px;
+  overflow-x: auto; padding-bottom: 4px;
+  scrollbar-width: thin;
+}
+.dayrow .chip { flex-shrink: 0; }
+
 /* --- filter panel --- */
 .panel {
   background: var(--panel); border: 1px solid var(--border);

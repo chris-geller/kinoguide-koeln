@@ -247,9 +247,18 @@ function LangBadge({ lang, t }) {
   return <span className={`badge-lang lang-${lang.toLowerCase()}`}>{label}</span>
 }
 
-function Card({ movie, onOpen, isFav, onToggleFav, t, ui }) {
+// Corner badge mirrors the metric the list is sorted by
+const BADGE_METRICS = {
+  imdb:       { emoji: '⭐', fmt: (v) => v.toFixed(1) },
+  metascore:  { emoji: '🎯', fmt: (v) => String(v) },
+  letterboxd: { emoji: '🎬', fmt: (v) => v.toFixed(1) },
+}
+
+function Card({ movie, onOpen, isFav, onToggleFav, t, ui, sort }) {
   const langs = [...new Set(movie.showtimes.map((s) => s.language))]
-  const imdb = movie.ratings.imdb
+  const metricKey = BADGE_METRICS[sort] ? sort : 'imdb'
+  const metric = BADGE_METRICS[metricKey]
+  const value = movie.ratings[metricKey]
   return (
     <div
       className="card" role="button" tabIndex={0}
@@ -258,10 +267,15 @@ function Card({ movie, onOpen, isFav, onToggleFav, t, ui }) {
     >
       <div className="card-poster">
         {movie.poster
-          ? <img src={movie.poster} alt="" loading="lazy" />
+          ? <img
+              src={movie.poster}
+              srcSet={`${movie.poster.replace('/w342/', '/w185/')} 185w, ${movie.poster} 342w`}
+              sizes="(max-width: 640px) 45vw, 200px"
+              width="342" height="513"
+              alt="" loading="lazy" decoding="async" />
           : <div className="poster-fallback">{(movie.title_original || movie.title_de).slice(0, 2)}</div>}
-        {imdb != null && (
-          <span className="badge-rating"><span className="star">★</span>{imdb.toFixed(1)}</span>
+        {value != null && (
+          <span className="badge-rating"><span className="star">{metric.emoji}</span>{metric.fmt(value)}</span>
         )}
         <div className="badge-langs">
           {langs.includes('OV') && <LangBadge lang="OV" t={t} />}
@@ -478,13 +492,20 @@ export default function App() {
 
   const allDates = useMemo(() => {
     if (!data) return []
+    const today = dayKey(new Date(Date.now() - new Date().getTimezoneOffset() * 60000).toISOString())
     const set = new Set()
-    for (const m of data.movies) for (const s of m.showtimes) set.add(dayKey(s.datetime))
+    for (const m of data.movies) for (const s of m.showtimes) {
+      const d = dayKey(s.datetime)
+      if (d >= today) set.add(d)
+    }
     return [...set].sort()
   }, [data])
 
   // showtimes of a movie that pass the when/where/version filters
   const showsFor = (m) => m.showtimes.filter((s) => {
+    // hide screenings that ended: data refreshes only each morning, but
+    // through the day past shows should drop out (30 min grace for latecomers)
+    if (new Date(s.datetime) < Date.now() - 30 * 60000) return false
     if (!matchesLang(s, lang)) return false
     if (city !== 'Alle' && s.city !== city) return false
     if (cinema !== 'Alle' && s.cinema !== cinema) return false
@@ -499,9 +520,12 @@ export default function App() {
     return true
   })
 
+  // diacritic-insensitive search: "tochter" finds "Töchter", "leon" finds "Léon"
+  const fold = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+
   const movies = useMemo(() => {
     if (!data) return []
-    const needle = q.trim().toLowerCase()
+    const needle = fold(q.trim())
     return data.movies
       .filter((m) => !favsOnly || favs.includes(m.id))
       .filter((m) => (m.ratings.imdb ?? 0) >= minImdb)
@@ -510,8 +534,8 @@ export default function App() {
       .filter((m) => topics.every((tg) => matchTopic(m, tg)))  // AND: each selected topic must match
       .filter((m) => origLangs.length === 0 || origLangs.includes(m.original_language))
       .filter((m) => !needle
-        || m.title_de.toLowerCase().includes(needle)
-        || (m.title_original || '').toLowerCase().includes(needle))
+        || fold(m.title_de).includes(needle)
+        || fold(m.title_original).includes(needle))
       .map((m) => ({ m, shows: showsFor(m) }))
       .filter((x) => x.shows.length > 0)
       .sort((a, b) => {
@@ -607,6 +631,15 @@ export default function App() {
         {data && <span className="count">{movies.length} {t.films}</span>}
       </div>
 
+      {allDates.length > 0 && (
+        <div className="dayrow" role="group" aria-label={t.dateLabel}>
+          <button className={`chip ${date === 'Alle' ? 'on' : ''}`} onClick={() => setDate('Alle')}>{t.allDays}</button>
+          {allDates.slice(0, 7).map((d) => (
+            <button key={d} className={`chip ${date === d ? 'on' : ''}`} onClick={() => setDate(d)}>{fmtDayShort(d, t)}</button>
+          ))}
+        </div>
+      )}
+
       {showFilters && (
         <section className="panel">
           <div className="field">
@@ -694,7 +727,7 @@ export default function App() {
         <div className="grid">
           {movies.map(({ m }, i) => (
             <Card key={`${m.id}-${i}`} movie={m} onOpen={setSelected}
-              isFav={favs.includes(m.id)} onToggleFav={toggleFav} t={t} ui={ui} />
+              isFav={favs.includes(m.id)} onToggleFav={toggleFav} t={t} ui={ui} sort={sort} />
           ))}
         </div>
       </main>
