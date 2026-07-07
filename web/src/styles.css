@@ -63,6 +63,19 @@ body {
 .sortrow { display: flex; align-items: center; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
 .sortrow-label { color: var(--muted); font-size: 13px; margin: 0 4px 0 8px; }
 
+/* topbar right side: language switch + stand */
+.topbar-right { display: flex; align-items: center; gap: 14px; }
+.lang-switch {
+  display: inline-flex; background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 999px; padding: 2px; gap: 2px;
+}
+.lang-switch button {
+  background: none; border: none; color: var(--muted); font-size: 12px; font-weight: 700;
+  padding: 4px 10px; border-radius: 999px; cursor: pointer;
+}
+.lang-switch button:hover { color: var(--text); }
+.lang-switch button.on { background: var(--accent); color: #fff; }
+
 /* segmented city switch */
 .city-switch {
   display: inline-flex; background: var(--bg2); border: 1px solid var(--border);
@@ -199,6 +212,19 @@ input[type=range] {
 .rating-link .ext { font-size: 10px; margin-left: 3px; opacity: .6; }
 .rating-link:hover b, .rating-link:hover { color: var(--accent); }
 .rating-link:hover .ext { opacity: 1; }
+
+/* wheelchair accessibility badge next to the cinema name */
+.wheel-badge {
+  font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 999px;
+  margin-left: 8px; white-space: nowrap; vertical-align: 1px;
+}
+.wheel-yes     { background: rgba(47,125,50,.22);  color: #7fd485; }
+.wheel-partial { background: rgba(184,134,11,.22); color: #e3b654; }
+.wheel-no      { background: rgba(120,40,40,.25);  color: #d98a8a; }
+
+/* checkbox row in the filter panel */
+.check-label { display: flex; align-items: center; gap: 10px; cursor: pointer; }
+.check-label input { width: 17px; height: 17px; accent-color: var(--accent); cursor: pointer; }
 .modal-desc { margin: 0 0 22px; color: var(--muted); font-size: 14px; line-height: 1.55; }
 .trailer-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
 .trailer-btn {

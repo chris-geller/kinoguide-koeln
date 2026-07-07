@@ -39,14 +39,13 @@ def lookup(title: str, year: int | None = None) -> dict | None:
         timeout=30,
     ).json()
 
-    # German overview is missing for smaller/documentary titles — fall back
-    # to the English one rather than showing nothing.
-    overview = (detail.get("overview") or "").strip()
-    if not overview:
-        en = requests.get(f"{API}/movie/{best['id']}",
-                          params={"api_key": _key(), "language": "en-US"},
-                          timeout=30).json()
-        overview = (en.get("overview") or "").strip()
+    # Both languages: the site has a DE/EN switch. The frontend falls back
+    # to whichever exists when one is missing.
+    overview_de = (detail.get("overview") or "").strip()
+    en = requests.get(f"{API}/movie/{best['id']}",
+                      params={"api_key": _key(), "language": "en-US"},
+                      timeout=30).json()
+    overview_en = (en.get("overview") or "").strip()
 
     return {
         "tmdb_id": best["id"],
@@ -58,7 +57,8 @@ def lookup(title: str, year: int | None = None) -> dict | None:
         "poster": IMG + detail["poster_path"] if detail.get("poster_path") else None,
         "genres": [g["name"] for g in detail.get("genres", []) if g.get("name")],
         "age_rating": _fsk(detail),
-        "overview": overview or None,
+        "overview_de": overview_de or None,
+        "overview_en": overview_en or None,
         **dict(zip(("trailer_de", "trailer_en"), _trailers(detail))),
     }
 

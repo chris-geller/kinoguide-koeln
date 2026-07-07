@@ -103,7 +103,8 @@ def main() -> None:
             "poster": (meta or {}).get("poster"),
             "genres": (meta or {}).get("genres", []),
             "age_rating": (meta or {}).get("age_rating"),
-            "overview": (meta or {}).get("overview"),
+            "overview_de": (meta or {}).get("overview_de"),
+            "overview_en": (meta or {}).get("overview_en"),
             "trailer_de": (meta or {}).get("trailer_de"),
             "trailer_en": (meta or {}).get("trailer_en"),
             "ratings": scores,
@@ -123,7 +124,13 @@ def main() -> None:
     result = list(merged.values())
 
     result.sort(key=lambda m: m["ratings"]["imdb"] or 0, reverse=True)
+    # static per-cinema facts (website, wheelchair access) for the frontend
+    cinema_info = {c["name"]: {"city": c["city"],
+                               "website": c.get("website"),
+                               "wheelchair": c.get("wheelchair")}
+                   for c in load_cinemas()}
     payload = {"generated_at": datetime.now(timezone.utc).isoformat(),
+               "cinemas": cinema_info,
                "movies": result}
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
