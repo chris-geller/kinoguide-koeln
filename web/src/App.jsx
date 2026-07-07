@@ -55,6 +55,9 @@ const T = {
     footer: 'Bewertungen: IMDb & Metascore via OMDb, Metadaten & FSK via TMDB. Themen- und Sprachfilter basieren auf TMDB-Daten (Originalsprache, Regie, Verschlagwortung) — sie zeigen Filme auf, sind aber nicht vollständig. OV/OmU wird aus den Kino-Angaben erkannt; einige Programmkinos kennzeichnen Originalfassungen nicht immer.',
     thanksPre: 'Inspiriert von Steven Kocadags wunderbarem',
     thanksPost: 'für Berlin — danke! 💙',
+    addCal: 'Zum Kalender hinzufügen',
+    viewGrid: 'Filmansicht',
+    viewPlan: 'Programm nach Uhrzeit',
   },
   en: {
     locale: 'en-GB',
@@ -109,6 +112,9 @@ const T = {
     footer: 'Ratings: IMDb & Metascore via OMDb, metadata & FSK via TMDB. Topic and language filters are based on TMDB data (original language, director, keywords) — they surface films but aren\'t exhaustive. OV/OmU is read from the cinemas\' listings; some arthouse cinemas don\'t always tag original-version screenings.',
     thanksPre: 'Inspired by Steven Kocadag\'s wonderful',
     thanksPost: 'for Berlin — thank you! 💙',
+    addCal: 'Add to calendar',
+    viewGrid: 'Movie grid',
+    viewPlan: 'Schedule by time',
   },
 }
 
@@ -230,6 +236,37 @@ function fmtDayShort(key, t) {
   if (d.toDateString() === today.toDateString()) return t.today
   if (d.toDateString() === tomorrow.toDateString()) return t.tomorrow
   return d.toLocaleDateString(t.locale, { weekday: 'short', day: '2-digit', month: '2-digit' })
+}
+
+// full-date heading for the schedule view, e.g. "Heute · Mittwoch, 8. Juli"
+function fmtDayFull(key, t) {
+  const d = new Date(key + 'T12:00:00')
+  const long = d.toLocaleDateString(t.locale, { weekday: 'long', day: 'numeric', month: 'long' })
+  const today = new Date()
+  const tomorrow = new Date(); tomorrow.setDate(today.getDate() + 1)
+  if (d.toDateString() === today.toDateString()) return `${t.today} · ${long}`
+  if (d.toDateString() === tomorrow.toDateString()) return `${t.tomorrow} · ${long}`
+  return long
+}
+
+// downloadable .ics calendar event for one screening
+function icsHref(movie, s, ui) {
+  const start = new Date(s.datetime)
+  const end = new Date(start.getTime() + ((movie.runtime || 120) + 20) * 60000) // + ads/trailers
+  const stamp = (d) => d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '')
+  const esc = (v) => String(v).replace(/[\\;,]/g, (c) => '\\' + c)
+  const lines = [
+    'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//kinoguide-koeln//DE', 'BEGIN:VEVENT',
+    `UID:${stamp(start)}-${esc(s.cinema).replace(/\W/g, '')}@kinoguide-koeln`,
+    `DTSTAMP:${stamp(new Date())}`,
+    `DTSTART:${stamp(start)}`,
+    `DTEND:${stamp(end)}`,
+    `SUMMARY:🎬 ${esc(displayTitle(movie, ui))} (${s.language})`,
+    `LOCATION:${esc(s.cinema)}\\, ${esc(s.city)}`,
+    s.booking_url ? `URL:${s.booking_url}` : '',
+    'END:VEVENT', 'END:VCALENDAR',
+  ].filter(Boolean)
+  return 'data:text/calendar;charset=utf-8,' + encodeURIComponent(lines.join('\r\n'))
 }
 
 // Display title / overview depending on UI language
@@ -391,27 +428,78 @@ function Modal({ movie, shows, onClose, t, ui }) {
         {overview && <p className="modal-desc">{overview}</p>}
         <div className="modal-shows">
           {Object.entries(byCinema).map(([cinema, times]) => {
+            // one compact row per day instead of one chip per screening
+            const byDay = {}
+            for (const s of times) {
+              const d = dayKey(s.datetime)
+              ;(byDay[d] = byDay[d] || []).push(s)
+            }
             return (
               <div className="cinema-row" key={cinema}>
                 <span className="cinema-name">{cinema}</span>
-                <span className="times">
-                  {times.map((tm, i) => {
-                    const chip = (
-                      <span className={`time lang-${tm.language.toLowerCase()}`}>
-                        <span className="time-day">{fmtDay(tm.datetime, t)}</span> {fmtTime(tm.datetime, t)}
-                        <span className="lang-tag">{tm.language}</span>
-                      </span>
-                    )
-                    return tm.booking_url
-                      ? <a key={i} href={tm.booking_url} target="_blank" rel="noreferrer">{chip}</a>
-                      : <span key={i}>{chip}</span>
-                  })}
-                </span>
+                {Object.keys(byDay).sort().map((d) => (
+                  <div className="day-times" key={d}>
+                    <span className="day-label">{fmtDayShort(d, t)}</span>
+                    <span className="times">
+                      {byDay[d].map((tm, i) => {
+                        const chip = (
+                          <span className={`time lang-${tm.language.toLowerCase()}`}>
+                            {fmtTime(tm.datetime, t)}
+                            <span className="lang-tag">{tm.language}</span>
+                          </span>
+                        )
+                        return (
+                          <span className="time-wrap" key={i}>
+                            {tm.booking_url
+                              ? <a href={tm.booking_url} target="_blank" rel="noreferrer">{chip}</a>
+                              : chip}
+                            <a className="cal-btn" href={icsHref(movie, tm, ui)}
+                              download={`${displayTitle(movie, ui).replace(/[^\w äöüÄÖÜß-]/g, '')}.ics`}
+                              title={t.addCal} aria-label={t.addCal}>📅</a>
+                          </span>
+                        )
+                      })}
+                    </span>
+                  </div>
+                ))}
               </div>
             )
           })}
         </div>
       </div>
+    </div>
+  )
+}
+
+// TV-guide style view: all filtered screenings, grouped by day, sorted by time
+function DayPlan({ items, onOpen, t, ui }) {
+  const byDay = {}
+  for (const { m, shows } of items) {
+    for (const s of shows) {
+      const d = dayKey(s.datetime)
+      ;(byDay[d] = byDay[d] || []).push({ m, s })
+    }
+  }
+  return (
+    <div className="plan">
+      {Object.keys(byDay).sort().map((d) => (
+        <section className="plan-day" key={d}>
+          <h2>{fmtDayFull(d, t)}</h2>
+          {byDay[d]
+            .sort((a, b) => a.s.datetime.localeCompare(b.s.datetime))
+            .map(({ m, s }, i) => (
+              <div className="plan-row" key={i}>
+                <span className="plan-time">{fmtTime(s.datetime, t)}</span>
+                <button className="plan-title" onClick={() => onOpen(m)}>{displayTitle(m, ui)}</button>
+                <span className={`lang-tag plan-lang lang-${s.language.toLowerCase()}`}>{s.language}</span>
+                <span className="plan-cinema">{s.cinema} · {s.city}</span>
+                {s.booking_url && (
+                  <a className="plan-ticket" href={s.booking_url} target="_blank" rel="noreferrer" title="Tickets">🎟️</a>
+                )}
+              </div>
+            ))}
+        </section>
+      ))}
     </div>
   )
 }
@@ -427,20 +515,47 @@ export default function App() {
   useEffect(() => { localStorage.setItem('kinoguide-lang', ui) }, [ui])
   const t = T[ui]
 
-  const [q, setQ] = useState('')
-  const [city, setCity] = useState('Alle')
-  const [lang, setLang] = useState('alle')
-  const [sort, setSort] = useState('imdb')
-  const [minImdb, setMinImdb] = useState(0)
-  const [genres, setGenres] = useState([])       // selected genre names
-  const [kidsOnly, setKidsOnly] = useState(false)
-  const [cinema, setCinema] = useState('Alle')
-  const [date, setDate] = useState('Alle')
-  const [timeFrom, setTimeFrom] = useState(0)
-  const [timeTo, setTimeTo] = useState(24)
-  const [topics, setTopics] = useState([])       // women_directed / queer / international
-  const [origLangs, setOrigLangs] = useState([]) // selected original-language ISO codes
-  const [lastMinute, setLastMinute] = useState(false) // only shows starting within 4h
+  // filters start from the URL, so filtered views are shareable links
+  const p0 = new URLSearchParams(window.location.search)
+  const csv = (k) => (p0.get(k) || '').split(',').filter(Boolean)
+
+  const [q, setQ] = useState(() => p0.get('q') || '')
+  const [city, setCity] = useState(() => p0.get('stadt') || 'Alle')
+  const [lang, setLang] = useState(() => p0.get('fassung') || 'alle')
+  const [sort, setSort] = useState(() => p0.get('sort') || 'imdb')
+  const [minImdb, setMinImdb] = useState(() => +(p0.get('imdb') || 0))
+  const [genres, setGenres] = useState(() => csv('genres'))
+  const [kidsOnly, setKidsOnly] = useState(() => p0.get('kinder') === '1')
+  const [cinema, setCinema] = useState(() => p0.get('kino') || 'Alle')
+  const [date, setDate] = useState(() => p0.get('datum') || 'Alle')
+  const [timeFrom, setTimeFrom] = useState(() => +(p0.get('von') || 0))
+  const [timeTo, setTimeTo] = useState(() => +(p0.get('bis') || 24))
+  const [topics, setTopics] = useState(() => csv('themen'))
+  const [origLangs, setOrigLangs] = useState(() => csv('sprachen'))
+  const [lastMinute, setLastMinute] = useState(() => p0.get('lm') === '1')
+  const [view, setView] = useState(() => (p0.get('ansicht') === 'plan' ? 'plan' : 'grid'))
+
+  // keep the URL in sync (replaceState — no history spam), only non-defaults
+  useEffect(() => {
+    const sp = new URLSearchParams()
+    if (q) sp.set('q', q)
+    if (city !== 'Alle') sp.set('stadt', city)
+    if (lang !== 'alle') sp.set('fassung', lang)
+    if (sort !== 'imdb') sp.set('sort', sort)
+    if (minImdb > 0) sp.set('imdb', String(minImdb))
+    if (genres.length) sp.set('genres', genres.join(','))
+    if (kidsOnly) sp.set('kinder', '1')
+    if (cinema !== 'Alle') sp.set('kino', cinema)
+    if (date !== 'Alle') sp.set('datum', date)
+    if (timeFrom > 0) sp.set('von', String(timeFrom))
+    if (timeTo < 24) sp.set('bis', String(timeTo))
+    if (topics.length) sp.set('themen', topics.join(','))
+    if (origLangs.length) sp.set('sprachen', origLangs.join(','))
+    if (lastMinute) sp.set('lm', '1')
+    if (view !== 'grid') sp.set('ansicht', view)
+    const qs = sp.toString()
+    window.history.replaceState(null, '', qs ? `?${qs}` : window.location.pathname)
+  }, [q, city, lang, sort, minImdb, genres, kidsOnly, cinema, date, timeFrom, timeTo, topics, origLangs, lastMinute, view])
 
   // favorites survive reloads via localStorage
   const [favs, setFavs] = useState(() => {
@@ -628,6 +743,10 @@ export default function App() {
             ♥ {t.favorites} ({favs.length})
           </button>
         )}
+        <div className="view-switch" role="group" aria-label="Ansicht">
+          <button className={view === 'grid' ? 'on' : ''} onClick={() => setView('grid')} title={t.viewGrid}>▦</button>
+          <button className={view === 'plan' ? 'on' : ''} onClick={() => setView('plan')} title={t.viewPlan}>☰</button>
+        </div>
         {data && <span className="count">{movies.length} {t.films}</span>}
       </div>
 
@@ -724,12 +843,16 @@ export default function App() {
         {error && <p className="empty">{t.loadError(error)}</p>}
         {!error && !data && <p className="empty">{t.loading}</p>}
         {data && movies.length === 0 && <p className="empty">{t.empty}</p>}
-        <div className="grid">
-          {movies.map(({ m }, i) => (
-            <Card key={`${m.id}-${i}`} movie={m} onOpen={setSelected}
-              isFav={favs.includes(m.id)} onToggleFav={toggleFav} t={t} ui={ui} sort={sort} />
-          ))}
-        </div>
+        {view === 'plan' ? (
+          <DayPlan items={movies} onOpen={setSelected} t={t} ui={ui} />
+        ) : (
+          <div className="grid">
+            {movies.map(({ m }, i) => (
+              <Card key={`${m.id}-${i}`} movie={m} onOpen={setSelected}
+                isFav={favs.includes(m.id)} onToggleFav={toggleFav} t={t} ui={ui} sort={sort} />
+            ))}
+          </div>
+        )}
       </main>
 
       {selected && (

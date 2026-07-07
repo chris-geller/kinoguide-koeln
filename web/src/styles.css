@@ -254,7 +254,15 @@ input[type=range] {
 .cinema-row { display: flex; flex-direction: column; gap: 8px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
 .cinema-row:last-child { border-bottom: none; padding-bottom: 0; }
 .cinema-name { font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: .04em; color: var(--accent2); }
-.times { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* one compact row per day: "Heute   19:45 OmU 📅  22:30 DE 📅" */
+.day-times { display: flex; align-items: baseline; gap: 12px; }
+.day-label { flex-shrink: 0; width: 92px; color: var(--muted); font-size: 14px; padding-top: 8px; }
+.time-wrap { display: inline-flex; align-items: center; gap: 2px; }
+.cal-btn { text-decoration: none; font-size: 13px; opacity: .55; padding: 4px 3px; border-radius: 6px; }
+.cal-btn:hover { opacity: 1; background: var(--panel); }
+
+.times { display: flex; flex-wrap: wrap; gap: 6px 8px; }
 .times a { text-decoration: none; }
 .time {
   display: inline-flex; align-items: center; gap: 6px;
@@ -266,6 +274,50 @@ input[type=range] {
 .lang-tag { font-size: 11px; font-weight: 700; padding: 2px 6px; border-radius: 4px; background: #3a4a66; color: #fff; }
 .time.lang-ov  .lang-tag { background: #2f7d32; }
 .time.lang-omu .lang-tag { background: #9a7009; }
+
+/* --- view switch (grid / schedule) --- */
+.view-switch {
+  display: inline-flex; background: var(--bg2); border: 1px solid var(--border);
+  border-radius: 999px; padding: 3px; gap: 2px; margin-left: 4px;
+}
+.view-switch button {
+  background: none; border: none; color: var(--muted); font-size: 15px;
+  padding: 6px 13px; border-radius: 999px; cursor: pointer; line-height: 1;
+}
+.view-switch button:hover { color: var(--text); }
+.view-switch button.on { background: var(--accent); color: #fff; }
+
+/* --- schedule (TV-guide) view --- */
+.plan { display: flex; flex-direction: column; gap: 30px; }
+.plan-day h2 {
+  font-size: 19px; margin: 0 0 12px; padding-bottom: 8px;
+  border-bottom: 1px solid var(--border2);
+}
+.plan-row {
+  display: grid; grid-template-columns: 58px 1fr auto auto 30px;
+  align-items: center; gap: 12px; padding: 7px 4px;
+  border-bottom: 1px solid var(--border); font-size: 15px;
+}
+.plan-row:last-child { border-bottom: none; }
+.plan-time { font-weight: 700; font-variant-numeric: tabular-nums; }
+.plan-title {
+  background: none; border: none; color: var(--text); font-size: 15px; font-weight: 600;
+  text-align: left; cursor: pointer; padding: 0;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.plan-title:hover { color: var(--accent2); }
+.plan-lang { justify-self: end; }
+.plan-cinema { color: var(--muted); font-size: 14px; white-space: nowrap; }
+.plan-ticket { text-decoration: none; font-size: 15px; opacity: .7; }
+.plan-ticket:hover { opacity: 1; }
+.lang-tag.lang-de { background: #3a4a66; }
+
+@media (max-width: 640px) {
+  .plan-row { grid-template-columns: 50px 1fr auto; }
+  .plan-cinema { grid-column: 2 / 4; grid-row: 2; }
+  .plan-ticket { display: none; }
+  .day-label { width: 74px; }
+}
 
 /* --- misc --- */
 .empty { text-align: center; color: var(--muted); padding: 60px 0; font-size: 16px; }
