@@ -90,6 +90,7 @@ function Card({ movie, onOpen }) {
           {movie.year}
           {(movie.genres || []).slice(0, 2).map((g) => <span className="genre-pill" key={g}>{g}</span>)}
         </p>
+        {movie.overview && <p className="card-desc">{movie.overview}</p>}
       </div>
     </button>
   )
@@ -125,10 +126,11 @@ function Modal({ movie, shows, onClose }) {
             <div className="modal-ratings">
               <span><b>{movie.ratings.imdb ?? '–'}</b> IMDb</span>
               <span><b>{movie.ratings.metascore ?? '–'}</b> Meta</span>
-              <span><b>{movie.ratings.letterboxd ?? '–'}</b> LB</span>
+              <span><b>{movie.ratings.letterboxd ?? '–'}</b> Letterboxd</span>
             </div>
           </div>
         </div>
+        {movie.overview && <p className="modal-desc">{movie.overview}</p>}
         <div className="modal-shows">
           {Object.entries(byCinema).map(([cinema, times]) => (
             <div className="cinema-row" key={cinema}>
@@ -265,6 +267,13 @@ export default function App() {
       </div>
 
       <div className="sortrow">
+        <div className="city-switch" role="group" aria-label="Stadt">
+          {CITIES.map((c) => (
+            <button key={c} className={city === c ? 'on' : ''} onClick={() => setCity(c)}>
+              {c === 'Alle' ? 'Beide' : c}
+            </button>
+          ))}
+        </div>
         <span className="sortrow-label">Sortieren:</span>
         {SORTS.map((s) => (
           <button key={s.id} className={`chip ${sort === s.id ? 'on' : ''}`} onClick={() => setSort(s.id)}>{s.label}</button>
@@ -283,22 +292,12 @@ export default function App() {
             </div>
           </div>
 
-          <div className="grid2">
-            <div className="field">
-              <label>Stadt</label>
-              <div className="pills">
-                {CITIES.map((c) => (
-                  <button key={c} className={`pill ${city === c ? 'on' : ''}`} onClick={() => setCity(c)}>{c}</button>
-                ))}
-              </div>
-            </div>
-            <div className="field">
-              <label>Fassung</label>
-              <div className="pills">
-                {LANGS.map((l) => (
-                  <button key={l.id} className={`pill ${lang === l.id ? 'on' : ''}`} onClick={() => setLang(l.id)}>{l.label}</button>
-                ))}
-              </div>
+          <div className="field">
+            <label>Fassung</label>
+            <div className="pills">
+              {LANGS.map((l) => (
+                <button key={l.id} className={`pill ${lang === l.id ? 'on' : ''}`} onClick={() => setLang(l.id)}>{l.label}</button>
+              ))}
             </div>
           </div>
 

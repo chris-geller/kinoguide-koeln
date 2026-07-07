@@ -48,6 +48,7 @@ def lookup(title: str, year: int | None = None) -> dict | None:
         "poster": IMG + detail["poster_path"] if detail.get("poster_path") else None,
         "genres": [g["name"] for g in detail.get("genres", []) if g.get("name")],
         "age_rating": _fsk(detail),
+        "overview": (detail.get("overview") or "").strip() or None,
     }
 
 

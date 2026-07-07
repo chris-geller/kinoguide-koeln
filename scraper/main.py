@@ -62,12 +62,18 @@ def main() -> None:
             key = clean_title(show["title"]).lower()
             entry = movies.setdefault(key, {"title_raw": clean_title(show["title"]),
                                             "showtimes": []})
+            # Link policy: send visitors to the cinema's own website rather
+            # than kinoheld. Non-kinoheld deeplinks (CineStar webticketing,
+            # kinotickets.express) ARE the cinema's system, so keep those.
+            url = show.get("booking_url", "")
+            if not url or "kinoheld.de" in url:
+                url = cinema.get("website", url)
             entry["showtimes"].append({
                 "cinema": cinema["name"],
                 "city": cinema["city"],
                 "datetime": show["datetime"],
                 "language": show["language"],
-                "booking_url": show.get("booking_url", ""),
+                "booking_url": url,
             })
 
     print(f"\nEnriching {len(movies)} unique films…")
@@ -97,6 +103,7 @@ def main() -> None:
             "poster": (meta or {}).get("poster"),
             "genres": (meta or {}).get("genres", []),
             "age_rating": (meta or {}).get("age_rating"),
+            "overview": (meta or {}).get("overview"),
             "ratings": scores,
             "showtimes": sorted(entry["showtimes"], key=lambda s: s["datetime"]),
         })
