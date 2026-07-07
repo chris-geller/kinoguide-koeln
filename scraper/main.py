@@ -95,9 +95,23 @@ def main() -> None:
             "year": (meta or {}).get("year"),
             "runtime": (meta or {}).get("runtime"),
             "poster": (meta or {}).get("poster"),
+            "genres": (meta or {}).get("genres", []),
+            "age_rating": (meta or {}).get("age_rating"),
             "ratings": scores,
             "showtimes": sorted(entry["showtimes"], key=lambda s: s["datetime"]),
         })
+
+    # Two title variants (e.g. kinoheld vs. Metropolis punctuation) can resolve
+    # to the same IMDb film — merge those so each movie is one card.
+    merged: dict[str, dict] = {}
+    for m in result:
+        hit = merged.get(m["id"])
+        if hit:
+            hit["showtimes"] = sorted(hit["showtimes"] + m["showtimes"],
+                                      key=lambda s: s["datetime"])
+        else:
+            merged[m["id"]] = m
+    result = list(merged.values())
 
     result.sort(key=lambda m: m["ratings"]["imdb"] or 0, reverse=True)
     payload = {"generated_at": datetime.now(timezone.utc).isoformat(),

@@ -34,7 +34,7 @@ def lookup(title: str, year: int | None = None) -> dict | None:
     detail = requests.get(
         f"{API}/movie/{best['id']}",
         params={"api_key": _key(), "language": "de-DE",
-                "append_to_response": "external_ids"},
+                "append_to_response": "external_ids,release_dates"},
         timeout=30,
     ).json()
 
@@ -46,4 +46,22 @@ def lookup(title: str, year: int | None = None) -> dict | None:
         "year": int((detail.get("release_date") or "0000")[:4]) or None,
         "runtime": detail.get("runtime"),
         "poster": IMG + detail["poster_path"] if detail.get("poster_path") else None,
+        "genres": [g["name"] for g in detail.get("genres", []) if g.get("name")],
+        "age_rating": _fsk(detail),
     }
+
+
+def _fsk(detail: dict) -> int | None:
+    """Extract the German FSK age rating (0/6/12/16/18) from release_dates.
+
+    TMDB nests it as release_dates.results[iso_3166_1='DE'].release_dates[].certification.
+    Returns the numeric minimum age, or None if TMDB has no DE certification.
+    """
+    for country in (detail.get("release_dates") or {}).get("results", []):
+        if country.get("iso_3166_1") != "DE":
+            continue
+        for rel in country.get("release_dates", []):
+            cert = (rel.get("certification") or "").strip()
+            if cert.isdigit():
+                return int(cert)
+    return None
