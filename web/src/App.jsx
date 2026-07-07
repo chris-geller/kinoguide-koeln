@@ -139,10 +139,19 @@ function Modal({ movie, shows, onClose }) {
               <span><b>{movie.ratings.metascore ?? '–'}</b> Meta</span>
               <span><b>{movie.ratings.letterboxd ?? '–'}</b> Letterboxd</span>
             </div>
-            {movie.trailer && (
-              <a className="trailer-btn" href={movie.trailer} target="_blank" rel="noreferrer">
-                ▶ Trailer ansehen
-              </a>
+            {(movie.trailer_de || movie.trailer_en) && (
+              <div className="trailer-row">
+                {movie.trailer_de && (
+                  <a className="trailer-btn" href={movie.trailer_de} target="_blank" rel="noreferrer">
+                    ▶ Trailer{movie.trailer_en ? ' (Deutsch)' : ''}
+                  </a>
+                )}
+                {movie.trailer_en && (
+                  <a className="trailer-btn" href={movie.trailer_en} target="_blank" rel="noreferrer">
+                    ▶ Trailer{movie.trailer_de ? ' (Original)' : ''}
+                  </a>
+                )}
+              </div>
             )}
           </div>
         </div>

@@ -59,29 +59,30 @@ def lookup(title: str, year: int | None = None) -> dict | None:
         "genres": [g["name"] for g in detail.get("genres", []) if g.get("name")],
         "age_rating": _fsk(detail),
         "overview": overview or None,
-        "trailer": _trailer(detail),
+        **dict(zip(("trailer_de", "trailer_en"), _trailers(detail))),
     }
 
 
-def _trailer(detail: dict) -> str | None:
-    """Best YouTube trailer URL: prefer official trailers, German over English."""
+def _trailers(detail: dict) -> tuple[str | None, str | None]:
+    """Best YouTube trailer per language: (German, original/English).
+
+    Gives visitors the choice between the dubbed and the original trailer
+    when both exist. Prefers proper trailers over teasers, official uploads
+    over fan/press ones.
+    """
     videos = [v for v in (detail.get("videos") or {}).get("results", [])
-              if v.get("site") == "YouTube" and v.get("key")]
-    if not videos:
-        return None
+              if v.get("site") == "YouTube" and v.get("key")
+              and v.get("type") in ("Trailer", "Teaser")]
 
-    def score(v):
-        return (
-            v.get("type") == "Trailer",
-            bool(v.get("official")),
-            v.get("iso_639_1") == "de",
-            v.get("iso_639_1") == "en",
-        )
+    def best(candidates):
+        if not candidates:
+            return None
+        b = max(candidates, key=lambda v: (v.get("type") == "Trailer", bool(v.get("official"))))
+        return f"https://www.youtube.com/watch?v={b['key']}"
 
-    best = max(videos, key=score)
-    if best.get("type") not in ("Trailer", "Teaser"):
-        return None
-    return f"https://www.youtube.com/watch?v={best['key']}"
+    de = best([v for v in videos if v.get("iso_639_1") == "de"])
+    en = best([v for v in videos if v.get("iso_639_1") != "de"])
+    return de, en
 
 
 def _fsk(detail: dict) -> int | None:
