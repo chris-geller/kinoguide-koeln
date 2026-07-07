@@ -1,0 +1,57 @@
+Captured 2026-07-07 from kinoheld.de Woki Bonn page (DevTools > Network > graphql > Copy as cURL, cmd.exe escaping).
+
+Endpoint:   POST https://next-live.kinoheld.de/graphql
+Operation:  FetchProgramByMovie
+Variables:  {"cinemaIds": ["1283"], "first": 5, "page": 1}
+
+Key headers the site sends (we mimic the content-type/accept, but use our own
+identifying User-Agent per project conventions):
+  accept: application/graphql-response+json, application/json
+  content-type: application/json
+  origin: https://www.kinoheld.de
+  referer: https://www.kinoheld.de/
+
+Decoded GraphQL query (the shape that matters — full fragment list trimmed to
+the fields we actually parse; see kinoheld.py QUERY for what we now send):
+
+query FetchProgramByMovie($cinemaIds: [ID!]!, $showGroups: [String!], $flags: [String!],
+    $technologyFlags: [String!], $languageFlags: [String!], $genres: [String!],
+    $eventFlags: [String!], $miscellaneousFlags: [String!], $contentRatings: [ID!],
+    $auditoriums: [ID!], $search: String, $dates: [Date!], $periods: [ShowPeriod!],
+    $first: Int, $page: Int) {
+  programByMovie(cinemaIds: $cinemaIds, ...filters..., first: $first, page: $page) {
+    data {
+      uuid
+      urlSlug
+      name
+      movie { ...MovieInterfaceAttributes }   # title, duration, genres{name}, shortDescription, contentRating, thumbnailImage, trailers, ...
+      showGroups {
+        uuid
+        cinema { name }
+        flags { id isCinemaSpecific name }
+        shows(periods/dates/languageFlags/...) {
+          data { ...ShowAttributes }          # id, startsale, deeplink, endsale, flags{id,name}, name, beginning, urlSlug, showGroup{uuid,urlSlug}, cinema{...}
+        }
+      }
+    }
+    paginatorInfo { __typename count currentPage firstItem hasMorePages lastItem perPage }
+  }
+}
+
+Raw cURL as copied from Chrome (cmd escaping, ^ = escape char):
+
+curl ^"https://next-live.kinoheld.de/graphql^" ^
+  -H ^"accept: application/graphql-response+json, application/json^" ^
+  -H ^"accept-language: de^" ^
+  -H ^"content-type: application/json^" ^
+  -H ^"origin: https://www.kinoheld.de^" ^
+  -H ^"priority: u=1, i^" ^
+  -H ^"referer: https://www.kinoheld.de/^" ^
+  -H ^"sec-ch-ua: ^\^"Google Chrome^\^";v=^\^"149^\^", ^\^"Chromium^\^";v=^\^"149^\^", ^\^"Not)A;Brand^\^";v=^\^"24^\^"^" ^
+  -H ^"sec-ch-ua-mobile: ?0^" ^
+  -H ^"sec-ch-ua-platform: ^\^"Windows^\^"^" ^
+  -H ^"sec-fetch-dest: empty^" ^
+  -H ^"sec-fetch-mode: cors^" ^
+  -H ^"sec-fetch-site: same-site^" ^
+  -H ^"user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36^" ^
+  --data-raw ^"^{^\^"query^\^":^\^"^\^\n    query FetchProgramByMovie(^$cinemaIds: ^[ID^!^]^!, ^$showGroups: ^[String^!^], ^$flags: ^[String^!^], ^$technologyFlags: ^[String^!^], ^$languageFlags: ^[String^!^], ^$genres: ^[String^!^], ^$eventFlags: ^[String^!^], ^$miscellaneousFlags: ^[String^!^], ^$contentRatings: ^[ID^!^], ^$auditoriums: ^[ID^!^], ^$search: String, ^$dates: ^[Date^!^], ^$periods: ^[ShowPeriod^!^], ^$first: Int, ^$page: Int) ^{^\^\n  programByMovie(^\^\n    cinemaIds: ^$cinemaIds^\^\n    showGroups: ^$showGroups^\^\n    auditoriums: ^$auditoriums^\^\n    flags: ^$flags^\^\n    languageFlags: ^$languageFlags^\^\n    technologyFlags: ^$technologyFlags^\^\n    contentRatings: ^$contentRatings^\^\n    dates: ^$dates^\^\n    periods: ^$periods^\^\n    genres: ^$genres^\^\n    eventFlags: ^$eventFlags^\^\n    miscellaneousFlags: ^$miscellaneousFlags^\^\n    search: ^$search^\^\n    first: ^$first^\^\n    page: ^$page^\^\n  ) ^{^\^\n    data ^{^\^\n      uuid^\^\n      urlSlug^\^\n      name^\^\n      movie ^{^\^\n        ...MovieInterfaceAttributes^\^\n      ^}^\^\n      showGroups ^{^\^\n        uuid^\^\n        cinema ^{^\^\n          name^\^\n        ^}^\^\n        flags ^{^\^\n          ...FlagAttributes^\^\n        ^}^\^\n        shows(^\^\n          periods: ^$periods^\^\n          dates: ^$dates^\^\n          languageFlags: ^$languageFlags^\^\n          technologyFlags: ^$technologyFlags^\^\n          eventFlags: ^$eventFlags^\^\n          miscellaneousFlags: ^$miscellaneousFlags^\^\n          auditoriums: ^$auditoriums^\^\n        ) ^{^\^\n          data ^{^\^\n            ...ShowAttributes^\^\n          ^}^\^\n        ^}^\^\n      ^}^\^\n    ^}^\^\n    paginatorInfo ^{^\^\n      ...SimplePaginatorInfoAttributes^\^\n    ^}^\^\n  ^}^\^\n^}^\^\n    ^\^\n    fragment MovieInterfaceAttributes on MovieInterface ^{^\^\n  __typename^\^\n  title^\^\n  duration^\^\n  genres ^{^\^\n    name^\^\n  ^}^\^\n  shortDescription^\^\n  additionalInfo^\^\n  contentRating ^{^\^\n    ...ContentRatingAttributes^\^\n  ^}^\^\n  thumbnailImage ^{^\^\n    ...ImageAttributes^\^\n  ^}^\^\n  heroImage ^{^\^\n    ...ImageAttributes^\^\n  ^}^\^\n  trailers ^{^\^\n    ...TrailerAttributes^\^\n  ^}^\^\n  hasTrailers: has(properties: ^[^\^\^\^"trailers^\^\^\^"^])^\^\n  hasInfos: has(properties: ^[^\^\^\^"description^\^\^\^", ^\^\^\^"cast^\^\^\^", ^\^\^\^"directors^\^\^\^", ^\^\^\^"sceneImages^\^\^\^"^])^\^\n  gretaMovieInfo ^{^\^\n    ...GretaInfoAttributes^\^\n  ^}^\^\n^}^\^\n    ^\^\n^\^\n    fragment ContentRatingAttributes on ContentRating ^{^\^\n  id^\^\n  aliases^\^\n  contentRatingSystem ^{^\^\n    name^\^\n  ^}^\^\n  description^\^\n  icon ^{^\^\n    url^\^\n    colors^\^\n  ^}^\^\n  minimumAge^\^\n  minimumAgeAccompanied^\^\n  name^\^\n^}^\^\n    ^\^\n^\^\n    fragment ImageAttributes on Image ^{^\^\n  id^\^\n  url^\^\n  colors(limit: 3)^\^\n  width^\^\n  height^\^\n^}^\^\n    ^\^\n^\^\n    fragment TrailerAttributes on Trailer ^{^\^\n  id^\^\n  format^\^\n  height^\^\n  remoteVideoId^\^\n  language ^{^\^\n    id^\^\n    isocode^\^\n    name^\^\n  ^}^\^\n  url^\^\n  width^\^\n^}^\^\n    ^\^\n^\^\n    fragment GretaInfoAttributes on GretaInfo ^{^\^\n  closedCaption^\^\n  audioDescription^\^\n  soundAmplification^\^\n^}^\^\n    ^\^\n^\^\n    fragment FlagAttributes on Flag ^{^\^\n  id^\^\n  isCinemaSpecific^\^\n  name^\^\n^}^\^\n    ^\^\n^\^\n    fragment ShowAttributes on Show ^{^\^\n  id^\^\n  startsale^\^\n  deeplink^\^\n  endsale^\^\n  flags ^{^\^\n    ...FlagAttributes^\^\n  ^}^\^\n  name^\^\n  beginning^\^\n  urlSlug^\^\n  showGroup ^{^\^\n    uuid^\^\n    urlSlug^\^\n  ^}^\^\n  cinema ^{^\^\n    id^\^\n    cid^\^\n    name^\^\n    street^\^\n    postcode ^{^\^\n      postcode^\^\n    ^}^\^\n    bookingType^\^\n    city ^{^\^\n      id^\^\n      name^\^\n      timezone^\^\n    ^}^\^\n  ^}^\^\n^}^\^\n    ^\^\n^\^\n    fragment SimplePaginatorInfoAttributes on SimplePaginatorInfo ^{^\^\n  __typename^\^\n  count^\^\n  currentPage^\^\n  firstItem^\^\n  hasMorePages^\^\n  lastItem^\^\n  perPage^\^\n^}^\^\n    ^\^",^\^"variables^\^":^{^\^"cinemaIds^\^":^[^\^"1283^\^"^],^\^"first^\^":5,^\^"page^\^":1^},^\^"operationName^\^":^\^"FetchProgramByMovie^\^"^}^"

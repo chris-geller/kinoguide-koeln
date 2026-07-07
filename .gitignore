@@ -1,0 +1,10 @@
+node_modules/
+web/dist/
+__pycache__/
+.env
+
+# local editor/assistant config
+.claude/
+
+# generated copy (canonical file lives in data/)
+web/public/data/movies.json

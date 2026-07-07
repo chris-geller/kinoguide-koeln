@@ -1,0 +1,23 @@
+{
+  "_comment": "kinoheld IDs discovered 2026-07-07 via the cinemas(search:) GraphQL query (API capture in scraper/debug/woki_curl.txt). Every ID below was verified to return real showtimes via programByMovie. Cinemas with 'source': 'custom' need their own scraper in sources/custom.py.",
+  "cinemas": [
+    { "name": "Woki",                "city": "Bonn", "source": "kinoheld", "kinoheld_id": 1283 },
+    { "name": "Rex Lichtspieltheater","city": "Bonn", "source": "kinoheld", "kinoheld_id": 1093 },
+    { "name": "Neue Filmbühne",      "city": "Bonn", "source": "kinoheld", "kinoheld_id": 996 },
+    { "name": "Kinopolis Bad Godesberg", "city": "Bonn", "source": "kinoheld", "kinoheld_id": 837, "_note": "listed as 'Kinopolis Bonn' on kinoheld, Moltkestr. 7 = Bad Godesberg; their data carries no OV/OmU flags, so everything classifies as DE" },
+    { "name": "Bonner Kinemathek",   "city": "Bonn", "source": "kinoheld", "kinoheld_id": 89, "_note": "listed as 'Bonner Kinemathek - Kino in der Brotfabrik' on kinoheld" },
+    { "name": "Stern Lichtspiele",   "city": "Bonn", "source": "kinoheld", "kinoheld_id": 335, "_note": "= CineStar Bonn (Markt 8), listed as 'CineStar Bonn' on kinoheld" },
+
+    { "name": "Metropolis",          "city": "Köln", "source": "custom", "scraper": "metropolis", "url": "https://www.metropolis-koeln.de/programm", "_note": "mostly-OV house. Not usably on kinoheld (id 974 there is an event venue) — scraped from their CineWeb site, tickets via kinotickets.express" },
+    { "name": "Odeon",               "city": "Köln", "source": "kinoheld", "kinoheld_id": 1018 },
+    { "name": "Filmpalette",         "city": "Köln", "source": "kinoheld", "kinoheld_id": 533 },
+    { "name": "OFF Broadway",        "city": "Köln", "source": "kinoheld", "kinoheld_id": 1019 },
+    { "name": "Rex am Ring",         "city": "Köln", "source": "kinoheld", "kinoheld_id": 1088 },
+    { "name": "Weisshaus Kino",      "city": "Köln", "source": "kinoheld", "kinoheld_id": 1277 },
+    { "name": "Lichtspiele Kalk",    "city": "Köln", "source": "kinoheld", "kinoheld_id": 2137, "_note": "mostly OmU program" },
+    { "name": "Cinenova",            "city": "Köln", "source": "kinoheld", "kinoheld_id": 255 },
+    { "name": "Kölner Filmhaus",     "city": "Köln", "source": "kinoheld", "kinoheld_id": 855 },
+    { "name": "Cineplex Köln",       "city": "Köln", "source": "kinoheld", "kinoheld_id": 1920 },
+    { "name": "Cinedom",             "city": "Köln", "source": "kinoheld", "kinoheld_id": 192, "_note": "IS on kinoheld after all — no custom scraper needed" }
+  ]
+}

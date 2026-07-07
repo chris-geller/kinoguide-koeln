@@ -1,0 +1,65 @@
+name: Scrape & Deploy
+
+on:
+  schedule:
+    - cron: "0 4 * * *"   # daily 04:00 UTC = 06:00 German summer time
+  workflow_dispatch: {}     # manual run button in the Actions tab
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  scrape-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Scrape showtimes
+        working-directory: scraper
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
+        run: |
+          pip install -r requirements.txt
+          python main.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "kinoguide-bot"
+          git config user.email "actions@github.com"
+          git add data/
+          git diff --cached --quiet || git commit -m "data: daily scrape $(date -u +%F)"
+          git push
+
+      - name: Copy data into frontend
+        run: |
+          mkdir -p web/public/data
+          cp data/movies.json web/public/data/movies.json
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build frontend
+        working-directory: web
+        run: |
+          npm ci
+          npm run build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+
+      - uses: actions/deploy-pages@v4

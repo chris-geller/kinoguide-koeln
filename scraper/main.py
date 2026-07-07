@@ -1,0 +1,113 @@
+"""Orchestrator: scrape all cinemas -> enrich -> write data/movies.json.
+
+Usage:
+    cd scraper
+    TMDB_API_KEY=... OMDB_API_KEY=... python main.py
+
+Design: each cinema is scraped in isolation and failures are logged but never
+abort the run — one broken source shouldn't take down the whole guide.
+"""
+from __future__ import annotations
+
+import json
+import os
+from datetime import datetime, timezone
+
+from sources import kinoheld, custom
+from enrich import tmdb, omdb, letterboxd
+from language import clean_title
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+OUT_PATH = os.path.join(HERE, "..", "data", "movies.json")
+
+
+def load_env() -> None:
+    """Load API keys from ../.env so beginners don't have to set variables."""
+    path = os.path.join(HERE, "..", ".env")
+    if not os.path.exists(path):
+        return
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, _, val = line.partition("=")
+                os.environ.setdefault(key.strip(), val.strip())
+
+
+load_env()
+
+SOURCES = {"kinoheld": kinoheld.fetch_shows, "custom": custom.fetch_shows}
+
+
+def load_cinemas() -> list[dict]:
+    with open(os.path.join(HERE, "cinemas.json"), encoding="utf-8") as f:
+        return json.load(f)["cinemas"]
+
+
+def main() -> None:
+    movies: dict[str, dict] = {}  # keyed by cleaned title
+
+    for cinema in load_cinemas():
+        fetch = SOURCES.get(cinema.get("source"))
+        if not fetch:
+            continue
+        print(f"Scraping {cinema['name']} ({cinema['city']})…")
+        try:
+            shows = fetch(cinema)
+        except Exception as e:  # isolate failures per cinema
+            print(f"  [error] {cinema['name']}: {e}")
+            continue
+
+        for show in shows:
+            key = clean_title(show["title"]).lower()
+            entry = movies.setdefault(key, {"title_raw": clean_title(show["title"]),
+                                            "showtimes": []})
+            entry["showtimes"].append({
+                "cinema": cinema["name"],
+                "city": cinema["city"],
+                "datetime": show["datetime"],
+                "language": show["language"],
+                "booking_url": show.get("booking_url", ""),
+            })
+
+    print(f"\nEnriching {len(movies)} unique films…")
+    result = []
+    for key, entry in movies.items():
+        meta = None
+        try:
+            meta = tmdb.lookup(entry["title_raw"])
+        except Exception as e:
+            print(f"  [warn] TMDB failed for '{entry['title_raw']}': {e}")
+
+        scores = {"imdb": None, "metascore": None, "letterboxd": None}
+        imdb_id = (meta or {}).get("imdb_id")
+        if imdb_id:
+            try:
+                scores.update(omdb.ratings(imdb_id))
+            except Exception as e:
+                print(f"  [warn] OMDb failed for {imdb_id}: {e}")
+            scores["letterboxd"] = letterboxd.rating(imdb_id)
+
+        result.append({
+            "id": imdb_id or key,
+            "title_de": (meta or {}).get("title_de", entry["title_raw"]),
+            "title_original": (meta or {}).get("title_original", entry["title_raw"]),
+            "year": (meta or {}).get("year"),
+            "runtime": (meta or {}).get("runtime"),
+            "poster": (meta or {}).get("poster"),
+            "ratings": scores,
+            "showtimes": sorted(entry["showtimes"], key=lambda s: s["datetime"]),
+        })
+
+    result.sort(key=lambda m: m["ratings"]["imdb"] or 0, reverse=True)
+    payload = {"generated_at": datetime.now(timezone.utc).isoformat(),
+               "movies": result}
+
+    os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
+    with open(OUT_PATH, "w", encoding="utf-8") as f:
+        json.dump(payload, f, indent=1, ensure_ascii=False)
+    print(f"\nWrote {len(result)} films to {OUT_PATH}")
+
+
+if __name__ == "__main__":
+    main()
