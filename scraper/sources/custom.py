@@ -141,15 +141,56 @@ def apply_filmpalette_languages(shows: list[dict]) -> None:
                 break
 
 
-# NOTE on Kinopolis: kinoheld carries none of their OV/OmU markers, so their
-# shows all classify as DE. We investigated correcting this from Kinopolis'
-# own program page, but their HTML does not tie a screening's performance id
-# to its version reliably — the OV/OmU marker lives only in the rendered
-# day's caption, spatially detached from the per-film performance-id groups,
-# and pairing them by proximity mislabels German kids' screenings (e.g.
-# "Minions + Monster") as OV. Rather than ship wrong data we leave Kinopolis
-# at the DE default; getting this right would need a headless browser to
-# render each film's schedule. (Documented in cinemas.json.)
+# --- Kinopolis language correction ---------------------------------------
+# kinoheld carries none of Kinopolis' OV/OmU markers (only tech flags), so
+# their shows all defaulted to DE. Kinopolis' own program page encodes the
+# version PER screening: each showtime is a <div data-performance-id="<ID>">…
+# whose booking button carries data-version='["2d","ov",…]' (and a visible
+# "ov Englisch" / "OmU" tech label). The <ID> equals the id in our kinoheld
+# booking link (…/vorstellung/<ID>), so we map id -> version and correct by id.
+#
+# IMPORTANT: read the version from THIS per-showtime attribute, not from the
+# nearby "OV: Moana" caption headings — those group a film's day-blocks and do
+# NOT imply every screening under them is OV (a mostly-German film like Vaiana
+# has a handful of OV screenings mixed in). Verified against the live page:
+# this yields ~17% OV, matching what the site shows users; the caption
+# approach wrongly reported ~70%.
+KINOPOLIS_SHOW_RE = re.compile(r'data-performance-id="([A-Z0-9]{16,})"')
+KINOPOLIS_VERSION_RE = re.compile(r"data-version='(\[[^\]]*\])'")
+
+
+def kinopolis_language_map(url: str) -> dict[str, str]:
+    """Return {performance_id: 'OV'|'OmU'} from a Kinopolis program page.
+
+    Only OV/OmU ids are recorded; everything else keeps the DE default.
+    """
+    try:
+        text = requests.get(url, headers=HEADERS, timeout=30).text
+    except Exception as e:
+        print(f"  [warn] Kinopolis language page failed: {e}")
+        return {}
+    mapping: dict[str, str] = {}
+    parts = KINOPOLIS_SHOW_RE.split(text)  # [pre, id1, body1, id2, body2, …]
+    for k in range(1, len(parts), 2):
+        vid, body = parts[k], parts[k + 1]
+        vm = KINOPOLIS_VERSION_RE.search(body[:1500])  # this show's buy button
+        versions = (vm.group(1).lower() if vm else "")
+        if '"omu"' in versions or '"omeu"' in versions:
+            mapping[vid] = "OmU"
+        elif '"ov"' in versions:
+            mapping[vid] = "OV"
+    return mapping
+
+
+def apply_kinopolis_languages(shows: list[dict], url: str) -> None:
+    """Correct 'language' in-place for Kinopolis shows using their site."""
+    mapping = kinopolis_language_map(url)
+    if not mapping:
+        return
+    for s in shows:
+        m = re.search(r"vorstellung/([A-Z0-9]{16,})", s.get("booking_url") or "")
+        if m and m.group(1) in mapping:
+            s["language"] = mapping[m.group(1)]
 
 
 SCRAPERS = {"metropolis": cineweb, "cineweb": cineweb}

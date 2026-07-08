@@ -85,6 +85,10 @@ def main() -> None:
         # has them ("Amores Perros (OmeU)") — correct the labels from there.
         if cinema["name"] == "Filmpalette":
             custom.apply_filmpalette_languages(shows)
+        # kinoheld carries no language markers for Kinopolis; their own program
+        # page does (per-screening id). Correct by booking id.
+        if cinema["name"] == "Kinopolis Bad Godesberg" and cinema.get("website"):
+            custom.apply_kinopolis_languages(shows, cinema["website"].rstrip("/") + "/programm")
 
         for show in shows:
             key = clean_title(show["title"]).lower()
