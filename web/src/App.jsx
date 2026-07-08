@@ -7,6 +7,7 @@ const T = {
     search: 'Filme suchen…',
     kids: '🧒 Kinderfilme',
     kidsTitle: 'Filme für Familien mit Kindern von 6 bis 12',
+    clearSearch: 'Suche löschen',
     lastMinute: '⏰ Last Minute',
     lastMinuteTitle: 'Filme, die jetzt oder in den nächsten 4 Stunden starten',
     filter: 'Filter',
@@ -64,6 +65,7 @@ const T = {
     search: 'Search movies…',
     kids: '🧒 Kids movies',
     kidsTitle: 'Movies for families with kids aged 6 to 12',
+    clearSearch: 'Clear search',
     lastMinute: '⏰ Last minute',
     lastMinuteTitle: 'Movies starting now or within the next 4 hours',
     filter: 'Filters',
@@ -638,9 +640,31 @@ export default function App() {
   // diacritic-insensitive search: "tochter" finds "Töchter", "leon" finds "Léon"
   const fold = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
 
+  // lenient match: every search word must appear in the title (any order),
+  // and a word matches if it's a substring OR within one typo (edit distance
+  // ≤1 for words ≥4 chars). So "intersteller", "hail mary project", "godzila"
+  // all still find the film.
+  const within1 = (a, b) => {
+    if (Math.abs(a.length - b.length) > 1) return false
+    let i = 0, j = 0, edits = 0
+    while (i < a.length && j < b.length) {
+      if (a[i] === b[j]) { i++; j++; continue }
+      if (++edits > 1) return false
+      if (a.length > b.length) i++
+      else if (a.length < b.length) j++
+      else { i++; j++ }
+    }
+    return edits + (a.length - i) + (b.length - j) <= 1
+  }
+  const wordMatches = (word, hay) => {
+    if (hay.includes(word)) return true
+    if (word.length < 4) return false
+    return hay.split(/\s+/).some((w) => within1(word, w))
+  }
+
   const movies = useMemo(() => {
     if (!data) return []
-    const needle = fold(q.trim())
+    const words = fold(q.trim()).split(/\s+/).filter(Boolean)
     return data.movies
       .filter((m) => !favsOnly || favs.includes(m.id))
       .filter((m) => (m.ratings.imdb ?? 0) >= minImdb)
@@ -648,9 +672,11 @@ export default function App() {
       .filter((m) => genres.length === 0 || (m.genres || []).some((g) => genres.includes(g)))
       .filter((m) => topics.every((tg) => matchTopic(m, tg)))  // AND: each selected topic must match
       .filter((m) => origLangs.length === 0 || origLangs.includes(m.original_language))
-      .filter((m) => !needle
-        || fold(m.title_de).includes(needle)
-        || fold(m.title_original).includes(needle))
+      .filter((m) => {
+        if (words.length === 0) return true
+        const hay = fold(m.title_de) + ' ' + fold(m.title_original)
+        return words.every((w) => wordMatches(w, hay))
+      })
       .map((m) => ({ m, shows: showsFor(m) }))
       .filter((x) => x.shows.length > 0)
       .sort((a, b) => {
@@ -704,6 +730,9 @@ export default function App() {
         <div className="search">
           <span className="search-icon">⌕</span>
           <input value={q} onChange={(e) => setQ(e.target.value)} placeholder={t.search} />
+          {q && (
+            <button className="search-clear" onClick={() => setQ('')} aria-label={t.clearSearch} title={t.clearSearch}>✕</button>
+          )}
         </div>
         <button
           className={`kids-btn ${lastMinute ? 'on' : ''}`}

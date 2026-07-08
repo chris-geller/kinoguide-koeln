@@ -4,7 +4,7 @@
     { "name": "Woki",                "city": "Bonn", "source": "kinoheld", "kinoheld_id": 1283, "website": "https://www.woki.de" },
     { "name": "Rex Lichtspieltheater","city": "Bonn", "source": "kinoheld", "kinoheld_id": 1093, "website": "https://www.rex-filmbuehne.de" },
     { "name": "Neue Filmbühne",      "city": "Bonn", "source": "kinoheld", "kinoheld_id": 996, "website": "https://www.rex-filmbuehne.de" },
-    { "name": "Kinopolis Bad Godesberg", "city": "Bonn", "source": "kinoheld", "kinoheld_id": 837, "website": "https://www.kinopolis.de/bn", "_note": "listed as 'Kinopolis Bonn' on kinoheld, Moltkestr. 7 = Bad Godesberg; their data carries no OV/OmU flags, so everything classifies as DE" },
+    { "name": "Kinopolis Bad Godesberg", "city": "Bonn", "source": "kinoheld", "kinoheld_id": 837, "website": "https://www.kinopolis.de/bn", "_note": "listed as 'Kinopolis Bonn' on kinoheld, Moltkestr. 7 = Bad Godesberg; kinoheld carries no OV/OmU flags for them so everything classifies as DE. Their own site HAS the markers but not in a way tied reliably to per-show ids (see custom.py) — would need a headless browser to fix. Known limitation: some Kinopolis OV screenings show as DE." },
     { "name": "Bonner Kinemathek",   "city": "Bonn", "source": "kinoheld", "kinoheld_id": 89, "website": "https://www.bonnerkinemathek.de", "_note": "listed as 'Bonner Kinemathek - Kino in der Brotfabrik' on kinoheld" },
     { "name": "Stern Lichtspiele",   "city": "Bonn", "source": "kinoheld", "kinoheld_id": 335, "website": "https://www.cinestar.de/kino-bonn-sternlichtspiele", "_note": "= CineStar Bonn (Markt 8), listed as 'CineStar Bonn' on kinoheld; keeps its webticketing3.cinestar.de deeplinks" },
 

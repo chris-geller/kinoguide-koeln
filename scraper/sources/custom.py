@@ -141,6 +141,17 @@ def apply_filmpalette_languages(shows: list[dict]) -> None:
                 break
 
 
+# NOTE on Kinopolis: kinoheld carries none of their OV/OmU markers, so their
+# shows all classify as DE. We investigated correcting this from Kinopolis'
+# own program page, but their HTML does not tie a screening's performance id
+# to its version reliably — the OV/OmU marker lives only in the rendered
+# day's caption, spatially detached from the per-film performance-id groups,
+# and pairing them by proximity mislabels German kids' screenings (e.g.
+# "Minions + Monster") as OV. Rather than ship wrong data we leave Kinopolis
+# at the DE default; getting this right would need a headless browser to
+# render each film's schedule. (Documented in cinemas.json.)
+
+
 SCRAPERS = {"metropolis": cineweb, "cineweb": cineweb}
 
 

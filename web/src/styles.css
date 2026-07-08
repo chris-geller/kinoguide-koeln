@@ -70,6 +70,11 @@ body {
   color: var(--text); font-size: 16px; padding: 14px 16px 14px 8px;
 }
 .search input::placeholder { color: var(--muted); opacity: 1; }
+.search-clear {
+  background: none; border: none; color: var(--muted); cursor: pointer;
+  font-size: 15px; padding: 0 16px 0 4px; line-height: 1; flex-shrink: 0;
+}
+.search-clear:hover { color: var(--text); }
 .kids-btn, .filters-btn {
   background: var(--bg2); border: 1px solid var(--border); color: var(--text);
   border-radius: var(--radius); padding: 12px 18px; font-size: 15px; font-weight: 600;
