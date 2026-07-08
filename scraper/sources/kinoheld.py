@@ -130,6 +130,39 @@ def _flag_names(flags: list | None) -> list[str]:
     return [f.get("name", "") for f in (flags or []) if isinstance(f, dict)]
 
 
+import re as _re
+
+_FSK_SUFFIX = _re.compile(r"[,·]?\s*(ab \d+|keine Angabe|FSK\s*\w*)\s*$", _re.IGNORECASE)
+# trailing language markers some cinemas append to show names ("… D", "… OmU")
+_LANG_SUFFIX = _re.compile(r"\s+(D|DF|OmU|OmeU|OmdU|OV|OF|Engl\.?\s*OF)\s*$")
+
+
+def _title_for(show_name: str | None, movie_title: str) -> str:
+    """Pick the trustworthy title for one show.
+
+    kinoheld sometimes files a different film under a movie entry — e.g. the
+    Egyptian 'Sakr w Canaria' sat inside an entry titled 'An Island Away From
+    You', which then TMDB-matched to the wrong film and sent visitors to a
+    ticket page for a film other than the one on the card. When the show's
+    own name shares (almost) no words with the entry title, the show name is
+    the one that matches what the ticket page sells — use it.
+    """
+    clean = lambda s: _LANG_SUFFIX.sub("", _FSK_SUFFIX.sub("", s)).strip(" -–·")
+    if not show_name:
+        return movie_title
+    if not movie_title:
+        return clean(show_name)
+
+    tokens = lambda s: set(_re.findall(r"[a-zà-ÿäöüß0-9]+", s.lower()))
+    a, b = tokens(show_name), tokens(movie_title)
+    if not a or not b:
+        return movie_title
+    overlap = len(a & b) / min(len(a), len(b))
+    if overlap >= 0.34:
+        return movie_title
+    return clean(show_name)
+
+
 def _booking_url(show: dict) -> str:
     """Prefer the API's deeplink when it points at a specific show; fall back
     to the canonical per-show page (pattern verified live 2026-07-07):
@@ -150,7 +183,12 @@ def _booking_url(show: dict) -> str:
     cinema_slug = cinema.get("urlSlug")
     show_id = show.get("id")
     if city_slug and cinema_slug and show_id:
-        return f"https://www.kinoheld.de/kino/{city_slug}/{cinema_slug}/vorstellung/{show_id}"
+        # the program listing with the show pre-selected, NOT the deep
+        # /vorstellung/<id> page — that page component crashes with a JS
+        # error ("can't access lexical declaration before initialization")
+        # in real browsers (reported for Odeon, 2026-07-08)
+        return (f"https://www.kinoheld.de/kino/{city_slug}/{cinema_slug}"
+                f"/vorstellungen?showId={show_id}")
     return ""
 
 
@@ -169,7 +207,7 @@ def normalize(entries: list[dict]) -> list[dict]:
                 if not (title and begin):
                     continue
                 shows_out.append({
-                    "title": title,
+                    "title": _title_for(show.get("name"), title),
                     "datetime": begin,
                     "language": classify(
                         program_name,
