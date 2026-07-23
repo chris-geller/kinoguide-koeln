@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-07-22T06:26:19.511775+00:00",
+ "generated_at": "2026-07-23T06:26:49.806849+00:00",
  "cinemas": {
   "Woki": {
    "city": "Bonn",
@@ -319,13 +319,6 @@
     {
      "cinema": "Rex am Ring",
      "city": "Köln",
-     "datetime": "2026-07-22T16:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100489"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
      "datetime": "2026-07-23T14:15:00+02:00",
      "language": "DE",
      "booking_url": "https://kinotickets.express/rex-koeln/booking/100680"
@@ -421,20 +414,6 @@
     {
      "cinema": "Odeon",
      "city": "Köln",
-     "datetime": "2026-07-22T19:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127354375"
-    },
-    {
-     "cinema": "Bonner Kinemathek",
-     "city": "Bonn",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=126905655"
-    },
-    {
-     "cinema": "Odeon",
-     "city": "Köln",
      "datetime": "2026-07-26T16:15:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584931"
@@ -527,279 +506,6 @@
     "letterboxd": 4.36
    },
    "showtimes": [
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T12:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=50671000023RFGKYDT"
-    },
-    {
-     "cinema": "Stern Lichtspiele",
-     "city": "Bonn",
-     "datetime": "2026-07-22T13:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=71424"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T14:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/05875000023GNFNDWF"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100387"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T15:10:00+02:00",
-     "language": "OV",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/59875000023GNFNDWF"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T15:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/5249DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T15:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=5EB71000023RFGKYDT"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/99729"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T16:15:00+02:00",
-     "language": "OV",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/D9875000023GNFNDWF"
-    },
-    {
-     "cinema": "Stern Lichtspiele",
-     "city": "Bonn",
-     "datetime": "2026-07-22T16:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=71423"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=F0671000023RFGKYDT"
-    },
-    {
-     "cinema": "Metropolis",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:30:00+02:00",
-     "language": "OV",
-     "booking_url": "https://kinotickets.express/metropolis-koeln/booking/68076"
-    },
-    {
-     "cinema": "Cinenova",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:30:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/cinenova-kino-koeln/vorstellungen?showId=127459585"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=42B71000023RFGKYDT"
-    },
-    {
-     "cinema": "OFF Broadway",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:40:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/off-broadway-kino-koeln/vorstellungen?showId=127347481"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T16:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127362071"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T17:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/8D875000023GNFNDWF"
-    },
-    {
-     "cinema": "Lichtspiele Kalk",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:00:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/lichtspiele-koeln-kalk/vorstellungen?showId=127366513"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/8D39DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:50:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100419"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/55875000023GNFNDWF"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T19:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/04875000023GNFNDWF"
-    },
-    {
-     "cinema": "OFF Broadway",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:00:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/off-broadway-kino-koeln/vorstellungen?showId=127324495"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T19:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=126333131"
-    },
-    {
-     "cinema": "Stern Lichtspiele",
-     "city": "Bonn",
-     "datetime": "2026-07-22T19:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=71588"
-    },
-    {
-     "cinema": "Cinenova",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:30:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/cinenova-kino-koeln/vorstellungen?showId=127459587"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/4E56CB00023FWBXJYB"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=B2B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/99735"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=39B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T19:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/1D875000023GNFNDWF"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/0E56CB00023FWBXJYB"
-    },
-    {
-     "cinema": "Stern Lichtspiele",
-     "city": "Bonn",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=71425"
-    },
-    {
-     "cinema": "Metropolis",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "OV",
-     "booking_url": "https://kinotickets.express/metropolis-koeln/booking/68077"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/99742"
-    },
-    {
-     "cinema": "Lichtspiele Kalk",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:15:00+02:00",
-     "language": "OV",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/lichtspiele-koeln-kalk/vorstellungen?showId=127366515"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=31671000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T21:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/74875000023GNFNDWF"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T23:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127362073"
-    },
     {
      "cinema": "Stern Lichtspiele",
      "city": "Bonn",
@@ -2958,6 +2664,13 @@
      "datetime": "2026-08-08T21:30:00+02:00",
      "language": "OV",
      "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=126827367"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-16T19:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754003"
     }
    ]
   },
@@ -2993,104 +2706,6 @@
     "letterboxd": 4.12
    },
    "showtimes": [
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=6CB71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T15:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/8549DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=6BB71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/3849DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T18:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100392"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127361995"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=DBB71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:10:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/DF39DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Metropolis",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:15:00+02:00",
-     "language": "OV",
-     "booking_url": "https://kinotickets.express/metropolis-koeln/booking/68047"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:20:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=0FB71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/BC39DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:45:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100380"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T20:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/66875000023GNFNDWF"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T23:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127361997"
-    },
     {
      "cinema": "Cineplex Köln",
      "city": "Köln",
@@ -3704,7 +3319,7 @@
      "cinema": "Kinopolis Bad Godesberg",
      "city": "Bonn",
      "datetime": "2026-07-29T21:30:00+02:00",
-     "language": "DE",
+     "language": "OV",
      "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/9B975000023GNFNDWF"
     },
     {
@@ -4033,13 +3648,6 @@
     {
      "cinema": "Rex am Ring",
      "city": "Köln",
-     "datetime": "2026-07-22T20:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100479"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
      "datetime": "2026-07-24T21:00:00+02:00",
      "language": "DE",
      "booking_url": "https://kinotickets.express/rex-koeln/booking/100677"
@@ -4109,52 +3717,6 @@
    ]
   },
   {
-   "id": "tt42574015",
-   "title_de": "Same Sun - Mit dem Fahrrad durch Afrika",
-   "title_original": "Same Sun - Mit dem Fahrrad durch Afrika",
-   "year": 2026,
-   "release_date": "2026-09-03",
-   "runtime": 82,
-   "poster": "https://image.tmdb.org/t/p/w342/kl4WuxZdeC5dtTg74yjWx8mcRAE.jpg",
-   "genres": [
-    "Dokumentarfilm"
-   ],
-   "age_rating": null,
-   "overview_de": "Am 3. Oktober 2023 steigt Wiebke Lühmann in Freiburg im Breisgau auf ihr bepacktes Fahrrad und fährt los. 20.150 Kilometer liegen vor ihr, 22 Länder und die vielleicht größte Frage von allen: Was passiert, wenn man alles Vertraute hinter sich lässt und einfach startet?  430 Tage später, am 5. Dezember 2024, steht sie am Kap der Guten Hoffnung. Dazwischen liegt nicht nur ein langer Weg, sondern eine Zeit voller Begegnungen, Weite, Zweifel und echter Veränderung.",
-   "overview_en": "The film SAME SUN tells the story of Wiebke Lühmann's journey from Freiburg to the Cape of Good Hope. Honest, raw, and close to the inner and outer challenges of a 430-day bicycle trip. Her journey takes her through 22 countries, Sahara storms, the rain season, the Congo Basin, and the deserts of Namibia.",
-   "original_language": "de",
-   "countries": [
-    "DE"
-   ],
-   "directors": [
-    "Fabienne Engel"
-   ],
-   "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=3japc3f58js",
-   "trailer_en": null,
-   "ratings": {
-    "imdb": 7.6,
-    "metascore": null,
-    "letterboxd": null
-   },
-   "showtimes": [
-    {
-     "cinema": "Rex Lichtspieltheater",
-     "city": "Bonn",
-     "datetime": "2026-07-22T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/rex-lichtspieltheater-bonn/vorstellungen?showId=127459815"
-    },
-    {
-     "cinema": "Weisshaus Kino",
-     "city": "Köln",
-     "datetime": "2026-07-24T18:00:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/weisshaus-kino-koeln/vorstellungen?showId=127571051"
-    }
-   ]
-  },
-  {
    "id": "tt21192142",
    "title_de": "All of Us Strangers",
    "title_original": "All of Us Strangers",
@@ -4195,6 +3757,45 @@
      "datetime": "2026-07-26T20:45:00+02:00",
      "language": "OmU",
      "booking_url": "https://kinotickets.express/rex-koeln/booking/99542"
+    }
+   ]
+  },
+  {
+   "id": "tt42574015",
+   "title_de": "Same Sun - Mit dem Fahrrad durch Afrika",
+   "title_original": "Same Sun - Mit dem Fahrrad durch Afrika",
+   "year": 2026,
+   "release_date": "2026-09-03",
+   "runtime": 82,
+   "poster": "https://image.tmdb.org/t/p/w342/kl4WuxZdeC5dtTg74yjWx8mcRAE.jpg",
+   "genres": [
+    "Dokumentarfilm"
+   ],
+   "age_rating": null,
+   "overview_de": "Am 3. Oktober 2023 steigt Wiebke Lühmann in Freiburg im Breisgau auf ihr bepacktes Fahrrad und fährt los. 20.150 Kilometer liegen vor ihr, 22 Länder und die vielleicht größte Frage von allen: Was passiert, wenn man alles Vertraute hinter sich lässt und einfach startet?  430 Tage später, am 5. Dezember 2024, steht sie am Kap der Guten Hoffnung. Dazwischen liegt nicht nur ein langer Weg, sondern eine Zeit voller Begegnungen, Weite, Zweifel und echter Veränderung.",
+   "overview_en": "The film SAME SUN tells the story of Wiebke Lühmann's journey from Freiburg to the Cape of Good Hope. Honest, raw, and close to the inner and outer challenges of a 430-day bicycle trip. Her journey takes her through 22 countries, Sahara storms, the rain season, the Congo Basin, and the deserts of Namibia.",
+   "original_language": "de",
+   "countries": [
+    "DE"
+   ],
+   "directors": [
+    "Fabienne Engel"
+   ],
+   "tags": [],
+   "trailer_de": "https://www.youtube.com/watch?v=3japc3f58js",
+   "trailer_en": null,
+   "ratings": {
+    "imdb": 7.6,
+    "metascore": null,
+    "letterboxd": null
+   },
+   "showtimes": [
+    {
+     "cinema": "Weisshaus Kino",
+     "city": "Köln",
+     "datetime": "2026-07-24T18:00:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://www.kinoheld.de/kino/koeln/weisshaus-kino-koeln/vorstellungen?showId=127571051"
     }
    ]
   },
@@ -5886,41 +5487,6 @@
     {
      "cinema": "Stern Lichtspiele",
      "city": "Bonn",
-     "datetime": "2026-07-22T14:10:00+02:00",
-     "language": "DE",
-     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=71942"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:10:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=4DB71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T14:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/B7875000023GNFNDWF"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T16:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/67875000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=8DB71000023RFGKYDT"
-    },
-    {
-     "cinema": "Stern Lichtspiele",
-     "city": "Bonn",
      "datetime": "2026-07-23T14:10:00+02:00",
      "language": "DE",
      "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=72006"
@@ -6098,34 +5664,6 @@
     "letterboxd": 3.61
    },
    "showtimes": [
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T15:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/FF39DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:10:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100441"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T18:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/DE875000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=47B71000023RFGKYDT"
-    },
     {
      "cinema": "Cinedom",
      "city": "Köln",
@@ -6323,75 +5861,6 @@
    ]
   },
   {
-   "id": "tt29567915",
-   "title_de": "Nürnberg",
-   "title_original": "Nuremberg",
-   "year": 2025,
-   "release_date": "2025-11-06",
-   "runtime": 148,
-   "poster": "https://image.tmdb.org/t/p/w342/2yVfXfnROnZfPPrArz2MMWfzOSr.jpg",
-   "genres": [
-    "Historie",
-    "Drama"
-   ],
-   "age_rating": 12,
-   "overview_de": "Hermann Göring wird von den Alliierten verhaftet und soll als ranghöchster noch verbliebener Nazi für die unfassbaren Taten des NS-Regimes zur Rechenschaft gezogen werden. Der Psychiater Dr. Kelley wird beauftragt, alle Angeklagten auf ihre Prozessfähigkeit hin zu untersuchen. Schnell ist er von Görings Scharfsinn und Charisma eingenommen und obwohl er dessen Machtspiele durchschaut, kann sich Dr. Kelley der manipulativen Stärke und Faszination des Bösen nur schwer entziehen. Um Görings Vertrauen zu gewinnen, überschreitet Dr. Kelley moralische Grenzen und gefährdet sogar den Nürnberger Prozess.  Das bis in die Nebenrollen hochkarätig besetzte Justizdrama erzählt vom folgenreichsten Prozess des 20. Jahrhunderts, der zudem die Geburtsstunde des Völkerrechts markiert.",
-   "overview_en": "In postwar Germany, an American psychiatrist must determine whether Nazi prisoners are fit to go on trial for war crimes, and finds himself in a complex battle of intellect and ethics with Hermann Göring, Hitler's right-hand man.",
-   "original_language": "en",
-   "countries": [
-    "US",
-    "HU"
-   ],
-   "directors": [
-    "James Vanderbilt"
-   ],
-   "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=BYQKxQ5C3kE",
-   "trailer_en": "https://www.youtube.com/watch?v=YWlCCVnZ4bo",
-   "ratings": {
-    "imdb": 7.4,
-    "metascore": 61,
-    "letterboxd": 3.54
-   },
-   "showtimes": [
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:20:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=73B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Weisshaus Kino",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/weisshaus-kino-koeln/vorstellungen?showId=127542055"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-24T16:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=36C71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-25T16:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=46C71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-26T16:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=56C71000023RFGKYDT"
-    }
-   ]
-  },
-  {
    "id": "tt31645419",
    "title_de": "Finding Connection",
    "title_original": "Finding Connection",
@@ -6452,44 +5921,57 @@
    ]
   },
   {
-   "id": "tt31688586",
-   "title_de": "Nouvelle Vague",
-   "title_original": "Nouvelle Vague",
+   "id": "tt29567915",
+   "title_de": "Nürnberg",
+   "title_original": "Nuremberg",
    "year": 2025,
-   "release_date": "2025-10-08",
-   "runtime": 105,
-   "poster": "https://image.tmdb.org/t/p/w342/bGrNjSuegU19if2CM9qkMOg2EU7.jpg",
+   "release_date": "2025-11-06",
+   "runtime": 148,
+   "poster": "https://image.tmdb.org/t/p/w342/2yVfXfnROnZfPPrArz2MMWfzOSr.jpg",
    "genres": [
-    "Komödie",
-    "Drama",
-    "Historie"
+    "Historie",
+    "Drama"
    ],
    "age_rating": 12,
-   "overview_de": "Paris, Ende der 1950er-Jahre: Der 28-jährige Jean-Luc Godard hat als Einziger in seinem Freundeskreis noch keinen eigenen Film gemacht. Mit einem verrückten Team, einem amerikanischen Filmstar und wenig Geld gelingt ihm schließlich unter abenteuerlichen Umständen mit AUSSER ATEM ein Meisterwerk, das in die Filmgeschichte eingehen und das Kino für immer verändern wird.  Kult-Regisseur Richard Linklater (BOYHOOD, BEFORE-Trilogie) lässt mit NOUVELLE VAGUE eine ganze Generation junger Wilder wieder lebendig werden: beneidenswert lässig, unverschämt mutig und angetrieben vom unbedingten Willen, alles neu und anders zu machen.  Ein Film, der vor Esprit, Dynamik und Humor nur so sprüht und einen dazu bringt, sich wieder kopfüber in das Kino zu verlieben. Seine Weltpremiere feierte NOUVELLE VAGUE beim Filmfestival von Cannes – unter großem Applaus von Kritik, Publikum und von Fans wie Quentin Tarantino.",
-   "overview_en": "After writing for Cahiers du cinéma, a young Jean-Luc Godard decides making films is the best film criticism. He convinces producer Georges de Beauregard to fund a low-budget feature, and creates a treatment with fellow New Wave filmmaker François Truffaut about a gangster couple. The result? Breathless, one of the first features of the Nouvelle Vague era of French cinema.",
-   "original_language": "fr",
+   "overview_de": "Hermann Göring wird von den Alliierten verhaftet und soll als ranghöchster noch verbliebener Nazi für die unfassbaren Taten des NS-Regimes zur Rechenschaft gezogen werden. Der Psychiater Dr. Kelley wird beauftragt, alle Angeklagten auf ihre Prozessfähigkeit hin zu untersuchen. Schnell ist er von Görings Scharfsinn und Charisma eingenommen und obwohl er dessen Machtspiele durchschaut, kann sich Dr. Kelley der manipulativen Stärke und Faszination des Bösen nur schwer entziehen. Um Görings Vertrauen zu gewinnen, überschreitet Dr. Kelley moralische Grenzen und gefährdet sogar den Nürnberger Prozess.  Das bis in die Nebenrollen hochkarätig besetzte Justizdrama erzählt vom folgenreichsten Prozess des 20. Jahrhunderts, der zudem die Geburtsstunde des Völkerrechts markiert.",
+   "overview_en": "In postwar Germany, an American psychiatrist must determine whether Nazi prisoners are fit to go on trial for war crimes, and finds himself in a complex battle of intellect and ethics with Hermann Göring, Hitler's right-hand man.",
+   "original_language": "en",
    "countries": [
-    "FR",
-    "US"
+    "US",
+    "HU"
    ],
    "directors": [
-    "Richard Linklater"
+    "James Vanderbilt"
    ],
    "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=9B3pQ0FL8C4",
-   "trailer_en": "https://www.youtube.com/watch?v=sRqWbsdACzg",
+   "trailer_de": "https://www.youtube.com/watch?v=BYQKxQ5C3kE",
+   "trailer_en": "https://www.youtube.com/watch?v=YWlCCVnZ4bo",
    "ratings": {
-    "imdb": 7.3,
-    "metascore": 76,
-    "letterboxd": 3.72
+    "imdb": 7.4,
+    "metascore": 61,
+    "letterboxd": 3.54
    },
    "showtimes": [
     {
-     "cinema": "Rex am Ring",
+     "cinema": "Cinedom",
      "city": "Köln",
-     "datetime": "2026-07-22T13:45:00+02:00",
+     "datetime": "2026-07-24T16:15:00+02:00",
      "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100437"
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=36C71000023RFGKYDT"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-25T16:15:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=46C71000023RFGKYDT"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-26T16:15:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=56C71000023RFGKYDT"
     }
    ]
   },
@@ -6546,48 +6028,6 @@
      "datetime": "2026-09-01T14:30:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinoheld.de/kino/koeln/weisshaus-kino-koeln/vorstellungen?showId=127467127"
-    }
-   ]
-  },
-  {
-   "id": "tt0057197",
-   "title_de": "Jason und die Argonauten",
-   "title_original": "Jason and the Argonauts",
-   "year": 1963,
-   "release_date": "1963-06-13",
-   "runtime": 104,
-   "poster": "https://image.tmdb.org/t/p/w342/rvjpSwoODeZE9hlzHFAFpdhrzk0.jpg",
-   "genres": [
-    "Abenteuer",
-    "Familie",
-    "Fantasy"
-   ],
-   "age_rating": 12,
-   "overview_de": "Der titelgebende griechische Held Jason ist auf der Suche nach dem goldenen Vlies und führt die Argonauten dabei in eine Welt voller Ungeheuer und Gefahren. So muss sowohl die siebenköpfige Hydra bezwungen werden, als auch der unbesiegbare Bronzegott.",
-   "overview_en": "Jason, a fearless sailor and explorer, returns to his home land of Thessaly after a long voyage to claim his rightful throne. He learns, however, that he must first find the magical Golden Fleece. To do so, he must embark on an epic quest fraught with fantastic monsters and terrible perils.",
-   "original_language": "en",
-   "countries": [
-    "US",
-    "GB"
-   ],
-   "directors": [
-    "Don Chaffey"
-   ],
-   "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=34nS1RWjEN8",
-   "trailer_en": "https://www.youtube.com/watch?v=WbWmMsyqf6k",
-   "ratings": {
-    "imdb": 7.3,
-    "metascore": 69,
-    "letterboxd": 3.66
-   },
-   "showtimes": [
-    {
-     "cinema": "Lichtspiele Kalk",
-     "city": "Köln",
-     "datetime": "2026-07-22T15:00:00+02:00",
-     "language": "OV",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/lichtspiele-koeln-kalk/vorstellungen?showId=127371487"
     }
    ]
   },
@@ -6667,41 +6107,6 @@
     "letterboxd": 3.76
    },
    "showtimes": [
-    {
-     "cinema": "Stern Lichtspiele",
-     "city": "Bonn",
-     "datetime": "2026-07-22T17:10:00+02:00",
-     "language": "DE",
-     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=71940"
-    },
-    {
-     "cinema": "Odeon",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127354371"
-    },
-    {
-     "cinema": "Metropolis",
-     "city": "Köln",
-     "datetime": "2026-07-22T18:20:00+02:00",
-     "language": "OV",
-     "booking_url": "https://kinotickets.express/metropolis-koeln/booking/68085"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=91C71000023RFGKYDT"
-    },
-    {
-     "cinema": "Neue Filmbühne",
-     "city": "Bonn",
-     "datetime": "2026-07-22T20:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/neue-filmbuehne-bonn/vorstellungen?showId=127467545"
-    },
     {
      "cinema": "Cinenova",
      "city": "Köln",
@@ -6967,6 +6372,13 @@
      "datetime": "2026-07-29T18:00:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinoheld.de/kino/bonn/rex-lichtspieltheater-bonn/vorstellungen?showId=127618891"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-14T20:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754033"
     }
    ]
   },
@@ -7325,62 +6737,6 @@
     "letterboxd": 3.36
    },
    "showtimes": [
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/8B39DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T18:20:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100373"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=8AB71000023RFGKYDT"
-    },
-    {
-     "cinema": "OFF Broadway",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:15:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/off-broadway-kino-koeln/vorstellungen?showId=127347491"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T20:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/BA875000023GNFNDWF"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:40:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100399"
-    },
-    {
-     "cinema": "Odeon",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:45:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127354377"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T21:15:00+02:00",
-     "language": "OV",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/EF875000023GNFNDWF"
-    },
     {
      "cinema": "Cineplex Köln",
      "city": "Köln",
@@ -7778,8 +7134,8 @@
     "FR"
    ],
    "directors": [
-    "Jean-Pierre Dardenne",
-    "Luc Dardenne"
+    "Luc Dardenne",
+    "Jean-Pierre Dardenne"
    ],
    "tags": [],
    "trailer_de": "https://www.youtube.com/watch?v=2q7ckaUKqac",
@@ -7800,6 +7156,50 @@
    ]
   },
   {
+   "id": "tt3075214",
+   "title_de": "Der kleine Rabe Socke 2 - Das große Rennen",
+   "title_original": "Der kleine Rabe Socke 2 - Das große Rennen",
+   "year": 2015,
+   "release_date": "2015-08-20",
+   "runtime": 70,
+   "poster": "https://image.tmdb.org/t/p/w342/o2Wwf3SbUwMIEYklQnXcZClZZq4.jpg",
+   "genres": [
+    "Abenteuer",
+    "Animation",
+    "Familie"
+   ],
+   "age_rating": 0,
+   "overview_de": "Socke hat's mal wieder vermasselt. Er ist schuld daran, dass die Ernte der Waldtiere im Fluss davon schwimmt. Damit Frau Dachs nichts davon merkt, wollen der kleine Rabe und seine Freunde neue Vorräte kaufen. Das Geld dafür möchten sie bei einem Wettrennen durch den Wald gewinnen. Dabei erweist sich der ehrgeizige Rennfahrer-Papagei Rinaldo aus Südamerika nicht als einziger Stolperstein auf dem Weg zum Erfolg. Rabe, Eddie-Bär und das kesse Biber-Girl Fritzi kommen ganz schön ins Schwitzen, mehr als ihnen lieb ist.",
+   "overview_en": "In a powerful story about teamwork, acceptance and finding one's calling, little Raven and his friends take part in an exciting and tumultuous race through the forest.",
+   "original_language": "de",
+   "countries": [
+    "DE"
+   ],
+   "directors": [
+    "Ute von Münchow-Pohl",
+    "Sandor Jesse"
+   ],
+   "tags": [
+    "women_directed"
+   ],
+   "trailer_de": "https://www.youtube.com/watch?v=IzPFjV36QcY",
+   "trailer_en": null,
+   "ratings": {
+    "imdb": 6.9,
+    "metascore": null,
+    "letterboxd": null
+   },
+   "showtimes": [
+    {
+     "cinema": "Woki",
+     "city": "Bonn",
+     "datetime": "2026-09-27T13:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=120819783"
+    }
+   ]
+  },
+  {
    "id": "tt30825738",
    "title_de": "Star Wars: The Mandalorian and Grogu",
    "title_original": "The Mandalorian and Grogu",
@@ -7808,9 +7208,9 @@
    "runtime": 132,
    "poster": "https://image.tmdb.org/t/p/w342/5QrwqFLCYVCI5emBzJkm2VhAfPR.jpg",
    "genres": [
-    "Fantasy",
     "Action",
-    "Abenteuer"
+    "Abenteuer",
+    "Science Fiction"
    ],
    "age_rating": 12,
    "overview_de": "Das böse Imperium ist gefallen, doch imperiale Kriegsherren sind weiterhin über die Galaxis verstreut. Die junge Neue Republik arbeitet daran, alles zu schützen, wofür die Rebellion gekämpft hat, und hat sich dazu die Hilfe des legendären mandalorianischen Kopfgeldjägers Din Djarin und seines jungen Lehrlings Grogu gesichert.",
@@ -7831,34 +7231,6 @@
     "letterboxd": 3.11
    },
    "showtimes": [
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127362003"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:20:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=7FB71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=EFB71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/5749DB00023FWBXJYB"
-    },
     {
      "cinema": "Kinopolis Bad Godesberg",
      "city": "Bonn",
@@ -7960,50 +7332,6 @@
    ]
   },
   {
-   "id": "tt3075214",
-   "title_de": "Der kleine Rabe Socke 2 - Das große Rennen",
-   "title_original": "Der kleine Rabe Socke 2 - Das große Rennen",
-   "year": 2015,
-   "release_date": "2015-08-20",
-   "runtime": 70,
-   "poster": "https://image.tmdb.org/t/p/w342/o2Wwf3SbUwMIEYklQnXcZClZZq4.jpg",
-   "genres": [
-    "Abenteuer",
-    "Animation",
-    "Familie"
-   ],
-   "age_rating": 0,
-   "overview_de": "Socke hat's mal wieder vermasselt. Er ist schuld daran, dass die Ernte der Waldtiere im Fluss davon schwimmt. Damit Frau Dachs nichts davon merkt, wollen der kleine Rabe und seine Freunde neue Vorräte kaufen. Das Geld dafür möchten sie bei einem Wettrennen durch den Wald gewinnen. Dabei erweist sich der ehrgeizige Rennfahrer-Papagei Rinaldo aus Südamerika nicht als einziger Stolperstein auf dem Weg zum Erfolg. Rabe, Eddie-Bär und das kesse Biber-Girl Fritzi kommen ganz schön ins Schwitzen, mehr als ihnen lieb ist.",
-   "overview_en": "In a powerful story about teamwork, acceptance and finding one's calling, little Raven and his friends take part in an exciting and tumultuous race through the forest.",
-   "original_language": "de",
-   "countries": [
-    "DE"
-   ],
-   "directors": [
-    "Ute von Münchow-Pohl",
-    "Sandor Jesse"
-   ],
-   "tags": [
-    "women_directed"
-   ],
-   "trailer_de": "https://www.youtube.com/watch?v=IzPFjV36QcY",
-   "trailer_en": null,
-   "ratings": {
-    "imdb": 6.9,
-    "metascore": null,
-    "letterboxd": null
-   },
-   "showtimes": [
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-09-27T13:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=120819783"
-    }
-   ]
-  },
-  {
    "id": "tt32433627",
    "title_de": "22 Bahnen",
    "title_original": "22 Bahnen",
@@ -8041,6 +7369,13 @@
      "datetime": "2026-08-01T21:30:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=126827371"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-06T18:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754009"
     }
    ]
   },
@@ -8383,47 +7718,6 @@
    ]
   },
   {
-   "id": "tt37537636",
-   "title_de": "Dry Leaf",
-   "title_original": "ხმელი ფოთოლი",
-   "year": 2026,
-   "release_date": "2026-03-20",
-   "runtime": 186,
-   "poster": "https://image.tmdb.org/t/p/w342/wPmrw3rZSmu5CBwO2ROSK3jUyem.jpg",
-   "genres": [
-    "Drama",
-    "Fantasy"
-   ],
-   "age_rating": null,
-   "overview_de": "Als die junge Sportfotografin Lisa verschwindet, beschließt ihr Vater sie zu suchen und macht sich mit ihrem besten Freund, dem mysteriösen Levani, auf eine Reise durch Georgien. Lisa hatte zuletzt Fußballstadien im ganzen Land fotografiert. Mit der vorbeiziehenden Landschaft und von einem Spielfeld zum nächsten ändern sich die Menschen sowie ihre Geschichten. Doch mit jedem Fußballplatz und jedem Dorf scheinen die Chancen, Lisa zu finden, zu schwinden…  Mit seinem neuen Roadmovie setzt Alexandre Koberidze nach WAS SEHEN WIR, WENN WIR ZUM HIMMEL SCHAUEN? die poetische Erkundung seines Heimatlandes Georgien fort.",
-   "overview_en": "Lisa, a photographer, has gone missing. The last known detail is that she had been photographing rural football stadiums in villages across Georgia. Her father, Irakli, sets out to search for her, traveling from place to place. Levani, Lisa's best friend – and an invisible person – also sets off to help.",
-   "original_language": "ka",
-   "countries": [
-    "DE",
-    "GE"
-   ],
-   "directors": [
-    "Alexandre Koberidze"
-   ],
-   "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=RP7Y5BBd_EA",
-   "trailer_en": "https://www.youtube.com/watch?v=nx1D3hVbMgc",
-   "ratings": {
-    "imdb": 6.8,
-    "metascore": 78,
-    "letterboxd": 3.83
-   },
-   "showtimes": [
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3575745880&bgswitch=false&resize=false"
-    }
-   ]
-  },
-  {
    "id": "tt0094862",
    "title_de": "Chucky - Die Mörderpuppe",
    "title_original": "Child's Play",
@@ -8459,6 +7753,95 @@
      "datetime": "2026-10-08T19:30:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/07165000023GNFNDWF"
+    }
+   ]
+  },
+  {
+   "id": "tt15047880",
+   "title_de": "Disclosure Day - Der Tag der Wahrheit",
+   "title_original": "Disclosure Day",
+   "year": 2026,
+   "release_date": "2026-06-10",
+   "runtime": 145,
+   "poster": "https://image.tmdb.org/t/p/w342/8aaV365bjSxPMZdT18RybAYGqSp.jpg",
+   "genres": [
+    "Science Fiction",
+    "Thriller"
+   ],
+   "age_rating": 12,
+   "overview_de": "Die Fernsehmeteorologin Margaret Fairchild wird live während eines TV-Auftritts plötzlich von einem unerklärlichen Phänomen heimgesucht. Während die Behörden zu vertuschen versuchen, dass Außerirdische dahinter stecken könnten, will der Aktivist Daniel Kellner mit allen Mitteln die Weltöffentlichkeit über die Wahrheit informieren.",
+   "overview_en": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
+   "original_language": "en",
+   "countries": [
+    "US"
+   ],
+   "directors": [
+    "Steven Spielberg"
+   ],
+   "tags": [],
+   "trailer_de": "https://www.youtube.com/watch?v=Wy6hQnNqXBk",
+   "trailer_en": "https://www.youtube.com/watch?v=icDuEHSxE-w",
+   "ratings": {
+    "imdb": 6.7,
+    "metascore": 74,
+    "letterboxd": 3.11
+   },
+   "showtimes": [
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-23T14:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=CFC71000023RFGKYDT"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-24T13:45:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=9FC71000023RFGKYDT"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-25T13:45:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=AFC71000023RFGKYDT"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-26T13:45:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=BFC71000023RFGKYDT"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-27T14:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=DFC71000023RFGKYDT"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-28T14:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=EFC71000023RFGKYDT"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-29T14:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=FFC71000023RFGKYDT"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-15T20:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754015"
     }
    ]
   },
@@ -8637,95 +8020,6 @@
    ]
   },
   {
-   "id": "tt15047880",
-   "title_de": "Disclosure Day - Der Tag der Wahrheit",
-   "title_original": "Disclosure Day",
-   "year": 2026,
-   "release_date": "2026-06-10",
-   "runtime": 145,
-   "poster": "https://image.tmdb.org/t/p/w342/8aaV365bjSxPMZdT18RybAYGqSp.jpg",
-   "genres": [
-    "Science Fiction",
-    "Thriller"
-   ],
-   "age_rating": 12,
-   "overview_de": "Die Fernsehmeteorologin Margaret Fairchild wird live während eines TV-Auftritts plötzlich von einem unerklärlichen Phänomen heimgesucht. Während die Behörden zu vertuschen versuchen, dass Außerirdische dahinter stecken könnten, will der Aktivist Daniel Kellner mit allen Mitteln die Weltöffentlichkeit über die Wahrheit informieren.",
-   "overview_en": "A cybersecurity expert becomes a whistleblower after uncovering secrets about aliens, putting him on the run from a corporation. Meanwhile, a meteorologist experiencing strange phenomena joins forces with him to prove there's life beyond our understanding.",
-   "original_language": "en",
-   "countries": [
-    "US"
-   ],
-   "directors": [
-    "Steven Spielberg"
-   ],
-   "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=Wy6hQnNqXBk",
-   "trailer_en": "https://www.youtube.com/watch?v=icDuEHSxE-w",
-   "ratings": {
-    "imdb": 6.7,
-    "metascore": 74,
-    "letterboxd": 3.11
-   },
-   "showtimes": [
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:20:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=1EB71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-23T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=CFC71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-24T13:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=9FC71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-25T13:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=AFC71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-26T13:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=BFC71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-27T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=DFC71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-28T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=EFC71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-29T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=FFC71000023RFGKYDT"
-    }
-   ]
-  },
-  {
    "id": "tt39316472",
    "title_de": "Jackass: Einer geht noch",
    "title_original": "Jackass: Best and Last",
@@ -8800,202 +8094,6 @@
     "letterboxd": 3.27
    },
    "showtimes": [
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T11:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127361975"
-    },
-    {
-     "cinema": "Stern Lichtspiele",
-     "city": "Bonn",
-     "datetime": "2026-07-22T13:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=71969"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100349"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=21B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:10:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100357"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T14:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/1C875000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=91B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/1649DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T14:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127361977"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T14:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/4A875000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T15:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=E7B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T15:45:00+02:00",
-     "language": "OV",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/AE875000023GNFNDWF"
-    },
-    {
-     "cinema": "Metropolis",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:00:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/metropolis-koeln/booking/68060"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100350"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T16:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/8C875000023GNFNDWF"
-    },
-    {
-     "cinema": "Stern Lichtspiele",
-     "city": "Bonn",
-     "datetime": "2026-07-22T16:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=71968"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T17:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127361901"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:20:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=D0B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T17:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/F5875000023GNFNDWF"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/3E39DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=28B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/F249DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Metropolis",
-     "city": "Köln",
-     "datetime": "2026-07-22T18:00:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/metropolis-koeln/booking/68061"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T18:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100351"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/7149DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=02B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/2B875000023GNFNDWF"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100457"
-    },
     {
      "cinema": "Woki",
      "city": "Bonn",
@@ -9725,13 +8823,6 @@
      "booking_url": "https://kinotickets.express/rex-koeln/booking/100556"
     },
     {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-28T14:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/AC8CDB00023FWBXJYB"
-    },
-    {
      "cinema": "Woki",
      "city": "Bonn",
      "datetime": "2026-07-28T15:00:00+02:00",
@@ -9744,6 +8835,13 @@
      "datetime": "2026-07-28T15:00:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/9C975000023GNFNDWF"
+    },
+    {
+     "cinema": "Cineplex Köln",
+     "city": "Köln",
+     "datetime": "2026-07-28T15:10:00+02:00",
+     "language": "DE",
+     "booking_url": "https://tickets.cineplex.de/checkout/351/AC8CDB00023FWBXJYB"
     },
     {
      "cinema": "Rex am Ring",
@@ -9976,7 +9074,7 @@
    "ratings": {
     "imdb": 6.6,
     "metascore": 77,
-    "letterboxd": 3.52
+    "letterboxd": 3.53
    },
    "showtimes": [
     {
@@ -10192,13 +9290,6 @@
     {
      "cinema": "Cinedom",
      "city": "Köln",
-     "datetime": "2026-07-22T17:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=60C71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
      "datetime": "2026-07-23T17:15:00+02:00",
      "language": "DE",
      "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=81D71000023RFGKYDT"
@@ -10283,6 +9374,55 @@
    ]
   },
   {
+   "id": "tt39123115",
+   "title_de": "Detektiv Conan Film 29: Der gefallene Engel des Highways",
+   "title_original": "名探偵コナン ハイウェイの堕天使",
+   "year": 2026,
+   "release_date": "2026-04-10",
+   "runtime": 109,
+   "poster": "https://image.tmdb.org/t/p/w342/l2kfiNoRi6ofM5pSjr1rCloOfpx.jpg",
+   "genres": [
+    "Animation",
+    "Action",
+    "Mystery",
+    "Krimi"
+   ],
+   "age_rating": null,
+   "overview_de": null,
+   "overview_en": "When a string of deadly highway incidents begin, Conan Edogawa's investigations point towards an orchestrated plot rather than mere accidents. As he uncovers a conspiracy involving hidden identities and advanced technology, the case escalates into a high-speed race against time to stop a calculating mastermind before more lives are lost.",
+   "original_language": "ja",
+   "countries": [
+    "JP"
+   ],
+   "directors": [
+    "蓮井隆弘"
+   ],
+   "tags": [],
+   "trailer_de": "https://www.youtube.com/watch?v=dU4QkrNtH90",
+   "trailer_en": "https://www.youtube.com/watch?v=-OmZGxr23hY",
+   "ratings": {
+    "imdb": 6.5,
+    "metascore": null,
+    "letterboxd": 3.08
+   },
+   "showtimes": [
+    {
+     "cinema": "Kinopolis Bad Godesberg",
+     "city": "Bonn",
+     "datetime": "2026-08-25T17:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/kinopolis/vorstellungen?showId=127756439"
+    },
+    {
+     "cinema": "Kinopolis Bad Godesberg",
+     "city": "Bonn",
+     "datetime": "2026-08-25T19:50:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/kinopolis/vorstellungen?showId=127756441"
+    }
+   ]
+  },
+  {
    "id": "tt28326501",
    "title_de": "Die jüngste Tochter",
    "title_original": "La Petite Dernière",
@@ -10327,55 +9467,6 @@
    ]
   },
   {
-   "id": "tt7734244",
-   "title_de": "Der Wunderweltenbaum",
-   "title_original": "The Magic Faraway Tree",
-   "year": 2026,
-   "release_date": "2026-03-26",
-   "runtime": 110,
-   "poster": "https://image.tmdb.org/t/p/w342/3aB1LnHpNMLwZu8zcgyqsHeUUdM.jpg",
-   "genres": [
-    "Abenteuer",
-    "Familie",
-    "Fantasy"
-   ],
-   "age_rating": 0,
-   "overview_de": "Als die Geschwister Beth, Fran und Joe wider ihren Willen mit ihren Eltern aufs Land ziehen, beginnt für die Familie ein ganz besonderes Abenteuer. In dem nahegelegenen, geheimnisvollen Wald entdecken die Kinder einen magischen Baum: den bis in die Wolken reichenden Wunderweltenbaum, in dem außergewöhnliche Wesen wohnen. Schnell schließen sie Freundschaft mit den Baumbewohnern Fee Seidenhaar, Frau Wasch und Mondgesicht, die sie in fantastische Welten entführen. Gemeinsam erleben sie märchenhafte Abenteuer – bis sie auf einer ihrer Reisen ausgerechnet in der düsteren Welt der gefürchteten Schuldirektorin Madame Klaps notlanden müssen. Auch zuhause läuft es mit dem neuen Familienbetrieb plötzlich nicht mehr ganz nach Plan… Wird ihnen die Flucht aus den Fängen von Madame Klaps gelingen und werden sie die Tomatenplantage ihrer Eltern retten? Können Seidenhaar und Mondgesicht die Geschwister davon überzeugen, dass Wunder möglich sind, wenn man nur fest daran glaubt?",
-   "overview_en": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
-   "original_language": "en",
-   "countries": [
-    "GB",
-    "US"
-   ],
-   "directors": [
-    "Ben Gregor"
-   ],
-   "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=-wpbSq7CHGM",
-   "trailer_en": "https://www.youtube.com/watch?v=PAUEwUhAjzg",
-   "ratings": {
-    "imdb": 6.3,
-    "metascore": null,
-    "letterboxd": 3.04
-   },
-   "showtimes": [
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T12:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127361935"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-26T11:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/A0A75000023GNFNDWF"
-    }
-   ]
-  },
-  {
    "id": "tt28650488",
    "title_de": "Der Super Mario Galaxy Film",
    "title_original": "The Super Mario Galaxy Movie",
@@ -10399,8 +9490,8 @@
     "US"
    ],
    "directors": [
-    "Michael Jelenic",
-    "Aaron Horvath"
+    "Aaron Horvath",
+    "Michael Jelenic"
    ],
    "tags": [],
    "trailer_de": "https://www.youtube.com/watch?v=Qt5NnNIAslY",
@@ -10411,20 +9502,6 @@
     "letterboxd": 2.89
    },
    "showtimes": [
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=DCB71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T15:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/D3875000023GNFNDWF"
-    },
     {
      "cinema": "Cinedom",
      "city": "Köln",
@@ -10694,6 +9771,48 @@
    ]
   },
   {
+   "id": "tt7734244",
+   "title_de": "Der Wunderweltenbaum",
+   "title_original": "The Magic Faraway Tree",
+   "year": 2026,
+   "release_date": "2026-03-26",
+   "runtime": 110,
+   "poster": "https://image.tmdb.org/t/p/w342/3aB1LnHpNMLwZu8zcgyqsHeUUdM.jpg",
+   "genres": [
+    "Abenteuer",
+    "Familie",
+    "Fantasy"
+   ],
+   "age_rating": 0,
+   "overview_de": "Als die Geschwister Beth, Fran und Joe wider ihren Willen mit ihren Eltern aufs Land ziehen, beginnt für die Familie ein ganz besonderes Abenteuer. In dem nahegelegenen, geheimnisvollen Wald entdecken die Kinder einen magischen Baum: den bis in die Wolken reichenden Wunderweltenbaum, in dem außergewöhnliche Wesen wohnen. Schnell schließen sie Freundschaft mit den Baumbewohnern Fee Seidenhaar, Frau Wasch und Mondgesicht, die sie in fantastische Welten entführen. Gemeinsam erleben sie märchenhafte Abenteuer – bis sie auf einer ihrer Reisen ausgerechnet in der düsteren Welt der gefürchteten Schuldirektorin Madame Klaps notlanden müssen. Auch zuhause läuft es mit dem neuen Familienbetrieb plötzlich nicht mehr ganz nach Plan… Wird ihnen die Flucht aus den Fängen von Madame Klaps gelingen und werden sie die Tomatenplantage ihrer Eltern retten? Können Seidenhaar und Mondgesicht die Geschwister davon überzeugen, dass Wunder möglich sind, wenn man nur fest daran glaubt?",
+   "overview_en": "A modern family relocates to the countryside where the children discover a magical tree with eccentric residents. They're transported to fantastical lands, rekindling their family bond through adventures.",
+   "original_language": "en",
+   "countries": [
+    "GB",
+    "US"
+   ],
+   "directors": [
+    "Ben Gregor"
+   ],
+   "tags": [],
+   "trailer_de": "https://www.youtube.com/watch?v=-wpbSq7CHGM",
+   "trailer_en": "https://www.youtube.com/watch?v=PAUEwUhAjzg",
+   "ratings": {
+    "imdb": 6.3,
+    "metascore": null,
+    "letterboxd": 3.04
+   },
+   "showtimes": [
+    {
+     "cinema": "Kinopolis Bad Godesberg",
+     "city": "Bonn",
+     "datetime": "2026-07-26T11:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/A0A75000023GNFNDWF"
+    }
+   ]
+  },
+  {
    "id": "tt19861162",
    "title_de": "Rückkehr nach Ithaka",
    "title_original": "The Return",
@@ -10896,34 +10015,6 @@
     "letterboxd": 3.07
    },
    "showtimes": [
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T17:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/53875000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=A8B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/A049DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T18:30:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100493"
-    },
     {
      "cinema": "Cinedom",
      "city": "Köln",
@@ -11187,6 +10278,13 @@
      "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=5FC71000023RFGKYDT"
     },
     {
+     "cinema": "Rex am Ring",
+     "city": "Köln",
+     "datetime": "2026-07-23T18:20:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://kinotickets.express/rex-koeln/booking/100643"
+    },
+    {
      "cinema": "Kölner Filmhaus",
      "city": "Köln",
      "datetime": "2026-07-23T20:00:00+02:00",
@@ -11206,6 +10304,13 @@
      "datetime": "2026-07-24T17:00:00+02:00",
      "language": "DE",
      "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=2FC71000023RFGKYDT"
+    },
+    {
+     "cinema": "Rex am Ring",
+     "city": "Köln",
+     "datetime": "2026-07-24T18:20:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://kinotickets.express/rex-koeln/booking/100644"
     },
     {
      "cinema": "Kölner Filmhaus",
@@ -11229,6 +10334,13 @@
      "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=3FC71000023RFGKYDT"
     },
     {
+     "cinema": "Rex am Ring",
+     "city": "Köln",
+     "datetime": "2026-07-25T18:20:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://kinotickets.express/rex-koeln/booking/100645"
+    },
+    {
      "cinema": "Kölner Filmhaus",
      "city": "Köln",
      "datetime": "2026-07-25T20:00:00+02:00",
@@ -11248,6 +10360,13 @@
      "datetime": "2026-07-26T17:00:00+02:00",
      "language": "DE",
      "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=4FC71000023RFGKYDT"
+    },
+    {
+     "cinema": "Rex am Ring",
+     "city": "Köln",
+     "datetime": "2026-07-26T18:20:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://kinotickets.express/rex-koeln/booking/100646"
     },
     {
      "cinema": "Kölner Filmhaus",
@@ -11271,6 +10390,13 @@
      "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=6FC71000023RFGKYDT"
     },
     {
+     "cinema": "Rex am Ring",
+     "city": "Köln",
+     "datetime": "2026-07-27T18:20:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://kinotickets.express/rex-koeln/booking/100647"
+    },
+    {
      "cinema": "Kölner Filmhaus",
      "city": "Köln",
      "datetime": "2026-07-27T20:00:00+02:00",
@@ -11292,6 +10418,13 @@
      "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=7FC71000023RFGKYDT"
     },
     {
+     "cinema": "Rex am Ring",
+     "city": "Köln",
+     "datetime": "2026-07-28T18:20:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://kinotickets.express/rex-koeln/booking/100648"
+    },
+    {
      "cinema": "Kölner Filmhaus",
      "city": "Köln",
      "datetime": "2026-07-28T20:00:00+02:00",
@@ -11311,6 +10444,13 @@
      "datetime": "2026-07-29T17:10:00+02:00",
      "language": "DE",
      "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=8FC71000023RFGKYDT"
+    },
+    {
+     "cinema": "Rex am Ring",
+     "city": "Köln",
+     "datetime": "2026-07-29T18:20:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://kinotickets.express/rex-koeln/booking/100649"
     },
     {
      "cinema": "Kölner Filmhaus",
@@ -11411,7 +10551,7 @@
    "ratings": {
     "imdb": 5.7,
     "metascore": null,
-    "letterboxd": 2.98
+    "letterboxd": 3.01
    },
    "showtimes": [
     {
@@ -11500,13 +10640,6 @@
    },
    "showtimes": [
     {
-     "cinema": "OFF Broadway",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/off-broadway-kino-koeln/vorstellungen?showId=127347485"
-    },
-    {
      "cinema": "Weisshaus Kino",
      "city": "Köln",
      "datetime": "2026-07-25T14:50:00+02:00",
@@ -11574,48 +10707,6 @@
      "datetime": "2026-10-25T13:30:00+01:00",
      "language": "DE",
      "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/C3775000023GNFNDWF"
-    }
-   ]
-  },
-  {
-   "id": "tt8695030",
-   "title_de": "The Dead Don't Die",
-   "title_original": "The Dead Don't Die",
-   "year": 2019,
-   "release_date": "2019-05-15",
-   "runtime": 105,
-   "poster": "https://image.tmdb.org/t/p/w342/5sW1pB8GE3V4bei5IHIBm1JFCz2.jpg",
-   "genres": [
-    "Komödie",
-    "Horror"
-   ],
-   "age_rating": 16,
-   "overview_de": "Eine Verschiebung der Erdachse löst eine Abfolge seltsamer Geschehnisse in der beschaulichen Kleinstadt Centerville aus. Während Sherriff Cliff Robertson noch rätselt, ist sich sein Kollege Ronald Peterson sicher: Es muss sich um eine Epidemie von Zombies handeln.",
-   "overview_en": "In the sleepy town of Centerville, the lives of a number of interconnected characters are disrupted by the undead.",
-   "original_language": "en",
-   "countries": [
-    "US",
-    "SE",
-    "JP"
-   ],
-   "directors": [
-    "Jim Jarmusch"
-   ],
-   "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=ozzREeOi2lg",
-   "trailer_en": "https://www.youtube.com/watch?v=CeWfxvHmNTI",
-   "ratings": {
-    "imdb": 5.4,
-    "metascore": 53,
-    "letterboxd": 2.61
-   },
-   "showtimes": [
-    {
-     "cinema": "Rex Lichtspieltheater",
-     "city": "Bonn",
-     "datetime": "2026-07-22T20:15:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/rex-lichtspieltheater-bonn/vorstellungen?showId=127459817"
     }
    ]
   },
@@ -11947,13 +11038,6 @@
     {
      "cinema": "Cinedom",
      "city": "Köln",
-     "datetime": "2026-07-22T14:10:00+02:00",
-     "language": "OV",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=21C71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
      "datetime": "2026-07-26T11:15:00+02:00",
      "language": "OV",
      "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=33D71000023RFGKYDT"
@@ -11993,139 +11077,6 @@
     "letterboxd": 3.04
    },
    "showtimes": [
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T12:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127362037"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T12:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=F4B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/C8875000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=B4B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T14:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127362039"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/1049DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=B9B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/7349DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T15:20:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/6449DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T16:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/38875000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=B3B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:10:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/9A39DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T17:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127362041"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T17:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/9B875000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=2AB71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/D249DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:10:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=75B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:10:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=C4B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T20:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/F6875000023GNFNDWF"
-    },
     {
      "cinema": "Cinedom",
      "city": "Köln",
@@ -12850,156 +11801,6 @@
    ]
   },
   {
-   "id": "sneak preview",
-   "title_de": "All In Sneak Preview",
-   "title_original": "All In Sneak Preview",
-   "year": null,
-   "release_date": null,
-   "runtime": 0,
-   "poster": "https://image.tmdb.org/t/p/w342/3XARNEq4obOjM7Xy6CpAcoyCiEC.jpg",
-   "genres": [],
-   "age_rating": null,
-   "overview_de": null,
-   "overview_en": "Cheng Jialang and Wei Yifu are the contemporary poker twin stars, and they are about to have their first face-to-face confrontation. However, at this moment, Cheng Jialang accidentally transferred his poker talent to a small-time crook named Huang Xiaoqi, who had no previous experience. The two of them went through a wonderful journey and decided to join forces to challenge Wei Yifu.",
-   "original_language": "en",
-   "countries": [],
-   "directors": [],
-   "tags": [],
-   "trailer_de": null,
-   "trailer_en": null,
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": null
-   },
-   "showtimes": [
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T20:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127361999"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-27T20:30:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578207"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-27T20:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/939CDB00023FWBXJYB"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-27T22:30:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578209"
-    },
-    {
-     "cinema": "Cinenova",
-     "city": "Köln",
-     "datetime": "2026-07-28T21:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/cinenova-kino-koeln/vorstellungen?showId=127527263"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-29T20:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578179"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-08-05T20:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592407902&bgswitch=false&resize=false"
-    }
-   ]
-  },
-  {
-   "id": "backrooms: everything must go (ext. version)",
-   "title_de": "Backrooms: Everything Must Go (Ext. Version)",
-   "title_original": "Backrooms: Everything Must Go (Ext. Version)",
-   "year": null,
-   "release_date": null,
-   "runtime": null,
-   "poster": null,
-   "genres": [],
-   "age_rating": null,
-   "overview_de": null,
-   "overview_en": null,
-   "original_language": null,
-   "countries": [],
-   "directors": [],
-   "tags": [],
-   "trailer_de": null,
-   "trailer_en": null,
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": null
-   },
-   "showtimes": [
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-22T22:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127361927"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-23T22:45:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578059"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-24T22:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578069"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-25T22:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578071"
-    },
-    {
-     "cinema": "Lichtspiele Kalk",
-     "city": "Köln",
-     "datetime": "2026-07-27T14:45:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/lichtspiele-koeln-kalk/vorstellungen?showId=127590933"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-28T22:45:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578061"
-    },
-    {
-     "cinema": "Woki",
-     "city": "Bonn",
-     "datetime": "2026-07-29T23:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578073"
-    }
-   ]
-  },
-  {
    "id": "tt19883490",
    "title_de": "Meine Freundin Conni - Abenteuer Mit Kranich Klaus",
    "title_original": "Meine Freundin Conni 2",
@@ -13032,13 +11833,6 @@
     "letterboxd": null
    },
    "showtimes": [
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:20:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100431"
-    },
     {
      "cinema": "Woki",
      "city": "Bonn",
@@ -13108,6 +11902,74 @@
      "datetime": "2026-07-29T13:45:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/B2975000023GNFNDWF"
+    }
+   ]
+  },
+  {
+   "id": "backrooms: everything must go (ext. version)",
+   "title_de": "Backrooms: Everything Must Go (Ext. Version)",
+   "title_original": "Backrooms: Everything Must Go (Ext. Version)",
+   "year": null,
+   "release_date": null,
+   "runtime": null,
+   "poster": null,
+   "genres": [],
+   "age_rating": null,
+   "overview_de": null,
+   "overview_en": null,
+   "original_language": null,
+   "countries": [],
+   "directors": [],
+   "tags": [],
+   "trailer_de": null,
+   "trailer_en": null,
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": null
+   },
+   "showtimes": [
+    {
+     "cinema": "Woki",
+     "city": "Bonn",
+     "datetime": "2026-07-23T22:45:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578059"
+    },
+    {
+     "cinema": "Woki",
+     "city": "Bonn",
+     "datetime": "2026-07-24T22:45:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578069"
+    },
+    {
+     "cinema": "Woki",
+     "city": "Bonn",
+     "datetime": "2026-07-25T22:45:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578071"
+    },
+    {
+     "cinema": "Lichtspiele Kalk",
+     "city": "Köln",
+     "datetime": "2026-07-27T14:45:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://www.kinoheld.de/kino/koeln/lichtspiele-koeln-kalk/vorstellungen?showId=127590933"
+    },
+    {
+     "cinema": "Woki",
+     "city": "Bonn",
+     "datetime": "2026-07-28T22:45:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578061"
+    },
+    {
+     "cinema": "Woki",
+     "city": "Bonn",
+     "datetime": "2026-07-29T23:15:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578073"
     }
    ]
   },
@@ -13202,6 +12064,74 @@
    ]
   },
   {
+   "id": "sneak preview",
+   "title_de": "All In Sneak Preview",
+   "title_original": "All In Sneak Preview",
+   "year": null,
+   "release_date": null,
+   "runtime": 0,
+   "poster": "https://image.tmdb.org/t/p/w342/3XARNEq4obOjM7Xy6CpAcoyCiEC.jpg",
+   "genres": [],
+   "age_rating": null,
+   "overview_de": null,
+   "overview_en": "Cheng Jialang and Wei Yifu are the contemporary poker twin stars, and they are about to have their first face-to-face confrontation. However, at this moment, Cheng Jialang accidentally transferred his poker talent to a small-time crook named Huang Xiaoqi, who had no previous experience. The two of them went through a wonderful journey and decided to join forces to challenge Wei Yifu.",
+   "original_language": "en",
+   "countries": [],
+   "directors": [],
+   "tags": [],
+   "trailer_de": null,
+   "trailer_en": null,
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": null
+   },
+   "showtimes": [
+    {
+     "cinema": "Woki",
+     "city": "Bonn",
+     "datetime": "2026-07-27T20:30:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578207"
+    },
+    {
+     "cinema": "Cineplex Köln",
+     "city": "Köln",
+     "datetime": "2026-07-27T20:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://tickets.cineplex.de/checkout/351/939CDB00023FWBXJYB"
+    },
+    {
+     "cinema": "Woki",
+     "city": "Bonn",
+     "datetime": "2026-07-27T22:30:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578209"
+    },
+    {
+     "cinema": "Cinenova",
+     "city": "Köln",
+     "datetime": "2026-07-28T21:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/koeln/cinenova-kino-koeln/vorstellungen?showId=127527263"
+    },
+    {
+     "cinema": "Woki",
+     "city": "Bonn",
+     "datetime": "2026-07-29T20:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/woki/vorstellungen?showId=127578179"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-08-05T20:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592407902&bgswitch=false&resize=false"
+    }
+   ]
+  },
+  {
    "id": "tt22084616",
    "title_de": "Spider-Man: Brand New Day",
    "title_original": "Spider-Man: Brand New Day",
@@ -13286,7 +12216,7 @@
      "cinema": "Kinopolis Bad Godesberg",
      "city": "Bonn",
      "datetime": "2026-07-29T16:30:00+02:00",
-     "language": "DE",
+     "language": "OV",
      "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/F0975000023GNFNDWF"
     },
     {
@@ -13412,7 +12342,7 @@
      "cinema": "Kinopolis Bad Godesberg",
      "city": "Bonn",
      "datetime": "2026-07-29T20:00:00+02:00",
-     "language": "DE",
+     "language": "OV",
      "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/84575000023GNFNDWF"
     },
     {
@@ -13496,7 +12426,7 @@
      "cinema": "Kinopolis Bad Godesberg",
      "city": "Bonn",
      "datetime": "2026-07-29T21:00:00+02:00",
-     "language": "DE",
+     "language": "OV",
      "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/B1A75000023GNFNDWF"
     },
     {
@@ -14756,58 +13686,6 @@
    ]
   },
   {
-   "id": "tt27802226",
-   "title_de": "Virginia Woolf's Night and Day",
-   "title_original": "Virginia Woolf's Night & Day",
-   "year": 2026,
-   "release_date": "2026-06-19",
-   "runtime": 95,
-   "poster": "https://image.tmdb.org/t/p/w342/pDSuVhatjn1n2Hjja5qdrP19i9K.jpg",
-   "genres": [
-    "Komödie",
-    "Drama",
-    "Liebesfilm"
-   ],
-   "age_rating": 6,
-   "overview_de": "Im London des frühen 20. Jahrhunderts sucht die brillante Astronomin Katharine Hilbery nach einem Leben jenseits gesellschaftlicher Erwartungen. Zwischen arrangierter Ehe, Liebe und geistiger Unabhängigkeit entdeckt sie, dass Herz und Verstand keine Gegensätze sein müssen – eine zarte, kluge und humorvolle Erkundung von Freiheit, Nähe und Selbstbestimmung.",
-   "overview_en": "In 1910 London, independent-minded Katharine Hilbery defies her family's expectations of marriage to pursue a career in astronomy. But when her father pressures her into an unwanted engagement, her resolve is tested. Through new friendships—including a bold suffragette and a thoughtful editor—Katharine begins to question the limits placed on her by society, love, and tradition, ultimately searching for a path that is truly her own.",
-   "original_language": "en",
-   "countries": [
-    "GB",
-    "US",
-    "DE"
-   ],
-   "directors": [
-    "Tina Gharavi"
-   ],
-   "tags": [
-    "women_directed"
-   ],
-   "trailer_de": "https://www.youtube.com/watch?v=7fQiszt8i4o",
-   "trailer_en": "https://www.youtube.com/watch?v=X6wM6lAT48k",
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": 2.86
-   },
-   "showtimes": [
-    {
-     "cinema": "Rex Lichtspieltheater",
-     "city": "Bonn",
-     "datetime": "2026-07-22T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/rex-lichtspieltheater-bonn/vorstellungen?showId=127459811"
-    },
-    {
-     "cinema": "Cinenova",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/cinenova-kino-koeln/vorstellungen?showId=127459629"
-    }
-   ]
-  },
-  {
    "id": "tt10329560",
    "title_de": "H wie Habicht",
    "title_original": "H Is for Hawk",
@@ -14841,13 +13719,6 @@
     "letterboxd": 3.31
    },
    "showtimes": [
-    {
-     "cinema": "Rex Lichtspieltheater",
-     "city": "Bonn",
-     "datetime": "2026-07-22T16:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/rex-lichtspieltheater-bonn/vorstellungen?showId=127459813"
-    },
     {
      "cinema": "Rex Lichtspieltheater",
      "city": "Bonn",
@@ -15275,27 +14146,6 @@
     "letterboxd": 3.61
    },
    "showtimes": [
-    {
-     "cinema": "Weisshaus Kino",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/weisshaus-kino-koeln/vorstellungen?showId=127542051"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/BC875000023GNFNDWF"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T18:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100450"
-    },
     {
      "cinema": "Rex am Ring",
      "city": "Köln",
@@ -15789,27 +14639,6 @@
     {
      "cinema": "Rex am Ring",
      "city": "Köln",
-     "datetime": "2026-07-22T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100405"
-    },
-    {
-     "cinema": "Neue Filmbühne",
-     "city": "Bonn",
-     "datetime": "2026-07-22T16:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/neue-filmbuehne-bonn/vorstellungen?showId=127467543"
-    },
-    {
-     "cinema": "Odeon",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127354369"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
      "datetime": "2026-07-23T14:00:00+02:00",
      "language": "DE",
      "booking_url": "https://kinotickets.express/rex-koeln/booking/100603"
@@ -15946,13 +14775,6 @@
    },
    "showtimes": [
     {
-     "cinema": "Odeon",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:00:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127354367"
-    },
-    {
      "cinema": "Rex Lichtspieltheater",
      "city": "Bonn",
      "datetime": "2026-07-26T11:30:00+02:00",
@@ -16009,6 +14831,138 @@
    ]
   },
   {
+   "id": "tt39814688",
+   "title_de": "Die Camino-Therapie - Finde deinen Weg",
+   "title_original": "Compostelle",
+   "year": 2026,
+   "release_date": "2026-04-01",
+   "runtime": 113,
+   "poster": "https://image.tmdb.org/t/p/w342/gLJDQ0kO8JQUn2hvq7bqUeNLrCA.jpg",
+   "genres": [
+    "Drama",
+    "Komödie"
+   ],
+   "age_rating": 12,
+   "overview_de": "Wenn zwei sich auf den Weg machen: Die Lehrerin Fred und der rebellische Jugendliche Adam könnten unterschiedlicher kaum sein. Während Fred an ihrem zunehmend wankenden, aber geordneten Leben festhält, versucht Adam seiner Vergangenheit aus Pflegeheimen, Schulverweisen und Jugendhaft um jeden Preis zu entkommen. Ein Resozialisierungsprogramm führt die beiden gemeinsam auf den Jakobsweg nach Santiago de Compostela. Zwischen Streit, Schweigen und unerwarteten Wendungen werden sie gezwungen, sich ihren Problemen zu stellen – und entdecken dabei eine neue Stärke in sich selbst und im anderen. Doch wird das reichen, um ihre Unterschiede zu überwinden und ihr Ziel zu erreichen?  Ein Film über zwei Fremde, die auf dem Jakobsweg nicht nur zueinanderfinden, sondern auch zu sich selbst. Vor der eindrucksvollen Kulisse des Camino de Santiago entsteht ein bewegender Film über Aufbruch, Loslassen und die Kraft des Zusammenhalts.",
+   "overview_en": "Fred and Adam have nothing in common. Yet, they will meet while walking the Way of St. James as a form of spiritual path.",
+   "original_language": "fr",
+   "countries": [
+    "FR",
+    "BE"
+   ],
+   "directors": [
+    "Yann Samuell"
+   ],
+   "tags": [],
+   "trailer_de": "https://www.youtube.com/watch?v=9KkINodHqeE",
+   "trailer_en": null,
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": 3.4
+   },
+   "showtimes": [
+    {
+     "cinema": "Neue Filmbühne",
+     "city": "Bonn",
+     "datetime": "2026-07-23T14:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/neue-filmbuehne-bonn/vorstellungen?showId=127595933"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-23T17:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=F1D71000023RFGKYDT"
+    },
+    {
+     "cinema": "Odeon",
+     "city": "Köln",
+     "datetime": "2026-07-23T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584861"
+    },
+    {
+     "cinema": "Neue Filmbühne",
+     "city": "Bonn",
+     "datetime": "2026-07-24T14:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/neue-filmbuehne-bonn/vorstellungen?showId=127595941"
+    },
+    {
+     "cinema": "Odeon",
+     "city": "Köln",
+     "datetime": "2026-07-24T16:15:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584875"
+    },
+    {
+     "cinema": "Stern Lichtspiele",
+     "city": "Bonn",
+     "datetime": "2026-07-25T11:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=72010"
+    },
+    {
+     "cinema": "Odeon",
+     "city": "Köln",
+     "datetime": "2026-07-25T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584903"
+    },
+    {
+     "cinema": "Stern Lichtspiele",
+     "city": "Bonn",
+     "datetime": "2026-07-26T11:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=72020"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-27T17:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=02D71000023RFGKYDT"
+    },
+    {
+     "cinema": "Stern Lichtspiele",
+     "city": "Bonn",
+     "datetime": "2026-07-28T11:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=72040"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-28T17:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=12D71000023RFGKYDT"
+    },
+    {
+     "cinema": "Weisshaus Kino",
+     "city": "Köln",
+     "datetime": "2026-07-28T17:40:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/koeln/weisshaus-kino-koeln/vorstellungen?showId=127571087"
+    },
+    {
+     "cinema": "Odeon",
+     "city": "Köln",
+     "datetime": "2026-07-29T16:15:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584989"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-29T17:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=22D71000023RFGKYDT"
+    }
+   ]
+  },
+  {
    "id": "tt29300998",
    "title_de": "So klingt das Leben",
    "title_original": "Rondallas",
@@ -16039,27 +14993,6 @@
     "letterboxd": 3.58
    },
    "showtimes": [
-    {
-     "cinema": "Neue Filmbühne",
-     "city": "Bonn",
-     "datetime": "2026-07-22T13:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/neue-filmbuehne-bonn/vorstellungen?showId=127467541"
-    },
-    {
-     "cinema": "Cinenova",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/cinenova-kino-koeln/vorstellungen?showId=127459617"
-    },
-    {
-     "cinema": "Filmpalette",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3589162844&bgswitch=false&resize=false"
-    },
     {
      "cinema": "Neue Filmbühne",
      "city": "Bonn",
@@ -16210,198 +15143,6 @@
    ]
   },
   {
-   "id": "to my sisters",
-   "title_de": "To my Sisters",
-   "title_original": "To my Sisters",
-   "year": 2026,
-   "release_date": "2026-07-23",
-   "runtime": 96,
-   "poster": "https://image.tmdb.org/t/p/w342/drIsayy0YTOoKV6zr8Rrgfw2wvE.jpg",
-   "genres": [
-    "Dokumentarfilm"
-   ],
-   "age_rating": 12,
-   "overview_de": "Eine junge Kurdin in Syrien führt eine Fraueneinheit in den Kampf gegen den IS – für Freiheit und Frauenrechte. Gehalten wird ihr Kampf von der Stimme einer jesidischen Überlebenden, die als Kind vom IS versklavt wurde und sichtbar macht, was auf dem Spiel steht, wenn dieser Kampf verloren geht. Und während sie den Horror überlebt hat, schloss sich eine deutsche Frau freiwillig dem IS an – und ist heute den Konsequenzen ihrer Entscheidung ausgeliefert. Drei Frauen, drei Entscheidungen, ein Spiegel von Mut, Leid und gefährlicher Verblendung.",
-   "overview_en": null,
-   "original_language": "de",
-   "countries": [
-    "DE"
-   ],
-   "directors": [
-    "Faek Falak"
-   ],
-   "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=_TiHyNSRUOY",
-   "trailer_en": null,
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": null
-   },
-   "showtimes": [
-    {
-     "cinema": "Neue Filmbühne",
-     "city": "Bonn",
-     "datetime": "2026-07-22T18:15:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/neue-filmbuehne-bonn/vorstellungen?showId=126000039"
-    },
-    {
-     "cinema": "Odeon",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=125579085"
-    },
-    {
-     "cinema": "Neue Filmbühne",
-     "city": "Bonn",
-     "datetime": "2026-07-29T18:30:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/neue-filmbuehne-bonn/vorstellungen?showId=127595985"
-    },
-    {
-     "cinema": "Odeon",
-     "city": "Köln",
-     "datetime": "2026-07-29T18:45:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584997"
-    }
-   ]
-  },
-  {
-   "id": "tt39814688",
-   "title_de": "Die Camino-Therapie - Finde deinen Weg",
-   "title_original": "Compostelle",
-   "year": 2026,
-   "release_date": "2026-04-01",
-   "runtime": 113,
-   "poster": "https://image.tmdb.org/t/p/w342/gLJDQ0kO8JQUn2hvq7bqUeNLrCA.jpg",
-   "genres": [
-    "Drama",
-    "Komödie"
-   ],
-   "age_rating": 12,
-   "overview_de": "Wenn zwei sich auf den Weg machen: Die Lehrerin Fred und der rebellische Jugendliche Adam könnten unterschiedlicher kaum sein. Während Fred an ihrem zunehmend wankenden, aber geordneten Leben festhält, versucht Adam seiner Vergangenheit aus Pflegeheimen, Schulverweisen und Jugendhaft um jeden Preis zu entkommen. Ein Resozialisierungsprogramm führt die beiden gemeinsam auf den Jakobsweg nach Santiago de Compostela. Zwischen Streit, Schweigen und unerwarteten Wendungen werden sie gezwungen, sich ihren Problemen zu stellen – und entdecken dabei eine neue Stärke in sich selbst und im anderen. Doch wird das reichen, um ihre Unterschiede zu überwinden und ihr Ziel zu erreichen?  Ein Film über zwei Fremde, die auf dem Jakobsweg nicht nur zueinanderfinden, sondern auch zu sich selbst. Vor der eindrucksvollen Kulisse des Camino de Santiago entsteht ein bewegender Film über Aufbruch, Loslassen und die Kraft des Zusammenhalts.",
-   "overview_en": "Fred and Adam have nothing in common. Yet, they will meet while walking the Way of St. James as a form of spiritual path.",
-   "original_language": "fr",
-   "countries": [
-    "FR",
-    "BE"
-   ],
-   "directors": [
-    "Yann Samuell"
-   ],
-   "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=9KkINodHqeE",
-   "trailer_en": null,
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": 3.4
-   },
-   "showtimes": [
-    {
-     "cinema": "Neue Filmbühne",
-     "city": "Bonn",
-     "datetime": "2026-07-23T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/neue-filmbuehne-bonn/vorstellungen?showId=127595933"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-23T17:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=F1D71000023RFGKYDT"
-    },
-    {
-     "cinema": "Odeon",
-     "city": "Köln",
-     "datetime": "2026-07-23T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584861"
-    },
-    {
-     "cinema": "Neue Filmbühne",
-     "city": "Bonn",
-     "datetime": "2026-07-24T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/neue-filmbuehne-bonn/vorstellungen?showId=127595941"
-    },
-    {
-     "cinema": "Odeon",
-     "city": "Köln",
-     "datetime": "2026-07-24T16:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584875"
-    },
-    {
-     "cinema": "Stern Lichtspiele",
-     "city": "Bonn",
-     "datetime": "2026-07-25T11:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=72010"
-    },
-    {
-     "cinema": "Odeon",
-     "city": "Köln",
-     "datetime": "2026-07-25T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584903"
-    },
-    {
-     "cinema": "Stern Lichtspiele",
-     "city": "Bonn",
-     "datetime": "2026-07-26T11:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=72020"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-27T17:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=02D71000023RFGKYDT"
-    },
-    {
-     "cinema": "Stern Lichtspiele",
-     "city": "Bonn",
-     "datetime": "2026-07-28T11:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=72040"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-28T17:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=12D71000023RFGKYDT"
-    },
-    {
-     "cinema": "Weisshaus Kino",
-     "city": "Köln",
-     "datetime": "2026-07-28T17:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/weisshaus-kino-koeln/vorstellungen?showId=127571087"
-    },
-    {
-     "cinema": "Odeon",
-     "city": "Köln",
-     "datetime": "2026-07-29T16:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584989"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-29T17:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=22D71000023RFGKYDT"
-    }
-   ]
-  },
-  {
    "id": "tt33298226",
    "title_de": "Auf zwei Rädern",
    "title_original": "À bicyclette !",
@@ -16432,20 +15173,6 @@
     "letterboxd": 3.79
    },
    "showtimes": [
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100499"
-    },
-    {
-     "cinema": "Weisshaus Kino",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/weisshaus-kino-koeln/vorstellungen?showId=127542053"
-    },
     {
      "cinema": "Neue Filmbühne",
      "city": "Bonn",
@@ -16556,6 +15283,20 @@
      "datetime": "2026-08-02T17:00:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127316395"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-11T18:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754005"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-19T17:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754007"
     }
    ]
   },
@@ -16662,6 +15403,13 @@
      "datetime": "2026-08-02T19:00:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127316397"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-07T20:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754013"
     }
    ]
   },
@@ -16758,13 +15506,6 @@
     {
      "cinema": "Odeon",
      "city": "Köln",
-     "datetime": "2026-07-22T18:45:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127354373"
-    },
-    {
-     "cinema": "Odeon",
-     "city": "Köln",
      "datetime": "2026-07-26T12:30:00+02:00",
      "language": "OmU",
      "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584919"
@@ -16782,6 +15523,188 @@
      "datetime": "2026-07-28T18:30:00+02:00",
      "language": "OmU",
      "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584979"
+    }
+   ]
+  },
+  {
+   "id": "to my sisters",
+   "title_de": "To my Sisters",
+   "title_original": "To my Sisters",
+   "year": 2026,
+   "release_date": "2026-07-23",
+   "runtime": 96,
+   "poster": "https://image.tmdb.org/t/p/w342/drIsayy0YTOoKV6zr8Rrgfw2wvE.jpg",
+   "genres": [
+    "Dokumentarfilm"
+   ],
+   "age_rating": 12,
+   "overview_de": "Eine junge Kurdin in Syrien führt eine Fraueneinheit in den Kampf gegen den IS – für Freiheit und Frauenrechte. Gehalten wird ihr Kampf von der Stimme einer jesidischen Überlebenden, die als Kind vom IS versklavt wurde und sichtbar macht, was auf dem Spiel steht, wenn dieser Kampf verloren geht. Und während sie den Horror überlebt hat, schloss sich eine deutsche Frau freiwillig dem IS an – und ist heute den Konsequenzen ihrer Entscheidung ausgeliefert. Drei Frauen, drei Entscheidungen, ein Spiegel von Mut, Leid und gefährlicher Verblendung.",
+   "overview_en": null,
+   "original_language": "de",
+   "countries": [
+    "DE"
+   ],
+   "directors": [
+    "Faek Falak"
+   ],
+   "tags": [],
+   "trailer_de": "https://www.youtube.com/watch?v=_TiHyNSRUOY",
+   "trailer_en": null,
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": null
+   },
+   "showtimes": [
+    {
+     "cinema": "Neue Filmbühne",
+     "city": "Bonn",
+     "datetime": "2026-07-29T18:30:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/neue-filmbuehne-bonn/vorstellungen?showId=127595985"
+    },
+    {
+     "cinema": "Odeon",
+     "city": "Köln",
+     "datetime": "2026-07-29T18:45:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584997"
+    }
+   ]
+  },
+  {
+   "id": "tt33996352",
+   "title_de": "Miss Moxy",
+   "title_original": "Miss Moxy",
+   "year": 2025,
+   "release_date": "2025-06-06",
+   "runtime": 88,
+   "poster": "https://image.tmdb.org/t/p/w342/bzAdUQ67ky7ABK3YmvyzfApR0c1.jpg",
+   "genres": [
+    "Abenteuer",
+    "Animation",
+    "Komödie",
+    "Familie"
+   ],
+   "age_rating": 0,
+   "overview_de": "Als sich die verwöhnte Hauskatze Miss Moxy im Urlaub verirrt, beginnt eine turbulente Reise quer durch Südeuropa. Um den Weg zurück nach Hause zu finden, muss sie ausgerechnet mit zwei Wesen zusammenarbeiten, die sie eigentlich verabscheut: einem tollpatschigen Hund und einer alten, weisen Schwalbe. Auf diesem Abenteuer entdeckt sie, dass Freundschaft manchmal dort entsteht, wo man sie am wenigsten erwartet.",
+   "overview_en": "From the cobbled streets of Paris to the wild countryside of Europe, follow Miss Moxy — a pampered cat with a whole lot of cattitude — as she’s thrown into the adventure of a lifetime. Lost far from home, she must team up with a goofy dog and a wise old bird to find her way back… and discover who she truly is along the way.",
+   "original_language": "nl",
+   "countries": [
+    "BE",
+    "FR",
+    "NL"
+   ],
+   "directors": [
+    "Vincent Bal",
+    "Wip Vernooij"
+   ],
+   "tags": [],
+   "trailer_de": null,
+   "trailer_en": "https://www.youtube.com/watch?v=AsMmKpKIvfk",
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": 3.32
+   },
+   "showtimes": [
+    {
+     "cinema": "Kinopolis Bad Godesberg",
+     "city": "Bonn",
+     "datetime": "2026-07-23T13:40:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/11A75000023GNFNDWF"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-23T14:40:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=36D71000023RFGKYDT"
+    },
+    {
+     "cinema": "Kinopolis Bad Godesberg",
+     "city": "Bonn",
+     "datetime": "2026-07-24T13:40:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/21A75000023GNFNDWF"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-24T14:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=06D71000023RFGKYDT"
+    },
+    {
+     "cinema": "Kinopolis Bad Godesberg",
+     "city": "Bonn",
+     "datetime": "2026-07-25T13:40:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/31A75000023GNFNDWF"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-25T14:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=16D71000023RFGKYDT"
+    },
+    {
+     "cinema": "Kinopolis Bad Godesberg",
+     "city": "Bonn",
+     "datetime": "2026-07-26T13:40:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/41A75000023GNFNDWF"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-26T14:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=26D71000023RFGKYDT"
+    },
+    {
+     "cinema": "Kinopolis Bad Godesberg",
+     "city": "Bonn",
+     "datetime": "2026-07-27T13:40:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/51A75000023GNFNDWF"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-27T14:40:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=46D71000023RFGKYDT"
+    },
+    {
+     "cinema": "Kinopolis Bad Godesberg",
+     "city": "Bonn",
+     "datetime": "2026-07-28T13:40:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/61A75000023GNFNDWF"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-28T14:40:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=56D71000023RFGKYDT"
+    },
+    {
+     "cinema": "Kinopolis Bad Godesberg",
+     "city": "Bonn",
+     "datetime": "2026-07-29T13:40:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/71A75000023GNFNDWF"
+    },
+    {
+     "cinema": "Cinedom",
+     "city": "Köln",
+     "datetime": "2026-07-29T14:40:00+02:00",
+     "language": "DE",
+     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=66D71000023RFGKYDT"
     }
    ]
   },
@@ -16817,27 +15740,6 @@
     "letterboxd": 2.85
    },
    "showtimes": [
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T19:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/05375000023GNFNDWF"
-    },
-    {
-     "cinema": "Stern Lichtspiele",
-     "city": "Bonn",
-     "datetime": "2026-07-22T19:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://webticketing3.cinestar.de/?cinemaId=32374&movieSessionId=71482"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=3F571000023RFGKYDT"
-    },
     {
      "cinema": "Cineplex Köln",
      "city": "Köln",
@@ -17292,6 +16194,13 @@
      "datetime": "2026-08-04T20:30:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127316415"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-11T20:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754035"
     }
    ]
   },
@@ -17326,48 +16235,6 @@
     "letterboxd": 3.33
    },
    "showtimes": [
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=76B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=06B71000023RFGKYDT"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/2349DB00023FWBXJYB"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-22T20:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/FD875000023GNFNDWF"
-    },
-    {
-     "cinema": "Metropolis",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:45:00+02:00",
-     "language": "OV",
-     "booking_url": "https://kinotickets.express/metropolis-koeln/booking/68030"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T21:00:00+02:00",
-     "language": "OV",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100425"
-    },
     {
      "cinema": "Cinedom",
      "city": "Köln",
@@ -17567,149 +16434,6 @@
    ]
   },
   {
-   "id": "tt33996352",
-   "title_de": "Miss Moxy",
-   "title_original": "Miss Moxy",
-   "year": 2025,
-   "release_date": "2025-06-06",
-   "runtime": 88,
-   "poster": "https://image.tmdb.org/t/p/w342/bzAdUQ67ky7ABK3YmvyzfApR0c1.jpg",
-   "genres": [
-    "Abenteuer",
-    "Animation",
-    "Komödie",
-    "Familie"
-   ],
-   "age_rating": 0,
-   "overview_de": "Als sich die verwöhnte Hauskatze Miss Moxy im Urlaub verirrt, beginnt eine turbulente Reise quer durch Südeuropa. Um den Weg zurück nach Hause zu finden, muss sie ausgerechnet mit zwei Wesen zusammenarbeiten, die sie eigentlich verabscheut: einem tollpatschigen Hund und einer alten, weisen Schwalbe. Auf diesem Abenteuer entdeckt sie, dass Freundschaft manchmal dort entsteht, wo man sie am wenigsten erwartet.",
-   "overview_en": "From the cobbled streets of Paris to the wild countryside of Europe, follow Miss Moxy — a pampered cat with a whole lot of cattitude — as she’s thrown into the adventure of a lifetime. Lost far from home, she must team up with a goofy dog and a wise old bird to find her way back… and discover who she truly is along the way.",
-   "original_language": "nl",
-   "countries": [
-    "BE",
-    "FR",
-    "NL"
-   ],
-   "directors": [
-    "Vincent Bal",
-    "Wip Vernooij"
-   ],
-   "tags": [],
-   "trailer_de": null,
-   "trailer_en": "https://www.youtube.com/watch?v=AsMmKpKIvfk",
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": 3.32
-   },
-   "showtimes": [
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=32C71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-23T13:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/11A75000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-23T14:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=36D71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-24T13:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/21A75000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-24T14:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=06D71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-25T13:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/31A75000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-25T14:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=16D71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-26T13:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/41A75000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-26T14:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=26D71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-27T13:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/51A75000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-27T14:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=46D71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-28T13:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/61A75000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-28T14:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=56D71000023RFGKYDT"
-    },
-    {
-     "cinema": "Kinopolis Bad Godesberg",
-     "city": "Bonn",
-     "datetime": "2026-07-29T13:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/71A75000023GNFNDWF"
-    },
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-29T14:40:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=66D71000023RFGKYDT"
-    }
-   ]
-  },
-  {
    "id": "khaly balak min nafsak",
    "title_de": "Khaly Balak Min Nafsak",
    "title_original": "خلى بالك من نفسك",
@@ -17779,13 +16503,6 @@
    },
    "showtimes": [
     {
-     "cinema": "Metropolis",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/metropolis-koeln/booking/68038"
-    },
-    {
      "cinema": "Bonner Kinemathek",
      "city": "Bonn",
      "datetime": "2026-07-23T18:00:00+02:00",
@@ -17819,6 +16536,20 @@
      "datetime": "2026-07-30T18:00:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127316417"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-12T18:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754047"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-18T18:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754049"
     }
    ]
   },
@@ -17852,6 +16583,47 @@
      "datetime": "2026-07-28T20:30:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/4E975000023GNFNDWF"
+    }
+   ]
+  },
+  {
+   "id": "tt33379543",
+   "title_de": "Jana Nayagan",
+   "title_original": "ஜன நாயகன்",
+   "year": 2026,
+   "release_date": "2026-07-23",
+   "runtime": 186,
+   "poster": "https://image.tmdb.org/t/p/w342/jt8pfSIdi47YpFMMWVRr8w5u2S0.jpg",
+   "genres": [
+    "Action",
+    "Drama",
+    "Science Fiction"
+   ],
+   "age_rating": null,
+   "overview_de": "Ein wahrer Anführer strebt nicht nach Macht, sondern setzt sich für die Menschen ein.",
+   "overview_en": "A clash of ideologies. One stands for the people, the other feeds on control. Their paths collided once before. Years later, a child’s silent fear ignites the past, drawing a former police officer into a battle far bigger than personal revenge.",
+   "original_language": "ta",
+   "countries": [
+    "IN"
+   ],
+   "directors": [
+    "H. Vinoth"
+   ],
+   "tags": [],
+   "trailer_de": null,
+   "trailer_en": null,
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": null
+   },
+   "showtimes": [
+    {
+     "cinema": "Kinopolis Bad Godesberg",
+     "city": "Bonn",
+     "datetime": "2026-08-02T11:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/A2A75000023GNFNDWF"
     }
    ]
   },
@@ -18046,7 +16818,7 @@
    "title_de": "One Night Only",
    "title_original": "One Night Only",
    "year": 2026,
-   "release_date": "2026-08-05",
+   "release_date": "2026-07-28",
    "runtime": 102,
    "poster": "https://image.tmdb.org/t/p/w342/aG0vY0XevpJqsHy9MKIHqhwLUyN.jpg",
    "genres": [
@@ -18064,7 +16836,7 @@
     "Will Gluck"
    ],
    "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=x0WnyntXUZ4",
+   "trailer_de": "https://www.youtube.com/watch?v=PCcTksxjkYY",
    "trailer_en": "https://www.youtube.com/watch?v=AvKoSR3O4NQ",
    "ratings": {
     "imdb": null,
@@ -18092,6 +16864,54 @@
      "datetime": "2026-08-26T20:00:00+02:00",
      "language": "DE",
      "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=10A71000023RFGKYDT"
+    }
+   ]
+  },
+  {
+   "id": "tt43683692",
+   "title_de": "GHOST: 2 Big To Rig",
+   "title_original": "2 Big to Rig",
+   "year": 2026,
+   "release_date": "2026-08-24",
+   "runtime": 115,
+   "poster": "https://image.tmdb.org/t/p/w342/yaGo6MAKEB1Xy6VayQXy5TlY94k.jpg",
+   "genres": [
+    "Musik",
+    "Dokumentarfilm"
+   ],
+   "age_rating": null,
+   "overview_de": "Aufgenommen live während der beiden ausverkauften Konzerte von GHOST in Mexiko-Stadt im vergangenen Jahr aufgenommen und ist das ultimative Zeugnis der unvergesslichen „SKELETOUR WORLD TOUR“ der Band.  Mit dem einzigen professionellen Filmmaterial von Papa V Perpetua und seiner Band der Nameless Ghouls von der handylosen SKELETOUR lässt „2 BIG TO RIG“ das Publikum in das Live-Ritual von GHOST eintauchen, einschließlich exklusiver Einblicke hinter die Kulissen und Backstage-Zugang.  2 BIG TO RIG wurde geschaffen, um das SKELETOUR-Erlebnis mit den Fans in den Regionen zu teilen, in denen eine Aufführung der Show logistisch nicht machbar war – und ist eine Liebeserklärung an alle, die am GHOST-Ritual teilgenommen haben.",
+   "overview_en": "Captured live over the course of GHOST’s two sold-out shows in Mexico City last year, 2 BIG TO RIG is the definitive document of the band's unforgettable SKELETOUR WORLD TOUR, presented in IMAX® in select locations.  Featuring the only pro-shot footage of Papa V Perpetua and his band of Nameless Ghouls from the phone-free SKELETOUR, 2 BIG TO RIG immerses the audience in the GHOST live ritual, including exclusive behind-the-scenes and backstage access.  2 BIG TO RIG was created to share the SKELETOUR experience with the faithful in the territories where staging the show was not logistically feasible — and is a love letter to all those who have shared the GHOST ritual.  Shot on 16mm film, GHOST has never looked or sounded better, ripping through material from the band's six albums — including 2025’s global #1 SKELETÁ as well as non-LP favorites including “Mary On A Cross,” “Kiss the Go-Goat,” and “The Future is a Foreign Land.”",
+   "original_language": "en",
+   "countries": [
+    "US"
+   ],
+   "directors": [
+    "Amir Juan Chamdin",
+    "Jim Parsons"
+   ],
+   "tags": [],
+   "trailer_de": null,
+   "trailer_en": "https://www.youtube.com/watch?v=Ne_yAwZyZkc",
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": null
+   },
+   "showtimes": [
+    {
+     "cinema": "Kinopolis Bad Godesberg",
+     "city": "Bonn",
+     "datetime": "2026-08-26T20:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/81975000023GNFNDWF"
+    },
+    {
+     "cinema": "Kinopolis Bad Godesberg",
+     "city": "Bonn",
+     "datetime": "2026-08-29T22:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinopolis.de/bn/programm/vorstellung/A1975000023GNFNDWF"
     }
    ]
   },
@@ -18694,39 +17514,6 @@
    ]
   },
   {
-   "id": "ukrainische filmtage 2026: traces",
-   "title_de": "UKRAINISCHE FILMTAGE 2026: TRACES",
-   "title_original": "UKRAINISCHE FILMTAGE 2026: TRACES",
-   "year": null,
-   "release_date": null,
-   "runtime": null,
-   "poster": null,
-   "genres": [],
-   "age_rating": null,
-   "overview_de": null,
-   "overview_en": null,
-   "original_language": null,
-   "countries": [],
-   "directors": [],
-   "tags": [],
-   "trailer_de": null,
-   "trailer_en": null,
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": null
-   },
-   "showtimes": [
-    {
-     "cinema": "Bonner Kinemathek",
-     "city": "Bonn",
-     "datetime": "2026-07-22T18:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127023295"
-    }
-   ]
-  },
-  {
    "id": "tt42170126",
    "title_de": "Sommer auf Asphalt",
    "title_original": "Sommer auf Asphalt",
@@ -18784,6 +17571,20 @@
      "datetime": "2026-08-05T20:30:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127316399"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-08T20:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754017"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-18T20:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754019"
     }
    ]
   },
@@ -19080,6 +17881,241 @@
      "datetime": "2026-07-31T21:30:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=126827369"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-09T16:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754011"
+    }
+   ]
+  },
+  {
+   "id": "tt29283995",
+   "title_de": "Lebensansichten eines Huhns",
+   "title_original": "Κότα",
+   "year": 2026,
+   "release_date": "2026-02-20",
+   "runtime": 96,
+   "poster": "https://image.tmdb.org/t/p/w342/rfiyrjBJqu3mvmmmnfQyqU5SU5O.jpg",
+   "genres": [
+    "Abenteuer",
+    "Drama"
+   ],
+   "age_rating": null,
+   "overview_de": "Unserer gefiederten Heldin gelingt die Flucht aus einer Legebatterie. Sie findet Zuflucht in einem heruntergekommenen Restaurant an der griechischen Küste. Dort entdeckt sie die Liebe, navigiert durch die Hackordnung der Menschen, und kämpft darum, ihre Eier vor dem gierigen Besitzer zu schützen. Die Henne wird Zeugin von Diebstählen, Schmuggeleien und schmutzigen Geschäften. Eine tierische Protagonistin, in dessen Ringen um Mutterschaft sich die chaotischen Kompromisse und stillen Kämpfe des menschlichen Lebens spiegeln.",
+   "overview_en": "Escaping from a chicken farm, a hen finds refuge in the courtyard of a crumbling restaurant. There, she discovers love, confronts the pecking order, and fights to protect her eggs from a greedy owner. Her droll yet touching quest for motherhood mirrors the messy compromises and silent struggles of human lives.",
+   "original_language": "el",
+   "countries": [
+    "DE",
+    "HU",
+    "GR"
+   ],
+   "directors": [
+    "Pálfi György"
+   ],
+   "tags": [],
+   "trailer_de": null,
+   "trailer_en": "https://www.youtube.com/watch?v=Zd9CGEUsIFA",
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": 3.48
+   },
+   "showtimes": [
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-08-06T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397531&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-06T20:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754021"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-07T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754023"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-08-07T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397544&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-08T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754025"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-08-08T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397557&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-09T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754027"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-08-09T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397595&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-08-10T18:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397582&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-08-11T18:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397609&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-08-12T18:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397627&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-12T20:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754029"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-08-13T16:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592403325&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-13T20:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754031"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-08-14T17:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592403296&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-08-15T17:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592403312&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-08-16T19:15:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592403351&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-08-18T16:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592403338&bgswitch=false&resize=false"
+    }
+   ]
+  },
+  {
+   "id": "tt32212403",
+   "title_de": "Sunny Dancer",
+   "title_original": "Sunny Dancer",
+   "year": 2026,
+   "release_date": "2026-08-12",
+   "runtime": 106,
+   "poster": "https://image.tmdb.org/t/p/w342/AdjlZuN1N3RpX1ggZNMz6oVcwN4.jpg",
+   "genres": [
+    "Drama"
+   ],
+   "age_rating": null,
+   "overview_de": "Partys, Freunde, große Freiheit – die Sommerferien eines typischen Teenagers. Aber nicht für die eigenbrötlerische Ivy (Bella Ramsey), die sich nach ihrer überstandenen Krebserkrankung lieber zurückzieht. Aus diesem Grund melden ihre überfürsorglichen Eltern die 17-Jährige für einen vierwöchigen Aufenthalt im Children Run Free Camp für krebskranke Jugendliche an. Überzeugt, dass ihr die schlimmste Zeit ihres Lebens bevorsteht, bezieht Ivy ihre Unterkunft im „Chemo-Camp“ und findet unerwartet Gleichgesinnte in einer Gruppe von Außenseitern, aus denen schnell Freunde werden. Gemeinsam feiern sie das Leben und einen Sommer, den sie nie vergessen werden.",
+   "overview_en": "Ivy is a teenager in remission from cancer, whose mum and dad insist she attend Children Run Free Camp, a summer retreat for young adults affected by cancer. However, as Ivy is reluctantly dragged through camp experience, she discovers new feelings with new friends.",
+   "original_language": "en",
+   "countries": [
+    "GB"
+   ],
+   "directors": [
+    "George Jaques"
+   ],
+   "tags": [],
+   "trailer_de": "https://www.youtube.com/watch?v=33THEhRELWI",
+   "trailer_en": "https://www.youtube.com/watch?v=UQxRhHK_Bmw",
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": 3.48
+   },
+   "showtimes": [
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-13T18:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754037"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-14T18:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754039"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-15T18:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754041"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-16T17:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754043"
+    },
+    {
+     "cinema": "Bonner Kinemathek",
+     "city": "Bonn",
+     "datetime": "2026-08-19T19:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/bonn/bonner-kinemathek-brotfabrik/vorstellungen?showId=127754045"
     }
    ]
   },
@@ -19140,13 +18176,6 @@
     "letterboxd": null
    },
    "showtimes": [
-    {
-     "cinema": "Weisshaus Kino",
-     "city": "Köln",
-     "datetime": "2026-07-22T19:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/weisshaus-kino-koeln/vorstellungen?showId=127542057"
-    },
     {
      "cinema": "Weisshaus Kino",
      "city": "Köln",
@@ -19510,13 +18539,6 @@
     {
      "cinema": "Filmpalette",
      "city": "Köln",
-     "datetime": "2026-07-22T18:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3589162822&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Filmpalette",
-     "city": "Köln",
      "datetime": "2026-07-27T17:15:00+02:00",
      "language": "DE",
      "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3595913325&bgswitch=false&resize=false"
@@ -19527,136 +18549,6 @@
      "datetime": "2026-07-27T18:30:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinoheld.de/kino/koeln/odeon-lichtspieltheater-koeln/vorstellungen?showId=127584959"
-    }
-   ]
-  },
-  {
-   "id": "tt39382755",
-   "title_de": "Etwas ganz Besonderes",
-   "title_original": "Etwas ganz Besonderes",
-   "year": 2026,
-   "release_date": "2026-07-09",
-   "runtime": 116,
-   "poster": "https://image.tmdb.org/t/p/w342/yInkf546G1I63g4Im3XvFCnmxsf.jpg",
-   "genres": [
-    "Drama"
-   ],
-   "age_rating": 12,
-   "overview_de": "Lea wird als Kandidatin einer Gesangs-Castingshow vom Fernsehteam gefragt: \"Wer bist Du, und was macht Dich aus?\" Sie weiß es nicht und beginnt auf der Suche nach dem Besonderen an ihr, in verschiedene Rollen zu schlüpfen, wobei sie eine unerwartete Faszination für ihre Tante Kati entwickelt.",
-   "overview_en": "As a contestant in a singing casting show, Lea is asked by the TV team who she is and what makes her special. She doesn't know and begins to slip into different roles in her search for what makes her special, developing an unexpected fascination for her aunt Kati. Kati's return home as head architect for the renovation of the Residenzschloss after many years abroad reunites the family in one place. This reunion raises the hopes of grandparents Friedrich and Christel that they can join forces to give their pension, which has few visitors, a new lease of life.",
-   "original_language": "de",
-   "countries": [
-    "DE"
-   ],
-   "directors": [
-    "Eva Trobisch"
-   ],
-   "tags": [
-    "women_directed"
-   ],
-   "trailer_de": "https://www.youtube.com/watch?v=Err0nRc0gyM",
-   "trailer_en": null,
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": 3.18
-   },
-   "showtimes": [
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-22T16:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100364"
-    },
-    {
-     "cinema": "Cinenova",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/cinenova-kino-koeln/vorstellungen?showId=127459547"
-    },
-    {
-     "cinema": "Filmpalette",
-     "city": "Köln",
-     "datetime": "2026-07-22T18:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3589148614&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-24T13:50:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100601"
-    },
-    {
-     "cinema": "Filmpalette",
-     "city": "Köln",
-     "datetime": "2026-07-26T17:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3595896796&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Filmpalette",
-     "city": "Köln",
-     "datetime": "2026-07-27T20:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3595896807&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Filmpalette",
-     "city": "Köln",
-     "datetime": "2026-07-28T20:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3595896818&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-29T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100602"
-    },
-    {
-     "cinema": "Filmpalette",
-     "city": "Köln",
-     "datetime": "2026-07-29T21:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3595913160&bgswitch=false&resize=false"
-    }
-   ]
-  },
-  {
-   "id": "amores perros (re 2026)",
-   "title_de": "AMORES PERROS (RE 2026)",
-   "title_original": "AMORES PERROS (RE 2026)",
-   "year": null,
-   "release_date": null,
-   "runtime": null,
-   "poster": null,
-   "genres": [],
-   "age_rating": null,
-   "overview_de": null,
-   "overview_en": null,
-   "original_language": null,
-   "countries": [],
-   "directors": [],
-   "tags": [],
-   "trailer_de": null,
-   "trailer_en": null,
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": null
-   },
-   "showtimes": [
-    {
-     "cinema": "Filmpalette",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:15:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3589148713&bgswitch=false&resize=false"
     }
    ]
   },
@@ -19770,6 +18662,82 @@
      "datetime": "2026-07-27T17:00:00+02:00",
      "language": "OmU",
      "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3595896785&bgswitch=false&resize=false"
+    }
+   ]
+  },
+  {
+   "id": "tt39382755",
+   "title_de": "Etwas ganz Besonderes",
+   "title_original": "Etwas ganz Besonderes",
+   "year": 2026,
+   "release_date": "2026-07-09",
+   "runtime": 116,
+   "poster": "https://image.tmdb.org/t/p/w342/yInkf546G1I63g4Im3XvFCnmxsf.jpg",
+   "genres": [
+    "Drama"
+   ],
+   "age_rating": 12,
+   "overview_de": "Lea wird als Kandidatin einer Gesangs-Castingshow vom Fernsehteam gefragt: \"Wer bist Du, und was macht Dich aus?\" Sie weiß es nicht und beginnt auf der Suche nach dem Besonderen an ihr, in verschiedene Rollen zu schlüpfen, wobei sie eine unerwartete Faszination für ihre Tante Kati entwickelt.",
+   "overview_en": "As a contestant in a singing casting show, Lea is asked by the TV team who she is and what makes her special. She doesn't know and begins to slip into different roles in her search for what makes her special, developing an unexpected fascination for her aunt Kati. Kati's return home as head architect for the renovation of the Residenzschloss after many years abroad reunites the family in one place. This reunion raises the hopes of grandparents Friedrich and Christel that they can join forces to give their pension, which has few visitors, a new lease of life.",
+   "original_language": "de",
+   "countries": [
+    "DE"
+   ],
+   "directors": [
+    "Eva Trobisch"
+   ],
+   "tags": [
+    "women_directed"
+   ],
+   "trailer_de": "https://www.youtube.com/watch?v=Err0nRc0gyM",
+   "trailer_en": null,
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": 3.18
+   },
+   "showtimes": [
+    {
+     "cinema": "Rex am Ring",
+     "city": "Köln",
+     "datetime": "2026-07-24T13:50:00+02:00",
+     "language": "DE",
+     "booking_url": "https://kinotickets.express/rex-koeln/booking/100601"
+    },
+    {
+     "cinema": "Filmpalette",
+     "city": "Köln",
+     "datetime": "2026-07-26T17:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3595896796&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Filmpalette",
+     "city": "Köln",
+     "datetime": "2026-07-27T20:45:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3595896807&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Filmpalette",
+     "city": "Köln",
+     "datetime": "2026-07-28T20:45:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3595896818&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Rex am Ring",
+     "city": "Köln",
+     "datetime": "2026-07-29T14:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://kinotickets.express/rex-koeln/booking/100602"
+    },
+    {
+     "cinema": "Filmpalette",
+     "city": "Köln",
+     "datetime": "2026-07-29T21:00:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3595913160&bgswitch=false&resize=false"
     }
    ]
   },
@@ -19960,13 +18928,6 @@
      "datetime": "2026-08-19T20:30:00+02:00",
      "language": "DE",
      "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=1332363123&showId=3589789898&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "OFF Broadway",
-     "city": "Köln",
-     "datetime": "2026-08-20T20:00:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/off-broadway-kino-koeln/vorstellungen?showId=127527119"
     }
    ]
   },
@@ -20112,6 +19073,39 @@
      "datetime": "2026-08-04T20:00:00+02:00",
      "language": "DE",
      "booking_url": "https://www.kinoheld.de/kino/koeln/off-broadway-kino-koeln/vorstellungen?showId=126732421"
+    }
+   ]
+  },
+  {
+   "id": "w.wednesday prev.:teenage sex and death at camp mi",
+   "title_de": "W.WEDNESDAY PREV.:Teenage Sex and Death at Camp Mi",
+   "title_original": "W.WEDNESDAY PREV.:Teenage Sex and Death at Camp Mi",
+   "year": null,
+   "release_date": null,
+   "runtime": null,
+   "poster": null,
+   "genres": [],
+   "age_rating": null,
+   "overview_de": null,
+   "overview_en": null,
+   "original_language": null,
+   "countries": [],
+   "directors": [],
+   "tags": [],
+   "trailer_de": null,
+   "trailer_en": null,
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": null
+   },
+   "showtimes": [
+    {
+     "cinema": "OFF Broadway",
+     "city": "Köln",
+     "datetime": "2026-08-20T20:00:00+02:00",
+     "language": "OmU",
+     "booking_url": "https://www.kinoheld.de/kino/koeln/off-broadway-kino-koeln/vorstellungen?showId=127527119"
     }
    ]
   },
@@ -20384,13 +19378,6 @@
     {
      "cinema": "Rex am Ring",
      "city": "Köln",
-     "datetime": "2026-07-22T16:20:00+02:00",
-     "language": "DE",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100505"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
      "datetime": "2026-07-23T16:00:00+02:00",
      "language": "DE",
      "booking_url": "https://kinotickets.express/rex-koeln/booking/100661"
@@ -20462,81 +19449,6 @@
      "datetime": "2026-09-04T20:45:00+02:00",
      "language": "OmU",
      "booking_url": "https://kinotickets.express/rex-koeln/booking/99010"
-    }
-   ]
-  },
-  {
-   "id": "dreams - gefhrliches verlangen",
-   "title_de": "Dreams - Gefhrliches Verlangen",
-   "title_original": "Dreams - Gefhrliches Verlangen",
-   "year": null,
-   "release_date": null,
-   "runtime": null,
-   "poster": null,
-   "genres": [],
-   "age_rating": null,
-   "overview_de": null,
-   "overview_en": null,
-   "original_language": null,
-   "countries": [],
-   "directors": [],
-   "tags": [],
-   "trailer_de": null,
-   "trailer_en": null,
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": null
-   },
-   "showtimes": [
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-23T18:20:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100643"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-24T18:20:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100644"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-25T18:20:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100645"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-26T18:20:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100646"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-27T18:20:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100647"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-28T18:20:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100648"
-    },
-    {
-     "cinema": "Rex am Ring",
-     "city": "Köln",
-     "datetime": "2026-07-29T18:20:00+02:00",
-     "language": "OmU",
-     "booking_url": "https://kinotickets.express/rex-koeln/booking/100649"
     }
    ]
   },
@@ -20736,59 +19648,6 @@
    ]
   },
   {
-   "id": "tt36415552",
-   "title_de": "Horst Schlämmer sucht das Glück",
-   "title_original": "Horst Schlämmer sucht das Glück",
-   "year": 2026,
-   "release_date": "2026-03-26",
-   "runtime": 93,
-   "poster": "https://image.tmdb.org/t/p/w342/lEg0bWvMTZ7s86ZoUp31ppXX3tG.jpg",
-   "genres": [
-    "Komödie"
-   ],
-   "age_rating": 6,
-   "overview_de": "Horst Schlämmer hat die Faxen dicke: Die Preise steigen, die Stimmung sinkt, die Kneipen schließen. Kurzum: Deutschland hat Rücken! Und zwar im Gesicht. Also geht der stellvertretende Chefredakteur vom „Grevenbroicher Tagblatt“ auf eine große Reise mit noch größerem Ziel: Er will den Leuten ihr Lächeln zurückbringen! Doch wie wird man glücklich? Schwere Zeiten verlangen nach klaren Antworten – und weil man die in Grevenbroich nicht finden kann, begibt sich Horst Schlämmer auf die Reise seines Lebens: Von Süddeutschland bis Sylt, von Berlin bis Büsum – per Anhalter, Krabbenkutter oder Schienenersatzverkehr. Er trifft Passanten, Promis und Psychologen, fragt knallhart nach und verliert, trotz vieler Rückschläge, nie seine Mission aus den Augen: Die Menschen wieder glücklich zu machen!",
-   "overview_en": "Horst Schlämmer is back—and he's fed up. People all over Germany are in a bad mood. So he leaves Grevenbroich and sets off in search of happiness. It must be somewhere!",
-   "original_language": "de",
-   "countries": [
-    "DE"
-   ],
-   "directors": [
-    "Sven Unterwaldt"
-   ],
-   "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=YdUP2xp6enM",
-   "trailer_en": null,
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": 2.81
-   },
-   "showtimes": [
-    {
-     "cinema": "Cinenova",
-     "city": "Köln",
-     "datetime": "2026-07-22T22:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/cinenova-kino-koeln/vorstellungen?showId=127314545"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-09-02T14:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/C698AB00023FWBXJYB"
-    },
-    {
-     "cinema": "Cineplex Köln",
-     "city": "Köln",
-     "datetime": "2026-09-02T15:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://tickets.cineplex.de/checkout/351/B698AB00023FWBXJYB"
-    }
-   ]
-  },
-  {
    "id": "surffilmnacht kingdom the evening + we the surfers",
    "title_de": "SURFFILMNACHT KINGDOM THE EVENING + WE THE SURFERS",
    "title_original": "SURFFILMNACHT KINGDOM THE EVENING + WE THE SURFERS",
@@ -20895,6 +19754,46 @@
    ]
   },
   {
+   "id": "tt28088049",
+   "title_de": "Bitteres Fest",
+   "title_original": "Amarga Navidad",
+   "year": 2026,
+   "release_date": "2026-03-20",
+   "runtime": 112,
+   "poster": "https://image.tmdb.org/t/p/w342/ei2nbzABWV0pK2Wt2DeVzRbZs3c.jpg",
+   "genres": [
+    "Drama",
+    "Komödie"
+   ],
+   "age_rating": null,
+   "overview_de": "Zwei Zeitebenen und zwei Perspektiven verweben sich zu einem vielschichtigen Spiel zwischen Realität und Fiktion: Die erfolgreiche Werbefilmregisseurin Elsa stürzt sich nach dem Tod ihrer Mutter in ihre Arbeit, ohne sich Raum zum Trauern zu geben. In einer anderen Zeit in der gleichen Stadt arbeitet der erfolgreiche Autor und Regisseur Raúl Durán, der gegen eine lange kreative Krise ankämpft, an seinem neuen Werk – und schreibt genau jene Geschichte, die Elsas Leben erzählt.",
+   "overview_en": "In 2025 Spain, a celebrated film director struggles to write the screenplay for an autofictional film set in 2004 Spain about an unsuccessful movie director turned director of commercials who suffers a panic attack that forces her to take a break by visiting the Canary Islands, where she begins work on a new film.",
+   "original_language": "es",
+   "countries": [
+    "ES"
+   ],
+   "directors": [
+    "Pedro Almodóvar"
+   ],
+   "tags": [],
+   "trailer_de": null,
+   "trailer_en": "https://www.youtube.com/watch?v=7PgPkSpuYpY",
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": 3.16
+   },
+   "showtimes": [
+    {
+     "cinema": "Cinenova",
+     "city": "Köln",
+     "datetime": "2026-08-01T21:45:00+02:00",
+     "language": "DE",
+     "booking_url": "https://www.kinoheld.de/kino/koeln/cinenova-kino-koeln/vorstellungen?showId=127601147"
+    }
+   ]
+  },
+  {
    "id": "tt35695538",
    "title_de": "My Father's Shadow",
    "title_original": "My Father's Shadow",
@@ -20965,154 +19864,6 @@
      "datetime": "2026-08-17T21:15:00+02:00",
      "language": "OmU",
      "booking_url": "https://www.kinoheld.de/kino/koeln/cinenova-kino-koeln/vorstellungen?showId=127583681"
-    }
-   ]
-  },
-  {
-   "id": "heimkino. - what ever happened to baby jane?",
-   "title_de": "heimkino. - What Ever Happened to Baby Jane?",
-   "title_original": "heimkino. - What Ever Happened to Baby Jane?",
-   "year": null,
-   "release_date": null,
-   "runtime": null,
-   "poster": null,
-   "genres": [],
-   "age_rating": null,
-   "overview_de": null,
-   "overview_en": null,
-   "original_language": null,
-   "countries": [],
-   "directors": [],
-   "tags": [],
-   "trailer_de": null,
-   "trailer_en": null,
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": null
-   },
-   "showtimes": [
-    {
-     "cinema": "Cinenova",
-     "city": "Köln",
-     "datetime": "2026-07-22T20:00:00+02:00",
-     "language": "OV",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/cinenova-kino-koeln/vorstellungen?showId=126557787"
-    }
-   ]
-  },
-  {
-   "id": "tt28088049",
-   "title_de": "Bitteres Fest",
-   "title_original": "Amarga Navidad",
-   "year": 2026,
-   "release_date": "2026-03-20",
-   "runtime": 112,
-   "poster": "https://image.tmdb.org/t/p/w342/ei2nbzABWV0pK2Wt2DeVzRbZs3c.jpg",
-   "genres": [
-    "Drama",
-    "Komödie"
-   ],
-   "age_rating": null,
-   "overview_de": "Zwei Zeitebenen und zwei Perspektiven verweben sich zu einem vielschichtigen Spiel zwischen Realität und Fiktion: Die erfolgreiche Werbefilmregisseurin Elsa stürzt sich nach dem Tod ihrer Mutter in ihre Arbeit, ohne sich Raum zum Trauern zu geben. In einer anderen Zeit in der gleichen Stadt arbeitet der erfolgreiche Autor und Regisseur Raúl Durán, der gegen eine lange kreative Krise ankämpft, an seinem neuen Werk – und schreibt genau jene Geschichte, die Elsas Leben erzählt.",
-   "overview_en": "In 2025 Spain, a celebrated film director struggles to write the screenplay for an autofictional film set in 2004 Spain about an unsuccessful movie director turned director of commercials who suffers a panic attack that forces her to take a break by visiting the Canary Islands, where she begins work on a new film.",
-   "original_language": "es",
-   "countries": [
-    "ES"
-   ],
-   "directors": [
-    "Pedro Almodóvar"
-   ],
-   "tags": [],
-   "trailer_de": null,
-   "trailer_en": "https://www.youtube.com/watch?v=7PgPkSpuYpY",
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": 3.16
-   },
-   "showtimes": [
-    {
-     "cinema": "Cinenova",
-     "city": "Köln",
-     "datetime": "2026-08-01T21:45:00+02:00",
-     "language": "DE",
-     "booking_url": "https://www.kinoheld.de/kino/koeln/cinenova-kino-koeln/vorstellungen?showId=127601147"
-    }
-   ]
-  },
-  {
-   "id": "die töchter europas",
-   "title_de": "Die Töchter Europas",
-   "title_original": "Die Töchter Europas",
-   "year": 2026,
-   "release_date": "2026-07-16",
-   "runtime": 80,
-   "poster": "https://image.tmdb.org/t/p/w342/lVeVsUVoQH0rOarX8EUCCzDA4KY.jpg",
-   "genres": [
-    "Dokumentarfilm"
-   ],
-   "age_rating": null,
-   "overview_de": "Der Film ist ein Road-Movie in den Fernreisebussen, auf den Schnellstraßen und in den Busterminals eines vermeintlich grenzenlosen Europas. Ein Kino-Dokumentarfilmin kaleidoskopischen Momentaufnahmen entlang der Schicksale dreier ganz unterschiedlicher Frauen, ihrer Erlebnisse und Begegnungen.",
-   "overview_en": "A road movie set in long-distance coaches, on motorways and in bus terminals across a supposedly borderless Europe. A cinema documentary in kaleidoscopic snapshots tracing the fates of three very different women, their experiences and encounters.",
-   "original_language": "de",
-   "countries": [
-    "DE"
-   ],
-   "directors": [
-    "Verena Kuri",
-    "Iris Janssen"
-   ],
-   "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=CnJ_Q2ln5fY",
-   "trailer_en": null,
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": null
-   },
-   "showtimes": [
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-07-22T17:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3575735339&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-07-24T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3575747709&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-07-25T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3575747723&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-07-26T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3575747738&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-07-27T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3575747752&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-07-28T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3575747768&bgswitch=false&resize=false"
     }
    ]
   },
@@ -21214,6 +19965,74 @@
    ]
   },
   {
+   "id": "die töchter europas",
+   "title_de": "Die Töchter Europas",
+   "title_original": "Die Töchter Europas",
+   "year": 2026,
+   "release_date": "2026-07-16",
+   "runtime": 80,
+   "poster": "https://image.tmdb.org/t/p/w342/lVeVsUVoQH0rOarX8EUCCzDA4KY.jpg",
+   "genres": [
+    "Dokumentarfilm"
+   ],
+   "age_rating": null,
+   "overview_de": "Der Film ist ein Road-Movie in den Fernreisebussen, auf den Schnellstraßen und in den Busterminals eines vermeintlich grenzenlosen Europas. Ein Kino-Dokumentarfilmin kaleidoskopischen Momentaufnahmen entlang der Schicksale dreier ganz unterschiedlicher Frauen, ihrer Erlebnisse und Begegnungen.",
+   "overview_en": "A road movie set in long-distance coaches, on motorways and in bus terminals across a supposedly borderless Europe. A cinema documentary in kaleidoscopic snapshots tracing the fates of three very different women, their experiences and encounters.",
+   "original_language": "de",
+   "countries": [
+    "DE"
+   ],
+   "directors": [
+    "Verena Kuri",
+    "Iris Janssen"
+   ],
+   "tags": [],
+   "trailer_de": "https://www.youtube.com/watch?v=CnJ_Q2ln5fY",
+   "trailer_en": null,
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": null
+   },
+   "showtimes": [
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-07-24T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3575747709&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-07-25T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3575747723&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-07-26T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3575747738&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-07-27T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3575747752&bgswitch=false&resize=false"
+    },
+    {
+     "cinema": "Kölner Filmhaus",
+     "city": "Köln",
+     "datetime": "2026-07-28T18:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3575747768&bgswitch=false&resize=false"
+    }
+   ]
+  },
+  {
    "id": "tt35439830",
    "title_de": "Fwends",
    "title_original": "Fwends",
@@ -21280,125 +20099,6 @@
      "datetime": "2026-08-05T17:00:00+02:00",
      "language": "DE",
      "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592381729&bgswitch=false&resize=false"
-    }
-   ]
-  },
-  {
-   "id": "tt29283995",
-   "title_de": "Lebensansichten eines Huhns",
-   "title_original": "Κότα",
-   "year": 2026,
-   "release_date": "2026-02-20",
-   "runtime": 96,
-   "poster": "https://image.tmdb.org/t/p/w342/rfiyrjBJqu3mvmmmnfQyqU5SU5O.jpg",
-   "genres": [
-    "Abenteuer",
-    "Drama"
-   ],
-   "age_rating": null,
-   "overview_de": "Unserer gefiederten Heldin gelingt die Flucht aus einer Legebatterie. Sie findet Zuflucht in einem heruntergekommenen Restaurant an der griechischen Küste. Dort entdeckt sie die Liebe, navigiert durch die Hackordnung der Menschen, und kämpft darum, ihre Eier vor dem gierigen Besitzer zu schützen. Die Henne wird Zeugin von Diebstählen, Schmuggeleien und schmutzigen Geschäften. Eine tierische Protagonistin, in dessen Ringen um Mutterschaft sich die chaotischen Kompromisse und stillen Kämpfe des menschlichen Lebens spiegeln.",
-   "overview_en": "Escaping from a chicken farm, a hen finds refuge in the courtyard of a crumbling restaurant. There, she discovers love, confronts the pecking order, and fights to protect her eggs from a greedy owner. Her droll yet touching quest for motherhood mirrors the messy compromises and silent struggles of human lives.",
-   "original_language": "el",
-   "countries": [
-    "DE",
-    "HU",
-    "GR"
-   ],
-   "directors": [
-    "Pálfi György"
-   ],
-   "tags": [],
-   "trailer_de": null,
-   "trailer_en": "https://www.youtube.com/watch?v=Zd9CGEUsIFA",
-   "ratings": {
-    "imdb": null,
-    "metascore": null,
-    "letterboxd": 3.48
-   },
-   "showtimes": [
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-08-06T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397531&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-08-07T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397544&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-08-08T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397557&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-08-09T18:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397595&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-08-10T18:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397582&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-08-11T18:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397609&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-08-12T18:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592397627&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-08-13T16:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592403325&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-08-14T17:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592403296&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-08-15T17:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592403312&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-08-16T19:15:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592403351&bgswitch=false&resize=false"
-    },
-    {
-     "cinema": "Kölner Filmhaus",
-     "city": "Köln",
-     "datetime": "2026-08-18T16:30:00+02:00",
-     "language": "DE",
-     "booking_url": "https://booking.cinetixx.de/frontend/index.html?cinemaId=2434537641&showId=3592403338&bgswitch=false&resize=false"
     }
    ]
   },
@@ -21749,24 +20449,68 @@
    ]
   },
   {
-   "id": "disney channel mitmachkino",
-   "title_de": "Disney Channel Mitmachkino",
-   "title_original": "Disney Channel Mitmachkino",
-   "year": 2023,
-   "release_date": "2023-02-25",
-   "runtime": 60,
-   "poster": "https://image.tmdb.org/t/p/w342/y01Qvr62t13ZLO15EPbyn8mOc8U.jpg",
+   "id": "tt36415552",
+   "title_de": "Horst Schlämmer sucht das Glück",
+   "title_original": "Horst Schlämmer sucht das Glück",
+   "year": 2026,
+   "release_date": "2026-03-26",
+   "runtime": 93,
+   "poster": "https://image.tmdb.org/t/p/w342/lEg0bWvMTZ7s86ZoUp31ppXX3tG.jpg",
    "genres": [
-    "Animation"
+    "Komödie"
    ],
+   "age_rating": 6,
+   "overview_de": "Horst Schlämmer hat die Faxen dicke: Die Preise steigen, die Stimmung sinkt, die Kneipen schließen. Kurzum: Deutschland hat Rücken! Und zwar im Gesicht. Also geht der stellvertretende Chefredakteur vom „Grevenbroicher Tagblatt“ auf eine große Reise mit noch größerem Ziel: Er will den Leuten ihr Lächeln zurückbringen! Doch wie wird man glücklich? Schwere Zeiten verlangen nach klaren Antworten – und weil man die in Grevenbroich nicht finden kann, begibt sich Horst Schlämmer auf die Reise seines Lebens: Von Süddeutschland bis Sylt, von Berlin bis Büsum – per Anhalter, Krabbenkutter oder Schienenersatzverkehr. Er trifft Passanten, Promis und Psychologen, fragt knallhart nach und verliert, trotz vieler Rückschläge, nie seine Mission aus den Augen: Die Menschen wieder glücklich zu machen!",
+   "overview_en": "Horst Schlämmer is back—and he's fed up. People all over Germany are in a bad mood. So he leaves Grevenbroich and sets off in search of happiness. It must be somewhere!",
+   "original_language": "de",
+   "countries": [
+    "DE"
+   ],
+   "directors": [
+    "Sven Unterwaldt"
+   ],
+   "tags": [],
+   "trailer_de": "https://www.youtube.com/watch?v=YdUP2xp6enM",
+   "trailer_en": null,
+   "ratings": {
+    "imdb": null,
+    "metascore": null,
+    "letterboxd": 2.81
+   },
+   "showtimes": [
+    {
+     "cinema": "Cineplex Köln",
+     "city": "Köln",
+     "datetime": "2026-09-02T14:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://tickets.cineplex.de/checkout/351/C698AB00023FWBXJYB"
+    },
+    {
+     "cinema": "Cineplex Köln",
+     "city": "Köln",
+     "datetime": "2026-09-02T15:30:00+02:00",
+     "language": "DE",
+     "booking_url": "https://tickets.cineplex.de/checkout/351/B698AB00023FWBXJYB"
+    }
+   ]
+  },
+  {
+   "id": "disney channel mitmachkino 2025",
+   "title_de": "Disney Channel Mitmachkino - September 2025",
+   "title_original": "Disney Channel Mitmachkino - September 2025",
+   "year": 2025,
+   "release_date": "2025-09-13",
+   "runtime": 60,
+   "poster": "https://image.tmdb.org/t/p/w342/zF57abpwl9bpFCv31oUSg9KkRGv.jpg",
+   "genres": [],
    "age_rating": null,
-   "overview_de": "Die Helden des Disney Channel präsentieren sich auf der großen Leinwand und fordern ihr Publikum zu allerlei lustigen Aktionen heraus.",
+   "overview_de": "Kino bedeutet Licht aus, Ruhe und Stillsitzen? Nicht beim DISNEY CHANNEL MITMACH-KINO! Hier dürfen Kinder eine Stunde lang lautstark mitsingen, tanzen, klatschen und rätseln – eben alles, nur nicht leise sein! Auf der großen Leinwand führt Micky Maus als animierter Gastgeber die Kinobesucher durch das kunterbunte Programm, das auf die kleinsten Zuschauer im Vorschulalter ausgerichtet ist und ca. 60 Minuten kindgerechtes Mitmach-Kino bietet.",
    "overview_en": null,
    "original_language": "de",
    "countries": [],
    "directors": [],
    "tags": [],
-   "trailer_de": "https://www.youtube.com/watch?v=gUBB4COZOfg",
+   "trailer_de": null,
    "trailer_en": null,
    "ratings": {
     "imdb": null,
@@ -22121,13 +20865,6 @@
     "letterboxd": 2.84
    },
    "showtimes": [
-    {
-     "cinema": "Cinedom",
-     "city": "Köln",
-     "datetime": "2026-07-22T14:00:00+02:00",
-     "language": "DE",
-     "booking_url": "https://shop.cinedom.de/landingpage?center=9DD10000014AKQLNRG&language=DE&page=seatingplan&performance=E1C71000023RFGKYDT"
-    },
     {
      "cinema": "Cinedom",
      "city": "Köln",
